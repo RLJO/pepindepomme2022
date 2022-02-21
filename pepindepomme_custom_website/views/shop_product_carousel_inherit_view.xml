@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <template id="shop_product_carousel_custom" inherit_id="website_sale.shop_product_carousel">
+
+
+        <!-- update -->
+
+                <xpath expr="//div[hasclass('carousel-outer')]" position="before">
+                  <section class="s_icon_block_13 pb-2 pt-2 o_colored_level undefined" data-snippet="s_icon_block_13" data-name="Icon Block - 13">
+                    <div class="container">
+                        <div class="s_nb_column_fixed text-lg-center">
+                            <div class="col-12 o_colored_level col-lg-12 p-2" style="background-color: #6D53AC">
+                                <div class="h-bandeau-1 m-1" style="font: normal normal 900 14px/17px Roboto;
+letter-spacing: 0px;
+color: #FFFFFF;"> Cumulez des points grâce à vos achats :
+                                    <span class="span-bandeau-1" style="font: normal normal 900 14px/17px Roboto;
+letter-spacing: 0px;
+color: #FFCE06;">100 points
+                                        fidélité = 5€ en bons d’achats
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 bg-black text-center p-1" style="font: normal normal normal 12px/17px Roboto; color: #FFFFFF;">
+        En savoir plus
+    </div>
+                        </div>
+                    </div>
+                </section>
+
+        </xpath>
+
+    </template>
+</odoo>

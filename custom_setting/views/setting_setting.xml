@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+
+        <record model="ir.ui.view" id="setting_setting_form_view">
+            <field name="name">setting_setting_form</field>
+            <field name="model">setting.setting</field>
+            <field name="arch" type="xml">
+                <form string="Settings Japan koi">
+                    <div class="o_control_panel">
+                        <div class="o_panel">
+                            <div class="title h2 mb0 mt4 text-muted d-none d-md-block">Configuration</div>
+                        </div>
+                    </div>
+                    <sheet>
+                        <notebook>
+                            <page string="Average category">
+                                <button type="object" name="update_product_category"
+                                        class="btn btn-primary btn-md btn-lg"
+                                        string="Update Category"/>
+
+
+                                <br/>
+                                <br/>
+                                <button type="object" name="update_attribute" class="btn btn-primary btn-md btn-lg"
+                                        string="Update attributes"/>
+
+
+                            </page>
+                            <page string="Importation produits prestashop">
+
+                                <group>
+                                    <field name="url_upload"/>
+                                    <br/>
+                                    <br/>
+                                    <button type="object" name="create_product_prestashop"
+                                            class="btn btn-primary btn-md btn-lg"
+                                            string="Import"/>
+                                    <br/>
+                                    <button type="object" name="check_data" class="btn btn-primary btn-md btn-lg"
+                                            string="Verification"/>
+
+                                    <br/>
+                                    <br/>
+                                    <button type="object" name="updte_custom_barcode"
+                                            class="btn btn-primary btn-md btn-lg"
+                                            string="Custom barcode tamplate"/>
+                                </group>
+
+                            </page>
+                            <page string="Migration Data">
+
+                                <button type="object" name="update_categ" class="btn btn-primary btn-md btn-lg"
+                                        string="Update Categorie vers categorie eco"/>
+
+                                <br/>
+                                <br/>
+                                <br/>
+                                <button type="object" name="update_description" class="btn btn-primary btn-md btn-lg"
+                                        string="Update descri sale vers descr eco"/>
+
+
+
+                                  <br/>
+                                <br/>
+                                <br/>
+                                <button type="object" name="publier_product" class="btn btn-danger btn-md btn-lg"
+                                        string="Puplier produits"/>
+
+                            </page>
+                            <page string="Importation value image/color">
+                               <button type="object" name="update_att_value" class="btn btn-danger btn-md btn-lg"
+                                        string="Import Image/color"/>
+                                 <br/>
+                                <br/>
+                                <br/>
+                                 <button type="object" name="check_value" class="btn btn-success btn-md btn-lg"
+                                        string="Check value"/>
+
+
+                                <br/>
+                                <br/>
+                                <br/>
+                                <button type="object" name="create_image" class="btn btn-success btn-md btn-lg"
+                                        string="Create Image"/>
+
+                            </page>
+                            <page string="Product Public Category">
+                                <button type="object" name="update_extrat_category" class="btn btn-success btn-md btn-lg"
+                                        string="Update extra category"/>
+                                <br/><br/><br/>
+                                 <button type="object" name="delete_extra_category" class="btn btn-danger btn-md btn-lg"
+                                        string="Delete extra category"/>
+
+                                <br/><br/><br/>
+                                <button type="object" name="unlink_extra_category" class="btn btn-danger btn-md btn-lg"
+                                        string="Delete ALL extra category"/>
+
+
+
+                            </page>
+
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="setting_setting_act_window">
+            <field name="name">Setting Japan koi</field> <!-- TODO -->
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">setting.setting</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+
+        </record>
+
+
+        <menuitem
+                name="Setting Japan Koi"
+                id="menu_first_consiergerie_setting"
+                parent="base.menu_custom"
+                sequence="1"
+                action="setting_setting_act_window"
+        />
+
+    </data>
+</odoo>

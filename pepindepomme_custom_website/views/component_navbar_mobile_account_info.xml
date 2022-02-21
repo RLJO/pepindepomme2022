@@ -1,0 +1,15 @@
+<odoo>
+<template name="Component: Navbar Mobile Account Info" id="theme_prime.component_navbar_mobile_account_info">
+             <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+        <div class="tp-account-info">
+            <a class="o_wsale_my_cart  tp-search-sidebar-action d-lg-none" href="#">
+                <i class="dri dri-search o_not_editable bg-light rounded-circle roundedcircle text-primary"/>
+            </a>
+            <a class="o_wsale_my_cart tp-cart-sidebar-action d-lg-none" href="/shop/cart">
+                <i class="dri dri-cart o_not_editable bg-light rounded-circle roundedcircle text-primary"/>
+                <sup class="my_cart_quantity badge badge-secondary mb-0 font-weight-bold supp" style="color: white;background-color: #EC6500;"  t-esc="website_sale_order and website_sale_order.cart_quantity or '0'" t-att-data-order-id="website_sale_order and website_sale_order.id or ''"/>
+            </a>
+        </div>
+</template>
+</odoo>
+

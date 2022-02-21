@@ -1,0 +1,271 @@
+<odoo>
+
+    <template t-name="portal.portal_my_details">
+        <t t-call="portal.portal_layout">
+
+            <t t-set="additional_title">Contact Details</t>
+            <style>
+                label{
+                margin-bottom:7px !important;
+                padding-bottom:0px !important;
+                }
+                .form-control{
+                height:36px !important;
+                }
+                div.row.align-items-center.bg-white.no-gutters.border.rounded{
+                display:none !important;
+                }
+            </style>
+            <section class="s_table_of_content pt24 pb24 o_cc o_cc1 o_colored_level">
+                <div class="container">
+                    <div class="row s_nb_column_fixed">
+                        <div class="col-lg-3 s_table_of_content_navbar_wrap s_table_of_content_navbar_sticky s_table_of_content_vertical_navbar d-print-none mb-5 d-lg-block o_not_editable "
+                             data-name="Navbar">
+                            <div class="s_table_of_content_navbar list-group" style="">
+
+                                <div class="border-top pt-2">
+                                    <a href="/my/account"
+                                       class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                       style="color:  #91B508; font: normal normal bold 14px/19px Roboto; ">
+                                        <img  class="mr-2 mb-2" style="height: 18px;width: 16px;margin-right: 17px !important;" src="/pepindepomme_custom_portal/static/src/img/user-vert.png" />
+                                        Informations personnelles
+                                        <i style="color: #91B508 !important;"
+                                           class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                           aria-label="Fold"/>
+                                    </a>
+
+                                </div>
+
+                                <div class="border-top pt-2">
+                                    <a href="/my/adress"
+                                       class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                       style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto;">
+                                        <img  class="mr-2 mb-2" style="height: 22px;width: 18px;margin-right: 16px !important;" src="/pepindepomme_custom_portal/static/src/img/map-pin.png" />
+                                        Mes adresses
+                                        <i style="color: #000000 !important;"
+                                           class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                           aria-label="Fold"/>
+                                    </a>
+
+                                </div>
+
+                                <div class="border-top pt-2">
+                                    <a href="/my/orders"
+                                       class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                       style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto;">
+                                        <img  class="mr-2 mb-1" style="height: 16px;width: 22px;margin-right: 12px !important;" src="/pepindepomme_custom_portal/static/src/img/card.png" />
+                                        Mes commandes
+                                        <i style="color: #000000 !important;"
+                                           class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                           aria-label="Fold"/>
+                                    </a>
+
+                                </div>
+
+                                <div class="border-top border-bottom pt-2">
+                                    <a href="/my/history"
+                                       class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                       style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto;">
+                                        <img  class="mr-2 mb-2" style="height: 20px;width: 18px;margin-right: 14px !important;" src="/pepindepomme_custom_portal/static/src/img/package.png" />
+                                        Historique des commandes
+                                        <i style="color: #000000 !important;"
+                                           class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                           aria-label="Fold"/>
+                                    </a>
+
+                                </div>
+
+                                <!--     <div class="border-top pt-2">
+                                         <a href="#"
+                                            class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                            style="color: #2C2D41; height: 40px; font: normal normal normal 14px/20px Poppins; padding-left: 4.3%;">
+                                             <i class="float-left fa fa-retweet mr-3 icon"/>
+                                             Mes retours produits
+                                             <i style="" class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                                aria-label="Fold"></i>
+                                         </a>
+
+                                     </div>-->
+
+                            </div>
+                        </div>
+                        <div class="col-lg-9 s_table_of_content_main oe_structure oe_empty o_colored_level"
+                             data-name="Content" data-editor-message="GLISSEZ UN BLOC ICI">
+                            <div>
+                                <h3 style="font: normal normal bold 30px/29px Roboto;color:#000000">
+                                    Mes informations personnelles
+                                </h3>
+                                <div class="text-right">
+                                                    <a href="/web/session/logout?redirect=/" role="menuitem" class="dropdown-item" style="text-decoration: underline;font: normal normal normal 14px/24px Roboto;color: #000000;">
+                                                        Se déconnecter
+                                                    </a>
+                                </div>
+                            </div>
+                            <form action="/my/account" method="post">
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                <div class="row o_portal_details">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <t t-set="partner_can_edit_vat" t-value="partner.can_edit_vat()"/>
+                                            <div class="col-lg-12">
+                                                <div t-if="error_message" class="alert alert-danger" role="alert">
+                                                    <t t-foreach="error_message" t-as="err">
+                                                        <t t-esc="err"/>
+                                                        <br/>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                            <div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="name">Nom *</label>
+                                                <input  type="text" name="name"
+                                                       t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}"
+                                                       t-att-value="name or partner.name"/>
+                                            </div>
+                                            <div t-attf-class="form-group #{error.get('email') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="email">Email *</label>
+                                                <input  type="email" name="email"
+                                                       t-attf-class="form-control #{error.get('email') and 'is-invalid' or ''}"
+                                                       t-att-value="email or partner.email"/>
+                                            </div>
+
+                                            <div class="clearfix"/>
+                                            <div t-attf-class="form-group #{error.get('company_name') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="company_name">
+                                                    Nom de société
+                                                </label>
+                                                <p t-if="not partner_can_edit_vat" t-attf-class="form-control"
+                                                   readonly="1" t-esc="partner.commercial_company_name"
+                                                   title="Changing company name is not allowed once document(s) have been issued for your account. Please contact us directly for this operation."/>
+                                                <input  t-else="" type="text" name="company_name"
+                                                       t-attf-class="form-control #{error.get('company_name') and 'is-invalid' or ''}"
+                                                       t-att-value="company_name or partner.commercial_company_name"/>
+                                            </div>
+                                            <div t-attf-class="form-group #{error.get('vat') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="vat">VAT Number
+                                                </label>
+                                                <t t-set="vat_not_editable_message">Changing VAT number is not allowed
+                                                    once document(s) have been issued for your account. Please contact
+                                                    us directly for this operation.
+                                                </t>
+                                                <input type="text"  name="vat"
+                                                       t-attf-class="form-control #{error.get('vat') and 'is-invalid' or ''}"
+                                                       t-att-value="vat or partner.vat"
+                                                       t-att-readonly="None if partner_can_edit_vat else '1'"
+                                                       t-att-title="None if partner_can_edit_vat else vat_not_editable_message"/>
+                                            </div>
+                                            <div t-attf-class="form-group #{error.get('phone') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="phone">Téléphone *</label>
+                                                <input type="tel"  name="phone"
+                                                       t-attf-class="form-control #{error.get('phone') and 'is-invalid' or ''}"
+                                                       t-att-value="phone or partner.phone"/>
+                                            </div>
+
+                                            <div class="clearfix"/>
+                                            <div t-attf-class="form-group #{error.get('street') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="street">Adresse *</label>
+                                                <input type="text"  name="street"
+                                                       t-attf-class="form-control #{error.get('street') and 'is-invalid' or ''}"
+                                                       t-att-value="street or partner.street"/>
+                                            </div>
+                                            <div t-attf-class="form-group #{error.get('city') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="city">Ville *</label>
+                                                <input type="text"  name="city"
+                                                       t-attf-class="form-control #{error.get('city') and 'is-invalid' or ''}"
+                                                       t-att-value="city or partner.city"/>
+                                            </div>
+                                            <div t-attf-class="form-group #{error.get('zip') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="zipcode">Code postal
+                                                </label>
+                                                <input type="text"  name="zipcode"
+                                                       t-attf-class="form-control #{error.get('zip') and 'is-invalid' or ''}"
+                                                       t-att-value="zipcode or partner.zip"/>
+                                            </div>
+                                            <div t-attf-class="form-group #{error.get('country_id') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="country_id">Pays *</label>
+                                                <select  name="country_id"
+                                                        t-attf-class="form-control #{error.get('country_id') and 'is-invalid' or ''}">
+                                                    <option value="">Pays...</option>
+                                                    <t t-foreach="countries or []" t-as="country">
+                                                        <option t-att-value="country.id"
+                                                                t-att-selected="country.id == int(country_id) if country_id else country.id == partner.country_id.id">
+                                                            <t t-esc="country.name"/>
+                                                        </option>
+                                                    </t>
+                                                </select>
+                                            </div>
+                                            <div t-attf-class="form-group d-none #{error.get('state_id') and 'o_has_error' or ''} col-xl-6">
+                                                <label class="col-form-label lbl" for="state_id">State / Province
+                                                </label>
+                                                <select  name="state_id"
+                                                        t-attf-class="form-control #{error.get('state_id') and 'is-invalid' or ''}">
+                                                    <option value="">select...</option>
+                                                    <t t-foreach="states or []" t-as="state">
+                                                        <option t-att-value="state.id" style="display:none;"
+                                                                t-att-data-country_id="state.country_id.id"
+                                                                t-att-selected="state.id == partner.state_id.id">
+                                                            <t t-esc="state.name"/>
+                                                        </option>
+                                                    </t>
+                                                </select>
+                                            </div>
+                                            <input type="hidden" name="redirect" t-att-value="redirect"/>
+                                        </div>
+                                       <!-- <p>Le mot de passe doit contenir :
+                                            <br/>
+                                            • 8 caractères minimum
+                                            <br/>
+                                            • Un chiffre
+                                            <br/>
+                                            • Une majuscule<br/>• Une minuscule
+                                            <br/>
+                                        </p>
+                                        -->
+                                        <div class="clearfix">
+                                            <button type="submit" class="btn btn-primary btn-lg float-right mb320"
+                                                    style="background: #91B508; border:none; height:52px; width: 140px;">
+                                                <span style="font: normal normal 16px/19px Roboto; color: #FFFFFF;" >
+                                                    Enregister
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="o_portal_my_security mt-3">
+                <h4 style="font: normal normal bold 20px/29px Roboto;color: #000000;">Sécurité du compte</h4>
+                <hr class="mt-1 mb-1"/>
+                <a href="/my/security"><i class="fa fa-pencil mx-1"/>Modifier les paramètres de sécurité
+                </a>
+            </div>
+
+
+            <style>
+                a.table_of_content_link.list-group-item.list-group-item-action.py-2.border-0.rounded-0:hover
+                {
+                background-color: transparent !important;
+                }
+                main{
+                background-color:white !important;
+                }
+                .lbl{
+                font: normal normal bold 14px/26px Roboto;
+                color: #000000;
+                .para{
+                font: italic normal normal 12px/20px Roboto;
+                color: #6C757D;
+                }
+                .o_portal_my_home{
+                display:none;
+                }
+            </style>
+        </t>
+    </template>
+</odoo>

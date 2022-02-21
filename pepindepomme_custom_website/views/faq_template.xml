@@ -1,0 +1,1020 @@
+<odoo>
+    <template id="faq_custom" name="FAQ">
+        <t t-call="website.layout">
+            <style>
+                .title{
+                text-align: left;
+                font: normal normal bold 24px/29px Roboto;
+                color: #000000;
+                }
+                .paragraph{
+                font: normal normal normal 14px/24px Roboto;
+                color: #000000;
+                text-align: left;
+                }
+                .underline{
+                text-decoration: underline;
+                font-weight:normal;
+                }
+                span{
+                font-weight: bold;
+                }
+                .bigtitle{
+                font: normal normal bold 36px/29px Roboto;
+                letter-spacing: 0px;
+                color: #000000;
+                text-align: center;
+                }
+                .greentitle{
+                font: normal normal bold 14px/24px Roboto;
+                letter-spacing: 0px;
+                color: #91B508;
+                }
+                .s_faq_collapse .accordion .card .card-header.collapsed:before{
+                float:right;
+                }
+                .s_faq_collapse .accordion .card .card-header:before {
+                content: '\f107';
+                float: right;
+                }
+                .s_faq_collapse .accordion .card .card-header.collapsed:before {
+                content: '\f105';
+                }
+                }
+            </style>
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_title pt32 o_colored_level pb16 " data-vcss="001" data-snippet="s_title"
+                         data-name="Title">
+                    <div class="s_allow_columns container">
+                        <h1 class="bigtitle">FAQ - Foire aux questions</h1>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <h2 class="paragraph greentitle">Tout ce qu’il faut savoir avant de commander sur Pépin de
+                            pomme
+                        </h2>
+                    </div>
+                </section>
+                <section class=" s_faq_collapse o_colored_level pt0 pb0" data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1642429509765" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="card-header o_default_snippet_text text-black font-weight-bold collapsed"
+                                   data-target="#myCollapseTab1642429509770">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    savoir si Pépin de pomme est un site fiable ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1642429509765"
+                                     id="myCollapseTab1642429509770" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pépin de pomme répond aux besoins
+                                            des parents. Pour mieux vous rassurer, nous dévoilons sur notre site toutes
+                                            les informations légales nous concernant. Vous pouvez également joindre nos
+                                            conseillers clients par téléphone au 09 72 44 96 58 du lundi au samedi, de
+                                            9h à 17h. Vous pouvez aussi envoyer directement un email via
+                                            serviceclient@pepindepomme.com.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1642429509771">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Pourrait-on
+                                    voir les avis des clients concernat les produits vendus chez Pépin de pomme?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1642429509765"
+                                     id="myCollapseTab1642429509771">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Sur chaque article proposé chez
+                                            Pépin de Pomme, vous pouvez voir les notes proposées par les clients. Vous
+                                            pouvez aussi consulter les avis des clients dans la rubrique « Avis
+                                            certifiés ». Les notations sont effectuées sous forme d’étoiles et sont
+                                            collectés par eKomi pour déterminer leur authenticité.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block pt32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Catalogue</p>
+                    </div>
+                </section>
+                <section class=" s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1642429740626" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="card-header collapsed text-black font-weight-bold"
+                                   data-target="#myCollapseTab1642429740627" data-original-title="" title=""
+                                   aria-describedby="tooltip761416">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Est-ce-que
+                                    les produits proposés par Pépin de pomme sont garantis
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1642429740626"
+                                     id="myCollapseTab1642429740627" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">
+                                            Les articles proposés par le site Pépin de pomme sont tous des produits de
+                                            marque authentique et originale. Ils répondent aux normes européennes, ce
+                                            qui fait qu’ils répondent tous aux besoins sanitaires des bébés. Ils sont
+                                            garantis suivant l’article L 211-1 du Code de Consommation et la garantie
+                                            des vices cachés du Code civil. Par contre, si un produit livré subit des
+                                            dommages résultant du client, comme une réparation ou une modification, le
+                                            produit ne peut en aucun cas être garanti.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1642429740627">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    choisir un produit en puériculture ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1642429740631"
+                                     id="myCollapseTab1642429740631">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">
+                                            Vous pouvez facilement votre choix de produit grâce aux rubriques que nous
+                                            vous proposons dont « premier bébé », « sortie bébé »…
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1642429740633">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que
+                                    faire si le produit choisi est plus cher qu'ailleurs ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1642429740626"
+                                     id="myCollapseTab1642429740633">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Si lors de votre recherche sur le
+                                            site Pépin de Pomme, vous constatez que le produit que vous envisagez
+                                            d’acheter est plus cher que sur un autre site, veuillez contacter
+                                            directement nos conseillers clients ou envoyez un mail. Nous prendrons
+                                            rapidement part de votre demande.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1642429740634">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Puis-je
+                                    bénéficier d'un guide pour mes achats ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1642429740626"
+                                     id="myCollapseTab1642429740634">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pour mieux faciliter vos achats,
+                                            Pépin de pomme met à votre disposition des guides et conseils concernant les
+                                            articles. En visitant le site, vous trouverez tout ce que vous devez savoir
+                                            sur un produit y compris ses critères d’évaluation. Les conseillers clients
+                                            restent également à votre disposition pour toute question.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Services</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643808498690" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643808498691" data-original-title="" title=""
+                                   aria-describedby="tooltip524178">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Qu’en est-il
+                                    des points de fidélité ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643808498690"
+                                     id="myCollapseTab1643808498691" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pépin de pomme offre à ses clients
+                                            des points de fidélité à chaque achat effectué. Vous pouvez cumuler vos
+                                            points et à 300 points, vous avez l’opportunité de gagner un bon d’achat de
+                                            10€ valable pour tout autre achat sur le site.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643808498692">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    être au courant des promotions proposées par le site ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643808498690"
+                                     id="myCollapseTab1643808498692">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pépin de pomme fait tout son
+                                            possible pour vous mettre au courant des promotions en cours. A part la
+                                            newsletter, dans la rubrique « Promotion », vous trouverez la totalité des
+                                            articles à prix réduit pour faire vos achats à prix malin.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Mon compte</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse o_colored_level pt0 pb32" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643809376278" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643809376279">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Devrais-je
+                                    créer un compte même si je suis abonné à la newsletter du site ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643809376278"
+                                     id="myCollapseTab1643809376279" style="">
+                                    <div class="card-body">
+                                        <p class="card-text">Même si vous êtes abonné à la newsletter de Pépin de pomme,
+                                            cela ne vous permet pas d’effectuer des achats. La newsletter vous met au
+                                            courant des actualités et des promotions en cours. Par contre, si vous
+                                            envisagez de faire des achats sur le site, créer un compte personnel est
+                                            recommandé.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643809376280">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Liens
+                                    vers d'autres sites web
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643809376278"
+                                     id="myCollapseTab1643809376280">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pour créer votre compte personnel,
+                                            accédez directement à l’accueil du site. En haut à droite, cliquez sur « Mon
+                                            Compte », suivez ensuite les recommandations pour connaitre toutes les
+                                            étapes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643809376281">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;J’ai
+                                    oublié mon mot de passe, que puis-je faire ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643809376278"
+                                     id="myCollapseTab1643809376281">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Si vous avez oublié votre mot de
+                                            passe, n’ayez crainte puisque vous avez la possibilité de le redéfinir. Il
+                                            suffit seulement de cliquer sur la mention « mot de passe oublié » dans le
+                                            menu « Mon compte » et d’entrer un nouveau.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">La liste de naissance</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643810284885" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="card-header o_default_snippet_text text-black font-weight-bold collapsed"
+                                   data-target="#myCollapseTab1643810284886">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    créer ma propre liste de naissance ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643810284885"
+                                     id="myCollapseTab1643810284886" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pour créer votre liste de naissance,
+                                            entrez dans le menu « Espace liste de naissance » puis suivez le guide. Vous
+                                            avez la possibilité de partager votre liste avec vos proches et d’acheter
+                                            des produits sur une liste que ces derniers ont crée.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643810284887">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Puis-je
+                                    suivre les contributions effectuées sur ma liste ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643810284885"
+                                     id="myCollapseTab1643810284887">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pépin de pomme vous tient informé de
+                                            toute action qui s’effectue sur le site ainsi que sur votre compte
+                                            personnel. Ainsi, dès que vos proches effectueront leurs achats, vous serez
+                                            prévenu directement par mail.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643810284888">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quels
+                                    peuvent être les avantages d’une liste de naissance sur Pépin de Pomme ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643810284885"
+                                     id="myCollapseTab1643810284888">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">A la clôture de votre demande, vous
+                                            pouvez recevoir un bon d’achat de jusqu’à 10% de la totalité des achats
+                                            effectués à partir de votre liste de naissance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643810284889">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quand
+                                    est-ce que les produits de ma liste de naissance me seront-envoyés ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643810284885"
+                                     id="myCollapseTab1643810284889">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Une fois que vos proches ont
+                                            effectué leurs achats sur le site de Pépin de pomme, les produits seront
+                                            livrés en fonction de la date prévue. D’un autre côté, vous pouvez les
+                                            récupérer si vous en avez l’opportunité.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Abonnement</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643811656532" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643811656533">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    s’inscrire à la newsletter de Pépin de pomme ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643811656532"
+                                     id="myCollapseTab1643811656533" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pour vous inscrire à la newsletter,
+                                            il vous suffit de vous rendre à la rubrique « Newsletter » dans le menu
+                                            Accueil. Ensuite, tapez votre adresse email. Vous recevrez des emails pour
+                                            vous mettre au courant de toutes les offres disponibles sur le site comme
+                                            les promotions ou les actualités.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643811656535">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    faire pour se désabonner ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643811656532"
+                                     id="myCollapseTab1643811656535">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Si vous envisagez de vous
+                                            désabonner, entrez dans la rubrique « Newsletter ». Vous y trouverez la
+                                            mention « Se désinscrire », puis cliquez.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643811656536">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    puis-je être informé de toutes les offres chez Pépin de pomme ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643811656532"
+                                     id="myCollapseTab1643811656536">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pépin de pomme vous informe de
+                                            toutes les offres disponibles en vous envoyant régulièrement un email. Nous
+                                            vous communiquerons aussi toutes les actualités, les bons plans, les
+                                            promotions et les achats qui sont effectués.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Parrainage</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643812301018" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643812301019">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quels
+                                    peuvent être les avantages du parrainage ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643812301018"
+                                     id="myCollapseTab1643812301019" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">En parrainant vos amis, sachez que
+                                            vous gagnerez 5% de remise sur votre prochaine commande. Vos amis peuvent
+                                            également bénéficier de cette offre puisqu’ils gagnent aussi 5% de réduction
+                                            sur leurs premières commandes. Cette offre est valable pendant un an.
+                                            Au-delà de ce délai, elle n’est plus récupérable.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643812301021">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    parrainer mes amis ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643812301018"
+                                     id="myCollapseTab1643812301021">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pour pouvoir parrainer vos amis, il
+                                            vous suffit d’avoir votre propre compte sur Pépin de pomme et d’effectuer au
+                                            moins une fois des achats.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643812301022">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;La
+                                    réduction concernant le parrainage est-elle valable dans tous mes achats ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643812301018"
+                                     id="myCollapseTab1643812301022">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">La réduction de 5% n’est valable
+                                            uniquement que pour votre prochain achat. Et du côté de vos amis parrainés,
+                                            l’offre est valable pour leur premier achat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Ma commande</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643813483425" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643813483426">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    effectuer une commande ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643813483425"
+                                     id="myCollapseTab1643813483426" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pour commander, sélectionnez le
+                                            produit qui vous intéresse et cliquez sur « Commander ». Validez ensuite
+                                            votre choix en cliquant sur « Finaliser ma commande». Vous avez la
+                                            possibilité de vérifier votre commande et de la suivre. Pensez également à
+                                            lire toutes les conditions prévues pour la vente ainsi que le paiement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643813483427">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Je
+                                    souhaite suivre ma commande, comment y procéder ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643813483425"
+                                     id="myCollapseTab1643813483427">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Si vous souhaitez suivre votre
+                                            commande, entrez dans la rubrique « Suivi de commande » et remplissez le
+                                            formulaire. Si vous avez déjà effectué des commandes chez Pépin de pomme, il
+                                            suffit de vous identifier en tapant votre adresse email ainsi que votre mot
+                                            de passe. Par contre, s’il s’agit de votre première commande, tapez votre
+                                            adresse email et créez votre propre compte.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643813483428">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    faire pour annuler ou modifier ma commande ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643813483425"
+                                     id="myCollapseTab1643813483428">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Si vous envisagez d’annuler votre
+                                            commande ou de la modifier, cliquez sur « Mon panier ».
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Paiement</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643814116631" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643814116632">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quels
+                                    sont les modes de paiement acceptés chez Pépin de pomme ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643814116631"
+                                     id="myCollapseTab1643814116632" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Vous avez la possibilité de payer
+                                            d’une part par cartes bancaires françaises, belges CB, Visa, Eurocard et
+                                            Mastercard. Pour ce type de paiement, indiquez le numéro de votre carte, sa
+                                            date d’expiration, votre nom ainsi que les trois derniers chiffres du numéro
+                                            inscrit au dos de la carte. D’autre part, le virement bancaire est aussi
+                                            possible mais n’oubliez pas de mentionner le numéro de votre commande. Vous
+                                            avez également la possibilité de payer avec votre carte cadeau.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643814116633">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Qu’en
+                                    est-il de ma sécurité ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643814116631"
+                                     id="myCollapseTab1643814116633">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Le processus de paiement sur Pépin
+                                            de Pomme est protégé par le système de cryptage SSL. Nous avons également
+                                            adopté d’autres systèmes de cryptage et de brouillage dans le but de
+                                            protéger toutes les données personnelles liées au paiement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643814116634">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Est-il
+                                    possible de payer en plusieurs tranches ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643814116631"
+                                     id="myCollapseTab1643814116634">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pour une facilité de paiement, Pépin
+                                            de pomme vous offre la possibilité de payer vos achats en 2 ou 3 tranches et
+                                            sans aucun frais. Par ailleurs, si vous optez pour le paiement en 2
+                                            tranches, le paiement de la moitié du prix total se fera chaque mois à la
+                                            date de la prise en compte de votre commande. Par contre si vous optez pour
+                                            le paiement en 3 tranches, le tiers du prix se paiera chaque mois. En effet,
+                                            vous pouvez choisir cette option au moment de l’enregistrement de votre
+                                            commande.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643814116635">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Et
+                                    si je n’arrive pas à payer au moment de la date convenue ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643814116631"
+                                     id="myCollapseTab1643814116635">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Dans ce cas, les frais de
+                                            recouvrement seront à votre charge.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643814116636">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Puis
+                                    je payer mes achats avec ma carte cadeaux ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643814116631"
+                                     id="myCollapseTab1643814116636">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Oui, vous avez la possibilité
+                                            d’effectuer vos achats avec votre carte cadeaux. Elle est aussi utilisable
+                                            plusieurs fois avec une validité de 6 mois.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="card-header text-black font-weight-bold collapsed"
+                                   data-target="#myCollapseTab1643814116637" data-original-title="" title=""
+                                   aria-describedby="tooltip682593">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quels
+                                    peuvent être les documents utiles pour effectuer le paiement ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643814116631"
+                                     id="myCollapseTab1643814116637" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Une fois votre commande faite, un
+                                            responsable vous contactera et vous informera des pièces importantes, à
+                                            savoir votre carte d’identité, une copie de votre carte bancaire et une
+                                            attestation de domicile.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Livraison</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643815460012" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643815460013">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment
+                                    se déroule la livraison ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643815460012"
+                                     id="myCollapseTab1643815460013" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pépin de pomme vous contactera pour
+                                            la date de livraison. Les produits commandés seront livrés au plus tard dans
+                                            les 10 jours comprenant ainsi la préparation de la commande, l’expédition et
+                                            la livraison.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643815460015">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quelles
+                                    peuvent être les modalités de livraison ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643815460012"
+                                     id="myCollapseTab1643815460015">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Les livraisons sont réalisées à
+                                            l’adresse que vous avez mentionnée pendant la commande. Les frais seront
+                                            ainsi à votre charge selon les conditions de vente du site qui vous sont
+                                            envoyées par email. Pour les livraisons en France, Pépin de pomme propose
+                                            une livraison par Exapaq en 48 heures ainsi qu’une livraison dans un point
+                                            relais en 24 heures. Pour les livraisons en Belgique, la livraison se fera
+                                            par Dpd en 48 heures et se fera à votre domicile.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643815460016">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que
+                                    faire si je ne peux pas récupérer mon colis ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643815460012"
+                                     id="myCollapseTab1643815460016">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Si vous êtes absent pendant la date
+                                            prévue pour la livraison, le colis sera retiré dans un point relais et si
+                                            vous ne vous présentez pas dans un délai de 7 jours, il sera retourné à
+                                            Pépin de pomme.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643815460017">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Si
+                                    je souhaite récupérer mon colis après la date prévue, comment faire ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643815460012"
+                                     id="myCollapseTab1643815460017">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Vous avez la possibilité de
+                                            récupérer votre colis dans un point relais au plus tard dans les 7 jours.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643815460018">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Est-il
+                                    possible que mon colis ne sera pas livré à la date convenue ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643815460012"
+                                     id="myCollapseTab1643815460018">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Ce cas est rare, mais s’il se
+                                            présente, Pépin de pomme vous en fera part rapidement. Il vous indiquera
+                                            également la durée du retard estimée.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643815460019">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que
+                                    puis-je faire si mon colis n’est pas livré?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643815460012"
+                                     id="myCollapseTab1643815460019">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Si vous n’avez pas reçu votre colis
+                                            après 7 jours de la date limite de livraison, vous pouvez faire une
+                                            réclamation chez Pépin de pomme. Ainsi, nous pourrons vous rembourser dans
+                                            les 30 jours en cas d’annulation de commande. Or, si la date limite de
+                                            livraison n’est pas encore dépassée, nous pouvons vous proposer une seconde
+                                            livraison et prenons en notre compte l’ensemble des frais.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643815460020">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que
+                                    faire en cas de perte de colis ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643815460012"
+                                     id="myCollapseTab1643815460020">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Si ce cas se présente, Pépin de
+                                            pomme fera une enquête auprès des services postaux ainsi qu’auprès du
+                                            transporteur. Une fois le colis retrouvé, Pépin de pomme se chargera des
+                                            frais pour vous le réexpédier. Dans le cas contraire, vous pouvez annuler
+                                            votre commande et jouir de votre droit de remboursement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Echanges et retours</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643817119107" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643817119108">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Le
+                                    produit comporte des défauts, est-il possible de l’échanger ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643817119107"
+                                     id="myCollapseTab1643817119108" style="">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Si vous constatez des défauts sur le
+                                            produit livré, vous avez la possibilité de refuser la livraison en précisant
+                                            les motifs. En d’autres termes, vous pouvez garder le produit mais adressez
+                                            une protestation au transporteur par lettre recommandée dans les 3 jours au
+                                            plus tard.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643817119111">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que
+                                    faire si des pièces manquent au produit?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643817119107"
+                                     id="myCollapseTab1643817119111">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">En cas de pièces manquantes ou de
+                                            produits non-conformes, faites une réclamation chez Pépin de pomme. Nous
+                                            expédierons au plus vite les pièces qui manquent et les frais seront à notre
+                                            charge.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643817119112">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Un
+                                    remboursement est il possible en cas d’insatisfaction ou d’annulation de commande ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643817119107"
+                                     id="myCollapseTab1643817119112">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Un remboursement est possible dans
+                                            un délai de 30 jours. Par contre, les produits ainsi retournés doivent être
+                                            à l’état neuf avec étiquettes, accessoires, documents et la facture d’achat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643817119113">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;De
+                                    quel délai je dispose pour retourner mes articles ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643817119107"
+                                     id="myCollapseTab1643817119113">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pour que votre demande soit prise en
+                                            compte, retournez le produit au plus tard dans les 7 jours à compter de la
+                                            livraison.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph greentitle">Autres services</p>
+                    </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0" data-snippet="s_faq_collapse"
+                         data-name="Accordion">
+                    <div class="container">
+                        <div id="myCollapse1643817967892" class="accordion" role="tablist">
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="true"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643817967893">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Je
+                                    souhaite partager des photos et des conseils sur le site. Est-ce possible ?
+                                </a>
+                                <div class="collapse show" role="tabpanel" data-parent="#myCollapse1643817967892"
+                                     id="myCollapseTab1643817967893">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Il est tout à fait possible de
+                                            partager vos photos sur Pépin de pomme si vous êtes déjà membre. Rejoignez
+                                            également Pépin de pomme dans les réseaux sociaux et n’hésitez pas à faire
+                                            part de vos conseils.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-white" data-name="Item">
+                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false"
+                                   class="collapsed card-header o_default_snippet_text text-black font-weight-bold"
+                                   data-target="#myCollapseTab1643817967894">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;En
+                                    cas de soucis ou de réclamation, comment y faire part ?
+                                </a>
+                                <div class="collapse" role="tabpanel" data-parent="#myCollapse1643817967892"
+                                     id="myCollapseTab1643817967894">
+                                    <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">Pour toutes informations, les
+                                            conseillers clients sont à votre disposition. Vous pouvez contacter le site
+                                            si vous avez des questions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_icon_block_2 pb32 o_colored_level pt0" style="border-top: solid 1px #CFCFD1"
+                         data-snippet="s_icon_block_2" data-name="Icon Block - 2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-4">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/delivery.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAAAXNSR0IArs4c6QAAAfhJREFUSEulloFRwzAMRdsNYIMwATABYQJgAsoEwASECSgTUCagTECYAJiAMgGMwH85K5cKx3GI7nRNLVl+kmUn81laTmW+HPBJme9lXKcc5gPBP2UvJgDUmnv8XwAWBgBZSb9GgBzJt5ROAqD8T2HRoUp5tkoDN1MB7hTgSvouPRyRPa4GwNzrztyfEK8dSmX2Jq8D6dIFyWExgJgv23lhBg9A2VkUoYQIXfwRQMggR1IAzG8hPMCLjGXPCmcBZgxALWc7BTt6Jr4l2EB4gEXIvHCrUAXKNrYCXQBCeohlrAe+g2OXgUaiF3LFtsAD2PwHPZDsLAYQ24Yx5SfuEEAZtqMBsG7vy27KMeyrwBZArORdGPZ9NwywhzTRn/Ps6H0FCtnRTdAtADNaDI4fDnaJMIkFGediMiE7egM/LwaAjbnEM6GhH6XNLRvrAXsBsTCKFEH9Qn2V6PO3+cyjmlGA1JasNIesubDo5FyxU0QFueJbkFgFSllRk/2wYLcXsNlR2uiZknrpeyNa09ckk/OWI1t7K9KMdhnZcWVPOaZeKg3QNwDuBSNlZ4v5vZVWOQDdSTTVs9SqQlxuyFUEoNQYkEgtfZWeSO0qBmqTA0CAhTS25wROffG0N54D5FZtXtO5APiSEd+HTfeGjCoXOPYX+POOYes78RdWz3e+V7JuFgAAAABJRU5ErkJggg=="
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Livraison
+                                        gratuite à partir de 89€
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png" alt=""
+                                     loading="lazy" data-original-title="" title="" aria-describedby="tooltip802397"
+                                     data-original-id="617"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png"
+                                     data-mimetype="image/png" data-resize-width="94"/>
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     alt="" loading="lazy" data-original-title="" title=""
+                                     aria-describedby="tooltip709349" data-original-id="618"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     data-mimetype="image/png" data-resize-width="54"/>
+                            </div>
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-8">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/secure.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/home/secure.png"
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Paiement
+                                        100% sécurisé
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Logo-CB.png" alt=""
+                                     loading="lazy"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png" alt=""
+                                     loading="lazy" data-original-id="598"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png"
+                                     data-mimetype="image/png" data-resize-width="44"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Paypal.png" alt=""
+                                     loading="lazy" data-original-id="599"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Paypal.png"
+                                     data-mimetype="image/png" data-resize-width="113"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/visa.png" alt=""
+                                     loading="lazy" data-original-id="600"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/visa.png"
+                                     data-mimetype="image/png" data-resize-width="65"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png" alt=""
+                                     loading="lazy" data-original-id="601"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png"
+                                     data-mimetype="image/png" data-resize-width="96"/>
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Image 102.png" alt=""
+                                     loading="lazy" data-original-id="620"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Image 102.png"
+                                     data-mimetype="image/png" data-resize-width="117"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+
+
+    </template>
+</odoo>

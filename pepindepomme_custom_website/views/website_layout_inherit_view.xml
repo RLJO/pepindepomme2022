@@ -1,0 +1,690 @@
+<odoo>
+
+    <template id="template_footer_header_pepin_de_pomme" inherit_id="website.layout"
+              name="Footer/Header Pepin de pomme" priority="16">
+        <!--part header-->
+        <xpath expr="//header//nav" position="replace">
+      <!--modifi preheader-->
+        <div class="tp-preheader">
+            <div class="container">
+                <div class="row justify-content-lg-between justify-content-center align-items-center">
+                    <div class="col-auto py-2 d-none d-lg-block">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mx-2">
+                <a href="/contactus" style="font: normal normal normal 12px/25px Roboto;">Contactez nous</a>
+              </li>
+              <li class="list-inline-item mx-2">
+                <a href="/web/login" style="font: normal normal normal 12px/25px Roboto;">Connexion</a>
+              </li>
+              <li class="list-inline-item mx-2">
+                <a href="/web/signup"  style="font: normal normal normal 12px/25px Roboto;">Créer un compte</a>
+              </li>
+            </ul>
+          </div>
+                    <div class="col-auto py-2">
+                        <section class="o_colored_level">
+                            <div><span class="fa fa-truck" /> Livraison gratuite à partir de 89€.</div>
+                        </section>
+                    </div>
+                    <div class="col-auto py-2 d-none d-lg-block">
+                        <t t-call="theme_prime.component_language_pricelist" />
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- fin modifi preheader-->
+            <div class="tp-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-auto py-3">
+                            <!-- Brand -->
+                            <t t-call="website.placeholder_header_brand">
+                                <t t-set="_link_class" t-value="'d-none d-lg-block'"/>
+                            </t>
+                        </div>
+                        <div class="col-auto py-3 flex-grow-1">
+                            <form class="o_wsale_products_searchbar_form w-75 mx-auto o_not_editable" method="get"
+                                  action="/shop">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <t t-call="theme_prime.component_product_search_category_dropdown">
+                                            <t t-set="_classes" t-value="'border'"/>
+                                        </t>
+                                    </div>
+                                    <input type="text" name="search" data-limit="5" data-display-price="true"
+                                           data-display-image="true" class="form-control bg-transparent search-query"
+                                           placeholder="Rechercher un produit..." t-att-value="search"/>
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-primary" aria-label="Recherche"
+                                                style="background: #7A93AB 0% 0% no-repeat padding-box;border-color: #7A93AB;">
+                                            <span
+                                                    style="font: normal normal 14px/18px Roboto;letter-spacing: 0px;color: #FFFFFF;">
+                                                Recherche
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-auto py-3 o_not_editable">
+                            <div class="row align-items-center justify-content-end tp-account-info">
+                                <!-- search -->
+                                <!--<div class="col-auto my-1 tp-search-sidebar-action">
+                      <div class="media align-items-center">
+
+                        <div class="o_wsale_my_cart position-relative tp-cart-sidebar-action">
+                          <a href="#">
+                            <i class="dri dri-search bg-light rounded-circle text-primary"/>
+                          </a>
+                        </div>
+
+                      </div>
+
+                    </div>-->
+
+                                <!-- end search -->
+                                <div class="col-auto my-1">
+                                    <div class="media align-items-center">
+                                        <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+                                        <div class="o_wsale_my_cart position-relative tp-cart-sidebar-action">
+                                            <a href="/shop/cart">
+                                                <i class="dri dri-cart bg-light rounded-circle text-primary"/>
+                                                <sup class="my_cart_quantity badge badge-secondary mb-0 font-weight-bold"
+                                                     style="color: white;background-color: #EC6500;"
+                                                     t-esc="website_sale_order and website_sale_order.cart_quantity or '0'"
+                                                     t-att-data-order-id="website_sale_order and website_sale_order.id or ''"/>
+                                            </a>
+                                        </div>
+                                        <div class="media-body ml-3 d-none d-xl-block">
+                                            <div class="mb-1">Mon panier</div>
+                                            <a class="tp-cart-sidebar-action" href="#">
+                                                <h6 class="mb-0 tp-link-dark">Voir mon panier</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto my-1 d-none">
+                                    <div class="media align-items-center">
+                                        <t t-set="wishcount" t-value="len(request.env['product.wishlist'].current())"/>
+                                        <div class="o_wsale_my_wish position-relative">
+                                            <a href="/shop/wishlist">
+                                                <i class="dri dri-wishlist bg-light rounded-circle text-primary"/>
+                                                <sup t-esc="wishcount"
+                                                     t-attf-class="my_wish_quantity o_animate_blink badge badge-primary"
+                                                     style="color: white;background-color: #EC6500;"/>
+                                            </a>
+                                        </div>
+                                        <div class="media-body ml-3 d-none d-xl-block">
+                                            <div class="mb-1">Ma liste de souhaits</div>
+                                            <a href="/shop/wishlist">
+                                                <h6 class="mb-0 tp-link-dark">Voir la liste de souhaits</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto my-1" t-if="request.website.viewref('portal.user_sign_in').active">
+                                    <div class="media align-items-center">
+                                        <i class="dri dri-user bg-light rounded-circle text-primary"/>
+                                        <div class="media-body ml-3">
+                                            <div style="max-width: 150px;" class="text-truncate mb-1">
+                                                <t t-esc="not user_id._is_public() and user_id.name or 'Invité'"/>
+                                            </div>
+                                            <div class="dropdown" t-ignore="true" t-if="not user_id._is_public()">
+                                                <a href="#" class="dropdown-toggle d-block" data-toggle="dropdown"
+                                                   aria-label="Account Info">
+                                                    <h6 class="d-inline mb-0 tp-link-dark"
+                                                        style="font: normal normal medium 22px/25px Roboto;color: #7A93AB;">
+                                                        Mon compte
+                                                    </h6>
+                                                </a>
+                                                <div class="dropdown-menu" role="menu">
+                                                    <a href="/my" role="menuitem" class="dropdown-item">Account</a>
+                                                    <a href="/my/orders" role="menuitem" class="dropdown-item">Mes commandes
+                                                    </a>
+                                                    <a href="/shop/wishlist" role="menuitem" class="dropdown-item d-none">
+                                                        Liste de souhaits (
+                                                        <span class="tp-wishlist-counter">
+                                                            <t t-esc="wishcount"/>
+                                                        </span>
+                                                        )
+                                                    </a>
+                                                    <div class="dropdown-divider"/>
+                                                    <a href="/web/session/logout?redirect=/" role="menuitem"
+                                                       class="dropdown-item">Logout
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown" t-else="">
+                                                <a href="#" class="dropdown-toggle d-block" data-toggle="dropdown"
+                                                   aria-label="Account Info">
+                                                    <h6 class="d-inline mb-0 tp-link-dark">Mon compte</h6>
+                                                </a>
+                                                <div class="dropdown-menu" role="menu">
+                                                    <a href="/web/login" role="menuitem" class="dropdown-item">Login</a>
+                                                    <div class="dropdown-divider"/>
+                                                    <a href="/shop/cart" role="menuitem" class="dropdown-item">Mon
+                                                        panier
+                                                    </a>
+                                                    <a href="/shop/wishlist" role="menuitem" class="dropdown-item d-none">
+                                                        Liste de souhaits (
+                                                        <span class="tp-wishlist-counter">
+                                                            <t t-esc="wishcount"/>
+                                                        </span>
+                                                        )
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+                <div id="top_menu_container" class="container justify-content-between ">
+                    <!-- Navbar Toggler -->
+                    <t t-call="theme_prime.component_navbar_toggler"/>
+                    <!-- Brand -->
+                    <t t-call="website.placeholder_header_brand">
+                        <t t-set="_link_class" t-value="'d-lg-none o_offcanvas_logo_container'"/>
+                    </t>
+                    <!-- Account Info -->
+                    <t t-call="theme_prime.component_navbar_mobile_account_info"/>
+                    <!-- Navbar Collapse -->
+                    <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0 h-vh">
+                        <t t-call="website.navbar_nav">
+                            <t t-set="_nav_class" t-value="'flex-grow-1'"/>
+                            <!-- Menu -->
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-value="'nav-item'"/>
+                                    <t t-set="link_class" t-value="'nav-link'"/>
+                                </t>
+                            </t>
+                            <!--info-->
+                            <li class="nav-item d-md-block d-lg-none">
+                                <div class="col-auto my-1 ml-4 mt-4 mb-4"
+                                     t-if="request.website.viewref('portal.user_sign_in').active ">
+                                    <div class="media align-items-center">
+                                        <i class="dri dri-user bg-light rounded-circle text-primary"
+                                           style="width: 3.5rem !important;height: 3.5rem!important;line-height: 3.5rem!important;"/>
+                                        <div class="media-body ml-3">
+                                            <!--<div style="max-width: 150px;" class="text-truncate mb-1">
+                                                <t t-esc="not user_id._is_public() and user_id.name or 'Invité'" />
+                                            </div>-->
+                                            <div class="dropdown" t-ignore="true" t-if="not user_id._is_public()">
+                                                <a href="#" class="dropdown-toggle d-block" data-toggle="dropdown"
+                                                   aria-label="Account Info">
+                                                    <h6 class="d-inline mb-0 tp-link-dark"
+                                                        style="font: normal normal 22px/25px Roboto;color: #7A93AB;">Mon
+                                                        compte
+                                                    </h6>
+                                                </a>
+                                                <div class="dropdown-menu" role="menu">
+                                                    <a href="/my" role="menuitem" class="dropdown-item">Account</a>
+                                                    <a href="/my/orders" role="menuitem" class="dropdown-item">Mes commandes
+                                                    </a>
+                                                    <a href="/shop/wishlist" role="menuitem" class="dropdown-item">
+                                                        Liste de souhaits (
+                                                        <span class="tp-wishlist-counter">
+                                                            <t t-esc="wishcount"/>
+                                                        </span>
+                                                        )
+                                                    </a>
+                                                    <div class="dropdown-divider"/>
+                                                    <a href="/web/session/logout?redirect=/" role="menuitem"
+                                                       class="dropdown-item">Déconnexion
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown" t-else="">
+                                                <a href="#" class="dropdown-toggle d-block" data-toggle="dropdown"
+                                                   aria-label="Account Info">
+                                                    <h6 class="d-inline mb-0 tp-link-dark"
+                                                        style="font: normal normal 22px/25px Roboto;color: #7A93AB;">Mon
+                                                        compte
+                                                    </h6>
+                                                </a>
+                                                <div class="dropdown-menu" role="menu">
+                                                    <a href="/web/login" role="menuitem" class="dropdown-item">Login</a>
+                                                    <div class="dropdown-divider"/>
+                                                    <a href="/shop/cart" role="menuitem" class="dropdown-item">Mon
+                                                        panier
+                                                    </a>
+                                                    <a href="/shop/wishlist" role="menuitem" class="dropdown-item">
+                                                        Liste de souhaits (
+                                                        <span class="tp-wishlist-counter">
+                                                            <t t-esc="wishcount"/>
+                                                        </span>
+                                                        )
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--end info-->
+                        </t>
+                    </div>
+                </div>
+            </nav>
+        </xpath>
+        <!-- part footer-->
+        <xpath expr="//div[@id='footer']" position="replace">
+            <style>
+                @media (min-width: 994px) and (max-width: 1250px) {
+                .search-btn-block{
+                display:block !important;
+                }
+                .group-n{
+                display:none !important;
+                }
+                }
+                .search-btn-none{
+                display:none;
+                }
+                .li {
+                font: normal normal normal 14px/25px Roboto;
+                color: #7A93AB;
+                }
+
+                .o_footer .o_footer_copyright {
+                padding: 0.8rem 0 !important;
+                }
+
+                .o_footer #footer .js_subscribe_email {
+                color: #7A93AB !important;
+                }
+
+                .hr-line {
+                width: 35%;
+                text-align: left;
+                background-color: #f1f2f2;
+                margin-left: 0;
+                margin-top: 0;
+                }
+
+                .hr-line1 {
+                width: 35%;
+                text-align: left;
+                background-color: #f1f2f2;
+                margin-left: 0;
+                margin-top: 0;
+                }
+                .hr-line2 {
+                width: 35%;
+                text-align: left;
+                background-color: #f1f2f2;
+                margin-left: 0;
+                margin-top: 0;
+                }
+
+                .mr-title {
+                margin-bottom: 0.4rem !important;
+                }
+
+                .footer-title {
+                font: normal normal normal 16px/35px Roboto;
+                margin: auto;
+                }
+
+                .footer-subtitle {
+                font: normal normal bold 16px/29px Roboto;
+                }
+
+                .btn-footer {
+                font: normal normal bold 14px/19px Roboto !important;
+                color: #FFFFFF !important;
+                background: #91B508 !important;
+                }
+
+                @media (max-width: 991px) {
+                .m-align {
+                margin-top: 90px;
+                }
+
+                .hr-line {
+                width: 100%;
+                }
+
+                .hr-line1 {
+                width: 45%;
+                }
+                .hr-line2 {
+                width: 35%;
+                }
+
+                .nav-link {
+                background: white !important;
+                border: none !important;
+                }
+
+                .roundedcircle {
+                width: 4rem !important;
+                height: 4rem !important;
+                line-height: 4rem !important;
+                }
+
+                .supp {
+                top: 0.5em !important;
+                left: -2em !important;
+                }
+                }
+            </style>
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="s_text_block pt48 pb36" data-name="Text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-lg-4 mb-4 o_colored_level pb64">
+                                <h6 class="mb-3 mr-title">CATALOGUE</h6>
+                                <hr class="hr-line"/>
+                                <ul class="list-unstyled">
+                                    <li class="my-2 li">
+                                        <a href="/shop/category/promenade-3756">Promenade</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/shop/category/sieges-auto-3935">Siège-auto</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/shop/category/mobilier-3775">Mobilier</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/shop/category/puericulture-3824">Puériculture</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/shop/category/promos-3971">Promos</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/shop/category/nouveautes-3940">Nouveautés</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/liste_naissance">Liste de naissance</a>
+                                    </li>
+                                </ul>
+                                <h6 class="mb-3 mr-title m-align">SERVICES</h6>
+                                <hr class="hr-line"/>
+                                <ul class="list-unstyled">
+                                    <li class="my-2 li d-none">
+                                        <a href="#">Chèques cadeaux</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/programme_fidelite">Programme fidélité</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/offres_speciales_et_codes_promos">Offres spéciales et codes promos</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="offres_et_remises_jumeaux">Offres et remises jumeaux</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="personal_shopper">Personal Shopper</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="valise_de_maternite">Valise de maternité</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-4 mb-4 o_colored_level">
+                                <h6 class="mb-3 mr-title">
+                                    AIDE
+                                </h6>
+                                <hr class="hr-line"/>
+                                <ul class="list-unstyled">
+                                    <li class="my-2 li d-none">
+                                        <a href="#">Suivi de commande</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/mode_paiement">Mode de paiment</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/mode_livraison">Mode de livraison</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/echanges">Echanges et retours</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/faq">FAQ</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="https://www.pepindepomme.com/blog/">Guides d'achat</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/premiere_commande">Première commande</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/support-garantie">Support et Garantie</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/satisfait-ou-rembourse">Satisfait ou remboursé</a>
+                                    </li>
+                                </ul>
+                                <h6 class="mt-4 mb-3 mr-title">
+                                    INFORMATIONS
+                                </h6>
+                                <hr class="hr-line"/>
+                                <ul class="list-unstyled">
+                                    <li class="my-2 li">
+                                        <a href="/qui-sommes-nous">Qui sommes nous?</a>
+                                    </li>
+                                    <li class="my-2 li d-none">
+                                        <a href="#">Nos marques</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/legal-notice">Conditions Générales de Vente</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/legal-notice">Mentions légales</a>
+                                    </li>
+                                    <li class="my-2 li d-none">
+                                        <a href="#">Plan du site</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/partenaires">Partenaires</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/contactus">Nous contacter</a>
+                                    </li>
+                                    <li class="my-2 li">
+                                        <a href="/affiliation">Affiliation</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-4 o_colored_level">
+                                <h6 class="mb-3 mr-title">
+                                    SERVICE CLIENT
+                                </h6>
+                                <hr class="hr-line1"/>
+                                <div>
+                                    <div>
+                                        <h6 class="footer-title">Du lundi
+                                            au vendredi
+                                        </h6>
+                                        <h6 class="footer-subtitle">10h-12h et 13h-17h</h6>
+                                        <a class="btn btn-lg btn-footer"
+                                           style="height: 52px;padding-top: 14px;"
+                                           href="tel:0972449658" data-original-title="" title=""
+                                           aria-describedby="tooltip191334"><img class="mr-2"
+                                                                                 src="/pepindepomme_custom_website/static/src/img/footer/phone.png"
+                                                                                 loading="lazy" data-original-title=""
+                                                                                 title=""
+                                                                                 aria-describedby="tooltip914203" alt=""
+                                                                                 data-original-id="728"
+                                                                                 data-original-src="/pepindepomme_custom_website/static/src/img/footer/phone.png"
+                                                                                 data-mimetype="image/png"
+                                                                                 data-resize-width="24"/>&amp;nbsp;09 72
+                                            44 96 58
+                                        </a>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 mb-3 mr-title">
+                                    RESTEZ INFORMÉ
+                                </h6>
+                                <hr class="hr-line2"/>
+                                Abonnez-vous à notre newsletter pour recevoir des
+                                <br/>
+                                offres de réduction anticipée et des informations sur
+                                <br/>
+                                les nouveaux produits.
+                                <div class="s_newsletter_subscribe_form js_subscribe w-75 d-none d-lg-block"
+                                     data-vxml="001"
+                                     data-list-id="0">
+                                    <div class="input-group group-n">
+                                        <div class="input-group-prepend mt-4">
+                                            <div class="input-group-text"
+                                                 style="background-color: white; border-top-left-radius: 2px;border-bottom-left-radius: 2px">
+                                                <img
+                                                        src="/pepindepomme_custom_website/static/src/img/footer/mail.png"
+                                                        loading="lazy" alt="" data-original-id="757"
+                                                        data-original-src="/pepindepomme_custom_website/static/src/img/footer/mail.png"
+                                                        data-mimetype="image/png" data-resize-width="23"/>
+                                            </div>
+                                        </div>
+                                        <input type="email" style="border: solid white;height: 52px !important;" name="email"
+                                               class="js_subscribe_email mt-4 form-control"
+                                               placeholder="Votre email ..."/>
+                                        <span class="input-group-append mt-4">
+                                            <a
+                                                    role="button" href="#" style="padding-top: 15px;border-top-right-radius: 2px;border-bottom-right-radius: 2px;" class="btn btn-secondary js_subscribe_btn">
+                                                Continuer
+                                            </a>
+                                            <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none"
+                                               disabled="disabled">Thanks
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <div class="search-btn-block search-btn-none ">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend mt-4">
+                                                <div class="input-group-text"
+                                                     style="background-color: white;border-right: none;height: 52px;border-radius: 3px 0 0 3px;">
+                                                    <img src="/pepindepomme_custom_website/static/src/img/footer/mail.png"
+                                                         loading="lazy" alt=""/>
+                                                </div>
+                                            </div>
+                                            <input type="email"
+                                                   style="border: solid white;height: 52px !important;border-radius: 0 3px 3px 0;"
+                                                   name="email" class="js_subscribe_email mt-4 form-control"
+                                                   placeholder="Votre email ..."/>
+                                        </div>
+                                        <span class="input-group-append mt-4 ">
+                                            <a role="button" href="#"
+                                               class="btn btn-secondary btn-block js_subscribe_btn"
+                                               style="       height: 52px;       padding-top: 15px;       border-radius: 3px;   ">
+                                                Continuer
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="s_share tp-followus-icons mt-4 d-none d-lg-block" data-name="Share">
+                                    <a href="https://web.facebook.com/pepindepomme01/"
+                                       class="s_share_facebook" target="_blank">
+                                        <img
+                                                class="img-fluid o_we_custom_image mr-2"
+                                                src="/pepindepomme_custom_website/static/src/img/footer/facebook.png"
+                                                alt=""
+                                                loading="lazy" data-original-title="" title=""
+                                                aria-describedby="tooltip886530"
+                                                data-original-id="730"
+                                                data-original-src="/pepindepomme_custom_website/static/src/img/footer/facebook.png"
+                                                data-mimetype="image/png" data-resize-width="45"/>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCmpOrYY-QPKaVDvD828SBBg"
+                                       target="_blank">
+                                        <img class="img-fluid o_we_custom_image mr-2"
+                                             src="/pepindepomme_custom_website/static/src/img/footer/youtube.png" alt=""
+                                             loading="lazy" data-original-title="" title=""
+                                             aria-describedby="tooltip987437"
+                                             data-original-id="731"
+                                             data-original-src="/pepindepomme_custom_website/static/src/img/footer/youtube.png"
+                                             data-mimetype="image/png" data-resize-width="45"/>
+                                    </a>
+                                    <a href="https://www.instagram.com/pepin_de_pomme/"
+                                       target="_blank">
+                                        <img class="img-fluid o_we_custom_image"
+                                             src="/pepindepomme_custom_website/static/src/img/footer/instagram.png"
+                                             alt=""
+                                             loading="lazy" data-original-title="" title=""
+                                             aria-describedby="tooltip651704"
+                                             data-original-id="732"
+                                             data-original-src="/pepindepomme_custom_website/static/src/img/footer/instagram.png"
+                                             data-mimetype="image/png" data-resize-width="45"/>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-4 mb-4 o_colored_level d-md-block d-lg-none">
+                                <div class="input-group">
+                                    <div class="input-group-prepend mt-4">
+                                        <div class="input-group-text"
+                                             style="background-color: white;border-right: none;height: 52px;border-radius: 3px 0 0 3px;">
+                                            <img src="/pepindepomme_custom_website/static/src/img/footer/mail.png"
+                                                 loading="lazy" alt=""/>
+                                        </div>
+                                    </div>
+                                    <input type="email"
+                                           style="border: solid white;height: 52px !important;border-radius: 0 3px 3px 0;"
+                                           name="email" class="js_subscribe_email mt-4 form-control"
+                                           placeholder="Votre email ..."/>
+                                </div>
+                                <span class="input-group-append mt-4 ">
+                                    <a role="button" href="#" class="btn btn-secondary btn-block js_subscribe_btn"
+                                       style="
+      height: 52px;
+      padding-top: 15px;
+      border-radius: 3px;
+  ">
+                                        Continuer
+                                    </a>
+                                </span>
+                                <div class="s_share tp-followus-icons mt-4 text-center" data-name="Share">
+                                    <a href="https://web.facebook.com/pepindepomme01/" class="s_share_facebook" target="_blank">
+                                        <img class="img-fluid o_we_custom_image mr-4"
+                                             src="/pepindepomme_custom_website/static/src/img/footer/facebook.png" alt=""
+                                             loading="lazy"/>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCmpOrYY-QPKaVDvD828SBBg" target="_blank">
+                                        <img class="img-fluid o_we_custom_image mr-4"
+                                             src="/pepindepomme_custom_website/static/src/img/footer/youtube.png" alt=""
+                                             loading="lazy"/>
+                                    </a>
+                                    <a href="https://www.instagram.com/pepin_de_pomme/" target="_blank">
+                                        <img class="img-fluid o_we_custom_image"
+                                             src="/pepindepomme_custom_website/static/src/img/footer/instagram.png"
+                                             alt=""
+                                             loading="lazy"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="attributes">
+            <attribute name="class" add="tp-custom-copyright" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="after">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="my-2">
+                            Pépin de Pomme 2021 ®. Tout droits réservés. Pépin de pomme urban, Pépin de pomme basics et
+                            P’tit pépin sont des marques déposées de Pépin de pomme.
+                            <br/>
+                            <a href="/legal-notice">Conditions générales de vente</a>
+                            | <a href="/legal-notice">Mentions Légales</a> | <a class="d-none" href="/my">Données Personnelles</a> |
+                            <a href="/cookie-policy">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

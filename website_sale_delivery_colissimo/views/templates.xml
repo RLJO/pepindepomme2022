@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <template id="website_sale_delivery_colissimo_address_on_payment" inherit_id="website_sale_delivery.payment_delivery_methods">
+            <xpath expr="//label[@class='label-optional']" position="after">
+                <t t-if="delivery.is_colissimo" >
+                    <img src="/website_sale_delivery_colissimo/static/src/img/logo.png" title="Colissimo" height="20px" />
+                </t>
+            </xpath>
+        </template>
+
+<!--        <template id="website_sale_delivery_colissimo_checkout" inherit_id="website_sale.checkout">-->
+<!--            <xpath expr="//t[@t-set='allow_edit']" position="after">-->
+<!--                <t t-set="allow_edit" t-value="allow_edit and not contact.is_colissimo"/>-->
+<!--            </xpath>-->
+<!--        </template>-->
+
+        <template id="website_sale_delivery_colissimo_address_kanban" inherit_id="website_sale.address_kanban">
+            <xpath expr="//t[@t-esc='contact']" position="before">
+                <t t-if="contact.is_colissimo">
+                    <img class="float-right" title="Colissimo" height="20px" src="/website_sale_delivery_colissimo/static/src/img/logo.png" />
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>

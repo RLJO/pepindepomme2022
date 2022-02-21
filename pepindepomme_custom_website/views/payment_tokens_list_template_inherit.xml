@@ -1,0 +1,71 @@
+<odoo>
+    <template name="payment_list_custom" inherit_id="payment.payment_tokens_list">
+        <xpath expr="//div[@class='card-body']" position="replace">
+            <div class="card-body o_payment_acquirer_select row">
+                <div class="col-4 col-lg-3">
+                    <label>
+                        <t t-if="acq.payment_flow == 'form'">
+                            <input type="radio" t-att-data-acquirer-id="acq.id" t-att-data-form-payment="true"
+                                   t-att-data-provider="acq.provider"
+                                   t-att-class="'d-none' if (acquirers_count==1 and pms_count==0) else ''" name="pm_id"
+                                   t-attf-value="form_{{acq.id}}"
+                                   t-att-checked="acquirers_count==1 and pms_count==0 or acquirers[0] == acq"/>
+                        </t>
+                        <t t-else="acq.payment_flow == 's2s'">
+                            <input type="radio" t-att-data-acquirer-id="acq.id" t-att-data-s2s-payment="true"
+                                   t-att-data-provider="acq.provider" name="pm_id" t-attf-value="new_{{acq.id}}"
+                                   t-att-class="'d-none' if (acquirers_count==1 and pms_count==0) else ''"
+                                   t-att-checked="acquirers_count==1 and pms_count==0 or acquirers[0] == acq"/>
+                        </t>
+                        <img class="img img-fluid" t-att-src="'data:image/png;base64,%s' % to_text(acq.image_128)"/>
+                        <t t-if="acq_extra_fees and acq_extra_fees.get(acq)">
+                            <span class="badge badge-pill badge-secondary">+
+                                <t t-esc="acq_extra_fees[acq]"
+                                   t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: acq_extra_fees[&quot;currency_id&quot;]}"/>
+                                Fee
+                            </span>
+                        </t>
+                        <t t-elif="acq.fees_active">
+                            <small class="text-muted">(Some fees may apply)</small>
+                        </t>
+                    </label>
+                </div>
+                <div class="col-8 col-lg-7">
+                    <span class="payment_option_name1">
+                        <t t-esc="acq.display_as or acq.name"/>
+                        <div t-if="acq.state == 'test'" class="badge-pill badge-warning float-right"
+                             style="margin-left:5px">
+                            Test Mode
+                        </div>
+                    </span>
+                    <div t-raw="acq.pre_msg" class="text-p"/>
+                </div>
+
+                <div class="col-lg-2 d-none d-lg-block">
+                    <ul class="float-right list-inline payment_icon_list">
+
+                        <t t-set="i" t-value="0"/>
+                        <t t-foreach="acq.payment_icon_ids" t-as="pm_icon">
+                            <li t-attf-class="list-inline-item#{'' if (i &lt; MAX_BRAND_LINE) else ' d-none'}">
+                                <span t-field="pm_icon.image_payment_form"
+                                      t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;alt-field&quot;: &quot;name&quot;}"/>
+                            </li>
+                            <li t-if="i==MAX_BRAND_LINE" style="display:block;" class="list-inline-item">
+                                <span class="float-right more_option text-info">
+                                    <a href="#" class="o_payment_form_pay_icon_more" data-toggle="tooltip"
+                                       t-att-title="', '.join([opt.name for opt in acq.payment_icon_ids[MAX_BRAND_LINE:]])">
+                                        and more
+                                    </a>
+                                </span>
+                            </li>
+                            <t t-set="i" t-value="i+1"/>
+                        </t>
+                    </ul>
+                </div>
+
+            </div>
+
+        </xpath>
+
+    </template>
+</odoo>

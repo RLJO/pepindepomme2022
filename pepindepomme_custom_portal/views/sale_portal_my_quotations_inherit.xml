@@ -1,0 +1,359 @@
+<odoo>
+<template t-name="sale.portal_my_orders">
+        <style>
+            main{
+            background-color:white;
+            }
+            address{
+            font: normal normal normal 14px/24px Roboto !important;
+            letter-spacing: 0px;
+            color: #000000 !important;
+            margin: 0 !important;
+            text-align: left;
+
+            }
+            a.table_of_content_link.list-group-item.list-group-item-action.py-2.border-0.rounded-0:hover
+                {
+                background-color: transparent !important;
+                }
+            .navbar.navbar-light.navbar-expand-lg.border.py-0.mb-2.o_portal_navbar.mt-3.rounded{
+                visibility: hidden !important;
+            }
+
+        </style>
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Commandes</t>
+            </t>
+            <t t-if="not orders">
+                <p>Il n'y a actuellement aucun commande pour votre compte.</p>
+            </t>
+            <section class="s_table_of_content pt24 pb24 o_cc o_cc1 o_colored_level">
+                <div class="container">
+                    <div class="row s_nb_column_fixed">
+                        <div class="col-lg-3 s_table_of_content_navbar_wrap s_table_of_content_navbar_sticky s_table_of_content_vertical_navbar d-print-none mb-5 d-lg-block o_not_editable " data-name="Navbar">
+                            <div class="s_table_of_content_navbar list-group" style="">
+
+                                <div class="border-top pt-2">
+                                    <a href="/my/account" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; font: normal normal bold 14px/19px Roboto;">
+                                        <img  class="mr-2 mb-2" style="height: 18px;width: 16px;margin-right: 17px !important;" src="/pepindepomme_custom_portal/static/src/img/user.png" />
+                                        Mes Informations
+
+
+                                        <i style="color: #000000 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                    </a>
+                                </div>
+
+                                <div class="border-top pt-2">
+                                    <a href="/my/adress" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; font: normal normal bold 14px/19px Roboto;">
+                                        <img  class="mr-2 mb-2" style="height: 22px;width: 18px;margin-right: 15px !important;" src="/pepindepomme_custom_portal/static/src/img/map-pin.png" />
+                                        Mes adresses
+                                        <i style="color: #000000 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                    </a>
+
+                                </div>
+
+                                <div class="border-top pt-2">
+                                    <a href="/my/orders" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #91B508; font: normal normal bold 14px/19px Roboto;">
+                                        <img  class="mr-2 mb-1" style="height: 16px;width: 22px;margin-right: 12px !important;" src="/pepindepomme_custom_portal/static/src/img/card-vert.png" />
+                                        Mes commandes
+                                             <i style="color: #91B508 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                    </a>
+
+                                </div>
+
+                                <div class="border-top border-bottom pt-2">
+                                    <a href="/my/history" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; font: normal normal bold 14px/19px Roboto;">
+                                        <img  class="mr-2 mb-2" style="height: 20px;width: 18px;margin-right: 14px !important;" src="/pepindepomme_custom_portal/static/src/img/package.png" />
+                                        Historique des commandes
+
+
+                                                                           <i style="color: #000000 !important;"  class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+
+                                    </a>
+                                </div>
+<!--
+                                <div class="border-top pt-2">
+                                    <a href="#"
+                                       class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                       style="color: #2C2D41; height: 40px; font: normal normal normal 14px/20px Poppins; padding-left: 4.3%;">
+                                        <i class="float-left fa fa-retweet mr-3 icon"/>
+                                        Mes retours produits
+                                        <i style="" class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                           aria-label="Fold"></i>
+                                    </a>
+
+                                </div>
+-->
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9 s_table_of_content_main oe_structure oe_empty o_colored_level" t-if="orders">
+                             <div style="margin-bottom:30px">
+                                    <h3 style="font: normal normal bold 30px/29px Roboto;color: #000000;">
+                                       Historique d'achats
+                                    </h3>
+                                 <div class="float-right">
+                                    <a href="/web/session/logout?redirect=/" role="menuitem" class="dropdown-item" style="text-decoration: underline;font: normal normal normal 14px/24px Roboto;letter-spacing: 0px;color: #000000;display: inline;">
+                                        Se déconnecter
+                                    </a>
+                                 </div>
+                             </div>
+                            <t t-foreach="orders" t-as="q">
+                                <t t-set="contact_shipping" t-value="q.partner_shipping_id"/>
+                                <p>
+                                    <h3 style="font: normal normal bold 16px/19px Roboto;letter-spacing: 0px;color: #000000;opacity: 1; margin-top:30px;">Commande N°<a style="color: #000000;" t-att-href="q.get_portal_url()" t-field="q.name"/></h3>
+                                </p>
+                                <table class="mb16 table js_cart_lines" id="cart_products">
+                                    <thead>
+                                        <tr>
+                                            <th style="color:#000000">Article</th>
+                                            <th style="width:28%"/>
+                                            <th style="color:#000000" class="text-center">Quantité</th>
+                                            <th style="color:#000000" class="text-center">Prix</th>
+                                            <th style="color:#000000;width:28%;" class="th-subtotal">Livraison</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr t-foreach="q.order_line" t-as="line">
+                                            <td colspan="2" t-if="not line.product_id.product_tmpl_id" class="td-img"/>
+                                            <td align="center" t-if="line.product_id.product_tmpl_id" class="td-img">
+                                                <span t-field="line.product_id.image_128" t-options="{'widget': 'image', 'qweb_img_responsive': False, 'class': 'rounded o_image_64_max'}"/>
+                                            </td>
+
+
+                                            <td t-if="line.product_id.product_tmpl_id" class="td-product_name">
+                                                <div>
+                                                    <a class="tp-link-dark" href="/shop/602450-image-imprime-helices-2-m-decoration-49-x-2-x-69-cm-24#attr=">
+                                                        <b>
+                                                            <span style="font: normal normal bold 14px/26px Roboto;color: #000000;" t-field="line.name_short">Table basse Chêne
+                                                            </span>
+                                                        </b>
+                                                    </a>
+                                                    <br/>
+                                                    <a t-att-href="q.get_portal_url(report_type='pdf', download=True)" style="font: normal normal normal 14px/24px Roboto;color: #000000;text-decoration: underline;">
+                                                        <i class="fa fa-file-text-o"/>
+                                                        Télécharger ma facture
+                                                    </a>
+
+                                                </div>
+                                            </td>
+                                            <td class="text-center td-price" style="padding-top: 4%;">
+
+                                                <span style="color: #000000;" t-esc="int(line.product_uom_qty)"/>
+
+                                            </td>
+                                            <td class="text-center td-price" name="price" style="padding-top: 4%;">
+                                                <span t-field="line.price_total" style="white-space: nowrap;font: normal normal normal 14px/24px Poppins !important;letter-spacing: 0px;color: #000000 !important;"/>
+
+                                            </td>
+                                            <td class="td-subtotal" style="padding-top: 1%; ">
+                                                <div>
+
+                                                    <t style="font: normal normal normal 14px/24px Poppins;letter-spacing: 0px;color: #000000;margin: 0;" t-esc="contact_shipping" t-options="dict(widget='contact', fields=['address'], no_marker=True)"/>
+
+                                                    <h3 style="font: normal normal bold 14px/24px Roboto;color: #00B74F;" class="m-0">Complétée</h3>
+                                                    <span style="font: normal normal bold 12px/20px Poppins;letter-spacing: 0px;color: #000000; ">Retrait en magasin </span>
+                                                    <span style="font: normal normal bold 12px/20px Poppins;letter-spacing: 0px;color: #000000; " t-field="q.commitment_date"/>
+
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </t>
+
+
+</template>
+    <template t-name="sale.portal_my_quotations">
+       <style>
+            main{
+            background-color:white;
+            }
+            address{
+            font: normal normal normal 14px/24px Poppins !important;
+            letter-spacing: 0px;
+            color: #615C6E !important;
+            margin: 0 !important;
+            text-align: left;
+
+            }
+                .link:hover {
+                background-color: transparent !important;
+                }
+        </style>
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Quotations</t>
+            </t>
+            <t t-if="not quotations">
+                <p>There are currently no quotations for your account.</p>
+            </t>
+            <section class="s_table_of_content pt24 pb24 o_cc o_cc1 o_colored_level">
+                <div class="container">
+                    <div class="row s_nb_column_fixed">
+                        <div class="col-lg-3 s_table_of_content_navbar_wrap s_table_of_content_navbar_sticky s_table_of_content_vertical_navbar d-print-none mb-5 d-lg-block o_not_editable " data-name="Navbar">
+                            <div class="s_table_of_content_navbar list-group" style="">
+
+                                <div class="border-top pt-2">
+                                    <a href="/my/account" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #2C2D41; height: 40px; font: normal normal normal 14px/20px Poppins;">
+                                        <i class="float-left fa fa-user mr-3 icon"/>
+                                        Mes Informations
+
+
+                                        <i style="" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                    </a>
+                                </div>
+
+                                <div class="border-top pt-2">
+                                    <a href="/my/adress" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #2C2D41; height: 40px; font: normal normal normal 14px/20px Poppins;">
+                                        <i class="float-left fa fa-map-marker mr-3 icon"/>
+                                        Mes adresses
+                                        <i style="" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                    </a>
+
+                                </div>
+
+                                <div class="border-top pt-2">
+                                    <a href="#" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #2C2D41; height: 40px; font: normal normal normal 14px/20px Poppins; padding-left: 4.3%;">
+                                        <i class="float-left fa fa-credit-card mr-3 icon"/>
+                                        Suivi de commandes
+                                        <i style="" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                    </a>
+
+                                </div>
+                                 <div class="border-top pt-2" style="background: #F2F2F2 0% 0% no-repeat padding-box;">
+                                    <a href="/my/quotes" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #FF5E17; height: 40px; font: normal normal normal 14px/20px Poppins; padding-left: 4.3%; background: #F2F2F2 0% 0% no-repeat padding-box;">
+                                        <i class="float-left fa fa-cube mr-3 icon"/>
+                                        Historique d'achats (devis)
+
+
+                                        <i style="color: #FF5E17 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                    </a>
+                                </div>
+
+                                <div class="border-top pt-2">
+                                    <a href="/my/orders" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #2C2D41; height: 40px; font: normal normal normal 14px/20px Poppins; padding-left: 4.3%;">
+                                        <i class="float-left fa fa-cube mr-3 icon"/>
+                                        Historique d'achats (commande)
+
+
+                                        <i style="color: #FF5E17 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                    </a>
+                                </div>
+<!--
+                                <div class="border-top pt-2">
+                                    <a href="#"
+                                       class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                       style="color: #2C2D41; height: 40px; font: normal normal normal 14px/20px Poppins; padding-left: 4.3%;">
+                                        <i class="float-left fa fa-retweet mr-3 icon"/>
+                                        Mes retours produits
+                                        <i style="" class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                           aria-label="Fold"></i>
+                                    </a>
+
+                                </div>
+-->
+                                <div class="border-top border-bottom pt-2">
+                                    <a href="#" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #2C2D41; height: 40px; font: normal normal normal 14px/20px Poppins; padding-left: 4.3%;">
+                                        <i class="float-left fa fa-download mr-3 icon"/>
+                                        Télécharger mes données
+                                        <i style="" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+
+
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-9 s_table_of_content_main oe_structure oe_empty o_colored_level" t-if="quotations">
+                            <t t-foreach="quotations" t-as="q">
+                                <t t-set="contact_shipping" t-value="q.partner_shipping_id"/>
+                                <p>
+                                    <a t-att-href="q.get_portal_url()" style="font: normal normal normal 14px/24px Poppins;letter-spacing: 0px;color: #615C6E;opacity: 1; margin-top:30px;" t-field="q.name"/>
+                                </p>
+                                <table class="mb16 table js_cart_lines" id="cart_products">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Article</th>
+                                            <th/>
+                                            <th>Quantité</th>
+                                            <th>Prix</th>
+                                            <th class="text-center th-subtotal">Livraison</th>
+                                            <th class="text-center td-action"/>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr t-foreach="q.order_line" t-as="line">
+                                            <td colspan="2" t-if="not line.product_id.product_tmpl_id" class="td-img"/>
+                                            <td align="center" t-if="line.product_id.product_tmpl_id" class="td-img">
+                                                <span t-field="line.product_id.image_128" t-options="{'widget': 'image', 'qweb_img_responsive': False, 'class': 'rounded o_image_64_max'}"/>
+                                            </td>
+
+
+                                            <td t-if="line.product_id.product_tmpl_id" class="td-product_name">
+                                                <div>
+                                                    <a class="tp-link-dark" href="/shop/602450-image-imprime-helices-2-m-decoration-49-x-2-x-69-cm-24#attr=">
+                                                        <b>
+                                                            <span style="font: normal normal bold 14px/20px Poppins;letter-spacing: 0px;color: #2C2D41;" t-field="line.name_short">Table basse Chêne
+                                                            </span>
+                                                        </b>
+                                                    </a>
+                                                    <br/>
+                                                    <a t-att-href="q.get_portal_url(report_type='pdf', download=True)" style="font: normal normal normal 14px/24px Roboto;letter-spacing: 0px;color: #FF5E17;text-decoration: underline;">
+                                                        <i class="fa fa-file-text-o"/>
+                                                        Télécharger ma facture
+                                                    </a>
+
+                                                </div>
+                                            </td>
+                                            <td class="text-center td-price" style="padding-top: 4%;">
+
+                                                <span t-esc="int(line.product_uom_qty)"/>
+
+                                            </td>
+                                            <td class="text-center td-price" name="price" style="padding-top: 4%;">
+                                                <span t-field="line.price_total" style="white-space: nowrap;font: normal normal normal 14px/24px Poppins !important;letter-spacing: 0px;color: #615C6E !important;"/>
+
+                                            </td>
+                                            <td class="text-center td-subtotal" style="     padding-top: 1%; ">
+                                                <div>
+                                                    <b>
+                                                        <span style="font: normal normal bold 14px/20px Poppins;letter-spacing: 0px;color: #2C2D41; ">Adresse de livraison:
+                                                        </span>
+                                                    </b>
+                                                    <t style="font: normal normal normal 14px/24px Poppins;letter-spacing: 0px;color: #615C6E;margin: 0;" t-esc="contact_shipping" t-options="dict(widget='contact', fields=['address'], no_marker=True)"/>
+
+
+                                                    <span style="font: normal normal bold 12px/20px Poppins;letter-spacing: 0px;color: #2C2D41; " t-field="q.commitment_date"/>
+
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </t>
+    </template>
+</odoo>
+

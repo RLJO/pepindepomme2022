@@ -1,0 +1,101 @@
+<odoo>
+    <template id="liste_naissance" name="liste naissance">
+         <t t-call="website.layout">
+        <style>
+            .title{
+            text-align: left;
+            font: normal normal bold 24px/29px Roboto;
+            color: #000000;
+            }
+            .paragraph{
+            font: normal normal normal 14px/24px Roboto;
+            color: #000000;
+            text-align: left;
+            }
+            .underline{
+            text-decoration: underline;
+            font-weight:normal;
+            }
+            span{
+            font-weight: bold;
+            }
+            .bigtitle{
+            font: normal normal bold 36px/29px Roboto;
+            letter-spacing: 0px;
+            color: #000000;
+            text-align: center;
+            }
+            .greentitle{
+            font: normal normal bold 14px/24px Roboto;
+            letter-spacing: 0px;
+            color: #91B508;
+            }
+            .s_faq_collapse .accordion .card .card-header.collapsed:before{
+            float:right;
+            }
+            .s_faq_collapse .accordion .card .card-header:before {
+            content: '\f107';
+            float: right;
+            }
+            .s_faq_collapse .accordion .card .card-header.collapsed:before {
+            content: '\f105';
+            }
+            }
+        </style>
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_title pt32 o_colored_level pb16 " data-vcss="001" data-snippet="s_title" data-name="Title">
+                <div class="s_allow_columns container">
+                    <h1 class="bigtitle">Liste de naissance</h1>
+                </div>
+            </section>
+            <section class="s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="container s_allow_columns">
+                    <h2 class="paragraph greentitle">PÉPIN DE POMME - LE SPÉCIALISTE DE LA LISTE DE NAISSANCE</h2>
+                </div>
+            </section>
+            <section class=" s_faq_collapse o_colored_level pt0 pb0" data-name="Accordion">
+                <div class="container">
+                    <p class="paragraph font-weight-bold mb-0">Pépin de pomme : spécialiste de la liste de naissance</p>
+                    <p class="paragraph">La création de la liste de naissance constitue une étape cruciale pour les parents en attente d’un heureux évènement. Cette liste déterminera la totalité des matériels, équipements et articles nécessaires pour accueillir bébé dans les meilleures conditions et pour prendre soin de lui. Il est ainsi très important de s’assurer de la qualité de ces derniers qui doivent également respecter les normes requises pour les tout-petits. Avec Pépin de pomme, vous trouverez tout ce dont vous aurez besoin que ce soit pour habiller bébé, son bain, son éveil, ses repas, sa chambre, ses sorties, sa protection et beaucoup d’autres encore…</p>
+                    <p class="paragraph font-weight-bold mb-0">Créez votre liste de naissance</p>
+                    <p class="paragraph">Des conseillers en puériculture qui sont également des parents avec les mêmes soucis que vous se feront une joie de vous aider à établir votre liste de naissance. Vous pouvez également effectuer des recherches ou demander l’avis de vos amis qui sont déjà parents. Sur le site de Pépin de pomme, vous trouverez absolument tout le nécessaire. Ce magasin en ligne met à votre disposition une grande variété d’articles des marques les plus connues mais à mini-prix. Si vous effectuez un premier achat sur Pépin de pomme, vous devez d’abord créer votre compte et donner quelques informations sur vous (nom, adresse, contacts…). Ensuite, à partir de votre liste, sélectionnez les articles qui vous plaisent et dont vous aurez besoin parmi les différentes catégories sur le site de Pépin de pomme. Vous découvrirez également des produits que vous pourrez ajouter à votre liste de naissance. En effet, Pépin de pomme expose souvent des nouveautés qui aideront considérablement les parents dans leurs tâches quotidiennes avec bébé.</p>
+                    <p class="paragraph font-weight-bold mb-0">Sollicitez votre entourage et suivez en temps réel les contributions pour votre liste de naissance</p>
+                    <p class="paragraph">Une fois votre liste établie, faites-en part avec vos proches. Ils aimeraient surement participer à la réunion de tous ces articles. C’est également un bon moyen d’éviter de se retrouver avec des produits, vêtements ou jouets identiques ou qui ne conviennent pas à votre bébé. N’oubliez pas de leur préciser qu’ils trouveront tout cela chez Pépin de pomme. Depuis votre compte client, vous suivrez en temps réel tous les mouvements de votre liste de naissance dus aux contributions de vos proches qui souhaitent vous faire plaisir et donner leur part. Il est même envisageable de recevoir des mails vous signalant les achats effectués pour réunir les articles dans votre liste de naissance. A la fin de votre liste, vous obtiendrez un récapitulatif de tous les cadeaux que votre famille ou vos amis ont pu faire pour que vous puissiez les remercier.</p>
+                    <p class="paragraph font-weight-bold mb-0">Clôturez votre liste de naissance</p>
+                    <p class="paragraph">Cette dernière étape consiste à fixer votre liste de naissance. La clôture s’active automatiquement 1 mois environ après la date de votre accouchement que vous avez préalablement défini avec votre liste de naissance. Avec ce système, vous bénéficierez jusqu’à 10% du montant total en bons d’achat avec une validité de 1 an. Alors n’attendez plus et fiez-vous à Pépin de pomme.</p>
+                </div>
+            </section>
+            <section class="s_icon_block_2 pb32 o_colored_level pt0" style="border-top: solid 1px #CFCFD1" data-snippet="s_icon_block_2" data-name="Icon Block - 2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 py-3 text-center o_colored_level col-lg-4">
+                            <h5 class="mt-3">
+                                <img class="img-fluid o_we_custom_image" src="/pepindepomme_custom_website/static/src/img/home/delivery.png" alt="" loading="lazy" data-original-id="596" data-original-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAAAXNSR0IArs4c6QAAAfhJREFUSEulloFRwzAMRdsNYIMwATABYQJgAsoEwASECSgTUCagTECYAJiAMgGMwH85K5cKx3GI7nRNLVl+kmUn81laTmW+HPBJme9lXKcc5gPBP2UvJgDUmnv8XwAWBgBZSb9GgBzJt5ROAqD8T2HRoUp5tkoDN1MB7hTgSvouPRyRPa4GwNzrztyfEK8dSmX2Jq8D6dIFyWExgJgv23lhBg9A2VkUoYQIXfwRQMggR1IAzG8hPMCLjGXPCmcBZgxALWc7BTt6Jr4l2EB4gEXIvHCrUAXKNrYCXQBCeohlrAe+g2OXgUaiF3LFtsAD2PwHPZDsLAYQ24Yx5SfuEEAZtqMBsG7vy27KMeyrwBZArORdGPZ9NwywhzTRn/Ps6H0FCtnRTdAtADNaDI4fDnaJMIkFGediMiE7egM/LwaAjbnEM6GhH6XNLRvrAXsBsTCKFEH9Qn2V6PO3+cyjmlGA1JasNIesubDo5FyxU0QFueJbkFgFSllRk/2wYLcXsNlR2uiZknrpeyNa09ckk/OWI1t7K9KMdhnZcWVPOaZeKg3QNwDuBSNlZ4v5vZVWOQDdSTTVs9SqQlxuyFUEoNQYkEgtfZWeSO0qBmqTA0CAhTS25wROffG0N54D5FZtXtO5APiSEd+HTfeGjCoXOPYX+POOYes78RdWz3e+V7JuFgAAAABJRU5ErkJggg==" data-mimetype="image/png"/>
+                                <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Livraison
+                                        gratuite à partir de 89€
+                                    </font>
+                            </h5>
+                            <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip802397" data-original-id="617" data-original-src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png" data-mimetype="image/png" data-resize-width="94"/>
+                            <img class="img-fluid o_we_custom_image mt-2" src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip709349" data-original-id="618" data-original-src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png" data-mimetype="image/png" data-resize-width="54"/>
+                        </div>
+                        <div class="col-12 py-3 text-center o_colored_level col-lg-8">
+                            <h5 class="mt-3">
+                                <img class="img-fluid o_we_custom_image" src="/pepindepomme_custom_website/static/src/img/home/secure.png" alt="" loading="lazy" data-original-id="596" data-original-src="/pepindepomme_custom_website/static/src/img/home/secure.png" data-mimetype="image/png"/>
+                                <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Paiement
+                                        100% sécurisé
+                                    </font>
+                            </h5>
+                            <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/Logo-CB.png" alt="" loading="lazy"/>
+                            <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png" alt="" loading="lazy" data-original-id="598" data-original-src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png" data-mimetype="image/png" data-resize-width="44"/>
+                            <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/Paypal.png" alt="" loading="lazy" data-original-id="599" data-original-src="/pepindepomme_custom_website/static/src/img/home/Paypal.png" data-mimetype="image/png" data-resize-width="113"/>
+                            <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/visa.png" alt="" loading="lazy" data-original-id="600" data-original-src="/pepindepomme_custom_website/static/src/img/home/visa.png" data-mimetype="image/png" data-resize-width="65"/>
+                            <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png" alt="" loading="lazy" data-original-id="601" data-original-src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png" data-mimetype="image/png" data-resize-width="96"/>
+                            <img class="img-fluid o_we_custom_image mt-2" src="/pepindepomme_custom_website/static/src/img/home/Image 102.png" alt="" loading="lazy" data-original-id="620" data-original-src="/pepindepomme_custom_website/static/src/img/home/Image 102.png" data-mimetype="image/png" data-resize-width="117"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+    </template>
+</odoo>

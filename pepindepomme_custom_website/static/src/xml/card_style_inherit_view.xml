@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <t t-extend="theme_prime.s_card_style_3" >
+        <t t-jquery=".d-add_to_cart_block" t-operation="replace">
+            <button type="button" class="btn btn-primary o_button_sync_transactions">
+                asmaa yeees
+            </button>
+        </t>
+    </t>
+</template>

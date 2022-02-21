@@ -1,0 +1,75 @@
+<odoo>
+    <template id="cookies_bar_custom" inherit_id="website.cookies_bar">
+        <xpath expr="//div[@id='website_cookies_bar']" position="replace">
+            <div id="website_cookies_bar" t-if="website.cookies_bar" class="s_popup o_snippet_invisible o_no_save"
+                 data-name="Cookies Bar" data-vcss="001" data-invisible="1">
+                <div class="modal s_popup_bottom s_popup_no_backdrop o_cookies_discrete" data-show-after="500"
+                     data-display="afterDelay" data-consents-duration="999" data-focus="false" data-backdrop="false"
+                     data-keyboard="false" tabindex="-1" role="dialog">
+                    <div class="modal-dialog d-flex s_popup_size_full m-0">
+                        <div class="modal-content oe_structure">
+                            <section class="o_colored_level o_cc o_cc1 pb32 bg-light">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-12 pt32">
+                                            <h2 style="
+    font: normal normal bold 20px/29px Roboto;
+    color: #91B508;
+">Pépin de Pomme et le respect de votre vie privée
+                                            </h2>
+                                            <p style="
+    font: normal normal normal 14px/24px Roboto;
+    color: #000000;
+    margin: auto;
+">Pépin de Pomme utilise des cookies pour s’assurer que le site internet fonctionne de manière idéale; pour la
+                                                personnalisation du contenu et des publicités, pour que les
+                                                fonctionnalités sur les réseaux sociaux soient disponibles et pour
+                                                analyser le trafic. Pépin de Pomme partage aussi des informations à
+                                                propos de votre navigation sur notre site web, avec nos partenaires
+                                                analytiques, nos partenaire publicitaires, ainsi que ceux des différents
+                                                réseaux sociaux.
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-12 pt16 pb16 d-none d-lg-block text-right">
+                                            <a href="/cookie-policy"
+                                               class="o_cookies_bar_text_policy btn btn-outline mb-2 btn-lg  " style="
+    color: #000000;
+    font: normal normal bold 16px/19px Roboto;
+    border: 2px solid #000000;
+">Politique relative aux cookies
+                                            </a>
+                                            <a href="#" role="button"
+                                               class="js_close_popup o_cookies_bar_text_button  mb-2 btn btn-primary btn-lg ml-2"
+                                               style="
+    color: #FFFFFF;
+    font: normal normal bold 16px/19px Roboto;
+">Tout accepter
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-12 pt16 pb16 text-right d-lg-none d-sm-block d-md-block ">
+                                            <a href="#" role="button"
+                                               class="js_close_popup o_cookies_bar_text_button  mb-2 btn btn-primary btn-block"
+                                               style="
+    color: #FFFFFF;
+    font: normal normal bold 16px/19px Roboto;
+">Tout accepter
+                                            </a>
+                                            <a href="/cookie-policy"
+                                               class="o_cookies_bar_text_policy btn btn-outline  btn-block  " style="
+    color: #000000;
+    font: normal normal bold 16px/19px Roboto;
+    border: 2px solid #000000;
+">Politique relative aux cookies
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+
+    </template>
+</odoo>

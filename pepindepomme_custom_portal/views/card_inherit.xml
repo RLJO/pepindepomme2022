@@ -1,0 +1,73 @@
+<odoo>
+
+
+    <template name="Portal Layout" t-name="theme_prime.s_card_style_3" priority="16">
+        <t t-set="userParams" t-value="widget.userParams"/>
+        <div t-attf-class="card h-100 s_card_style_3 #{isForGridSnippet ? 'tp-has-count-down' : ''}">
+            <div class="d_product_box d-flex position-relative h-100 text-center">
+                <div t-if="userParams.anyActionEnabled" class="d_actions d-flex">
+                    <button t-if="userParams.quick_view" t-att-data-product-template-id="item.id" data-toggle="tooltip" data-placement="bottom" class="btn btn-light text-center border rounded-circle d_action_btn d_product_quick_view" title="Quick View">
+                        <i class="d_action_btn_icon dri dri-eye"></i>
+                    </button>
+                    <button t-if="userParams.comparison &amp;&amp; !widget.isMobile" t-att-data-product-product-id="item.product_variant_id" data-toggle="tooltip" data-placement="bottom" class="btn btn-light text-center border rounded-circle d_action_btn d_product_comparison" title="Compare">
+                        <span class="d_action_btn_icon dri dri-compare"></span>
+                    </button>
+                    <button t-if="userParams.wishlist" t-att-data-product-product-id="item.product_variant_id" data-toggle="tooltip" data-placement="bottom" class="btn btn-light text-center border rounded-circle d_action_btn d_add_to_wishlist_btn" title="Add to Wishlist">
+                        <i class="d_action_btn_icon dri dri-wishlist"></i>
+                    </button>
+                    <button t-if="userParams.show_similar" t-att-data-product-template-id="item.id" data-toggle="tooltip" data-placement="bottom" class="btn btn-light text-center border rounded-circle d_action_btn tp_show_similar_products" title="Show Similar Products">
+                        <i class="d_action_btn_icon fa fa-clone"></i>
+                    </button>
+                </div>
+                <div class="d_img_block position-relative d-flex justify-content-center">
+                    <a t-att-href="item.website_url" t-att-class="hasTimer and 'h-100'">
+                        <img loading="lazy" t-att-alt="item.name" t-att-src="item.img_medium" t-attf-class="img img-fluid d-product-img #{hasTimer ? 'tp-has-timer-img' : ''}"/>
+                    </a>
+                    <t t-call="dr_s_lable_tmpl"></t>
+                    <t t-if="hasTimer">
+                        <div style="bottom:3px;" t-if="item.offer_data" class="s_countdown_4 w-100 tp-light position-absolute tp_timer_center tp-countdown py-2 no-gutters" data-countdown-style="s_countdown_4" t-att-data-due-date="item.offer_data.date_end">
+                            <div class="mt-3 end_msg_container css_non_editable_mode_hidden">
+                                <h6 class="mb-0" t-esc="item.offer_data.offer_finish_msg"/>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+                <div class="d_product_info p-3">
+                    <div class="d_product_info_lev_2">
+                        <t t-if="userParams.category_info &amp;&amp; item.category_info">
+                            <a class="text-decoration-none" t-att-href="item.category_info.website_url">
+                                <small class="dr_category_lable" t-esc="item.category_info.name"/>
+                            </a>
+                        </t>
+                        <t t-else="">
+                            <br/>
+                        </t>
+                        <a t-att-href="item.website_url">
+                            <p class="text-truncate mt-2 h6 text-primary mb-1"><t t-esc="item.name"/></p>
+                        </a>
+                        <t t-if="userParams.rating">
+                            <t t-if="item.rating_avg"><div t-raw="item.rating"/></t>
+                            <t t-else=""><br/></t>
+                        </t>
+                        <div class="d-product-price position-relative">
+                            <p class="d-inline-block mb-0 text-800" t-raw="item.price"/>
+                            <small t-if="item.has_discounted_price" class="text-muted d-inline-block mb-0" style="text-decoration: line-through; white-space: nowrap;" t-raw="item.list_price"/>
+                        </div>
+                        <div t-if="isForGridSnippet" class="d-add_to_cart_block">
+                            <button t-att-data-product-product-id="item.product_variant_id" data-toggle="tooltip" data-placement="bottom" class="btn btn-primary-soft w-100 d_action_btn d_add_to_cart_btn" title="Add to Cart">
+                                <i class="d_action_btn_icon dri dri-cart"></i>   Configurer (test)
+                            </button>
+                        </div>
+                        <div t-else=" " class="d-add_to_cart_block">
+                            <button t-if="userParams.add_to_cart" t-att-data-product-product-id="item.product_variant_id" data-toggle="tooltip" data-placement="bottom" class="btn btn-primary w-100 d_action_btn d_add_to_cart_btn" title="Add to Cart">
+                                <i class="d_action_btn_icon dri dri-cart"></i> ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </template>
+</odoo>

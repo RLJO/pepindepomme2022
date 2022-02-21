@@ -1,0 +1,389 @@
+<odoo>
+    <template id="website.contactus" priority="16" name="Contactez-nous">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <style>
+                    .s_title {
+                    font: normal normal bold 36px/29px Roboto;
+                    }
+                    .s_website_form_label{
+                    font: normal normal bold 14px/26px Roboto;
+                    color: black !important;
+                    margin-bottom: 7px !important;
+                    }
+                    .a-custom {
+                    font: normal normal normal 14px/29px Roboto;
+                    letter-spacing: 0px;
+                    color: #0088FF;
+
+                    }
+
+                    .s_website_form_input {
+                    border: 1px solid #939393;
+                    height: 36px !important;
+                    }
+                    .s_website_form_input_msg {
+                    border: 1px solid #939393;
+                    }
+                    .s_website_form_send {
+                    font: normal normal bold 16px/19px Roboto;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+
+                    }
+                    .contact-title{
+                    font: normal normal bold 16px/19px Roboto;
+                    letter-spacing: 0px;
+                    color: #91B508;
+
+
+                    }
+                    .img-icon {
+                    width: 21px;
+                    height: 21px;
+
+                    }
+                    .contact-span {
+                    font: normal normal bold 14px/24px Roboto;
+                    }
+                    .t2-contact{
+                    font: normal normal bold 30px/29px Roboto;
+                    }
+                    .a-maps{
+                    text-decoration: underline;
+                    font: normal normal normal 14px/24px Roboto;
+                    letter-spacing: 0px;
+                    color: #0088FF;
+                    opacity: 1;
+                    }
+                    address i {
+                    display:none !important;
+                    }
+
+                    address,.paragraph{
+                    font: normal normal normal 14px/24px Roboto;
+                    letter-spacing: 0px;
+                    color: #000000;
+
+                    }
+                    .form-check-label{
+                    font: normal normal normal 14px/29px Roboto;
+                    color:black;
+                    }
+
+                </style>
+                <!--<div class="oe_structure">
+                    <section class="s_title parallax s_parallax_is_fixed  pt24 pb24" data-vcss="001"
+                             data-snippet="s_title" data-scroll-background-ratio="1">
+                        <h1 class="text-center text-black">Contact us</h1>
+
+                    </section>
+
+                </div>-->
+                <div class="container mt-4 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-7 ml-lg-auto">
+                            <div class="oe_structure">
+                                <section class="s_text_block" data-snippet="s_text_block">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                 <section class="s_title parallax s_parallax_is_fixed  pt24 pb24" data-vcss="001"
+                                     data-snippet="s_title" data-scroll-background-ratio="1">
+                                <p class="text-center text-black t2-contact">Contactez-nous</p>
+
+                            </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="text-center my-3" name="mail_button">
+                                <a role="button" t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary"
+                                   id="o_contact_mail">Send us an email
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-4 mt-lg-0 mr-lg-auto">
+
+                            <section class="s_title parallax s_parallax_is_fixed  pt24 pb24" data-vcss="001"
+                                     data-snippet="s_title" data-scroll-background-ratio="1">
+                                <p class="text-left text-black t2-contact w-50">Informations de <br/> la boutique</p>
+
+                            </section>
+
+                            <!--<t t-call="website.company_description"/>-->
+                            <span class="contact-title mb-2" t-field="res_company.name"/>
+                            <address itemscope="itemscope" itemtype="http://schema.org/Organization">
+                                <!-- TODO widget contact must add itemprop attributes -->
+                                <div t-field="res_company.partner_id"
+                                     t-options="{                 &quot;widget&quot;: &quot;contact&quot;,                 &quot;fields&quot;: [&quot;address&quot;]}"/>
+                                <t t-if="not res_company.google_map_img()">
+
+                                    <img src="pepindepomme_custom_website/static/src/img/annex/map-pin.svg"
+                                         class="img-icon" role="img" aria-label="Address"
+                                         title="Address"/>
+                                    <a t-att-href="res_company.google_map_link()" target="_BLANK" class="a-maps">Google
+                                        Maps
+                                    </a>
+                                </t>
+                            </address>
+
+                            <p class="contact-title  mt-3 mb-1">Horaires magasin :</p>
+                            <p class="paragraph">
+
+                                Lundi : 10:00 - 12:30 et 14:00 - 19:30
+                                <br/>
+                                Mardi : 09:30 - 12:30 et 14:00 - 19:30
+                                <br/>
+                                Mercredi : 09:30 - 12:30 et 14:00 - 19:30
+                                <br/>
+                                Jeudi : 09:30 - 12:30 et 14:00 - 19:30
+                                <br/>
+                                Vendredi : 09:30 - 12:30 et 14:00 - 19:30
+                                <br/>
+                                <span class="contact-span">Fermé samedi et dimanche</span>
+
+
+                            </p>
+                            <p class="contact-title  mt-3 mb-1">Horaires service client :</p>
+                            <p  class="paragraph">
+                                Du lundi au vendredi* :10:00 - 12:00 et 13:00 - 17:00
+                                <br/>
+                                *sauf les jours fériés
+                            </p>
+                            <p class="contact-title  mt-3 mb-1">Nous contacter par téléphone :</p>
+                            <img src="/pepindepomme_custom_website/static/src/img/annex/phone.svg" class="img-icon"/>
+                            <span t-field="res_company.phone"  class="paragraph"/>
+
+
+                            <p class="contact-title  mt-3 mb-1">Nous contacter par e-mail :</p>
+                            <img src="/pepindepomme_custom_website/static/src/img/annex/mail.svg" class="img-icon"/>
+                            &#160;&#160;<span t-field="res_company.email"  class="paragraph"/>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="oe_structure mt-2"/>
+
+
+                <section class="s_icon_block_2 pb32 o_colored_level pt0" style="border-top: solid 1px #CFCFD1"
+                         data-snippet="s_icon_block_2" data-name="Icon Block - 2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-4">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/delivery.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAAAXNSR0IArs4c6QAAAfhJREFUSEulloFRwzAMRdsNYIMwATABYQJgAsoEwASECSgTUCagTECYAJiAMgGMwH85K5cKx3GI7nRNLVl+kmUn81laTmW+HPBJme9lXKcc5gPBP2UvJgDUmnv8XwAWBgBZSb9GgBzJt5ROAqD8T2HRoUp5tkoDN1MB7hTgSvouPRyRPa4GwNzrztyfEK8dSmX2Jq8D6dIFyWExgJgv23lhBg9A2VkUoYQIXfwRQMggR1IAzG8hPMCLjGXPCmcBZgxALWc7BTt6Jr4l2EB4gEXIvHCrUAXKNrYCXQBCeohlrAe+g2OXgUaiF3LFtsAD2PwHPZDsLAYQ24Yx5SfuEEAZtqMBsG7vy27KMeyrwBZArORdGPZ9NwywhzTRn/Ps6H0FCtnRTdAtADNaDI4fDnaJMIkFGediMiE7egM/LwaAjbnEM6GhH6XNLRvrAXsBsTCKFEH9Qn2V6PO3+cyjmlGA1JasNIesubDo5FyxU0QFueJbkFgFSllRk/2wYLcXsNlR2uiZknrpeyNa09ckk/OWI1t7K9KMdhnZcWVPOaZeKg3QNwDuBSNlZ4v5vZVWOQDdSTTVs9SqQlxuyFUEoNQYkEgtfZWeSO0qBmqTA0CAhTS25wROffG0N54D5FZtXtO5APiSEd+HTfeGjCoXOPYX+POOYes78RdWz3e+V7JuFgAAAABJRU5ErkJggg=="
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Livraison
+                                        gratuite à partir de 89€
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png" alt=""
+                                     loading="lazy" data-original-title="" title="" aria-describedby="tooltip802397"
+                                     data-original-id="617"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png"
+                                     data-mimetype="image/png" data-resize-width="94"/>
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     alt="" loading="lazy" data-original-title="" title=""
+                                     aria-describedby="tooltip709349" data-original-id="618"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     data-mimetype="image/png" data-resize-width="54"/>
+                            </div>
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-8">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/secure.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/home/secure.png"
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Paiement
+                                        100% sécurisé
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Logo-CB.png" alt=""
+                                     loading="lazy"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png" alt=""
+                                     loading="lazy" data-original-id="598"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png"
+                                     data-mimetype="image/png" data-resize-width="44"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Paypal.png" alt=""
+                                     loading="lazy" data-original-id="599"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Paypal.png"
+                                     data-mimetype="image/png" data-resize-width="113"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/visa.png" alt=""
+                                     loading="lazy" data-original-id="600"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/visa.png"
+                                     data-mimetype="image/png" data-resize-width="65"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png" alt=""
+                                     loading="lazy" data-original-id="601"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png"
+                                     data-mimetype="image/png" data-resize-width="96"/>
+                                <!--
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="pepindepomme_custom_website/static/src/img/home/Image 101.png" alt="" loading="lazy"
+                                     data-original-id="619" data-original-src="pepindepomme_custom_website/static/src/img/home/Image 101.png"
+                                     data-mimetype="image/png" data-resize-width="39"/>
+                                     -->
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Image 102.png" alt=""
+                                     loading="lazy" data-original-id="620"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Image 102.png"
+                                     data-mimetype="image/png" data-resize-width="117"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </t>
+    </template>
+    <template id="contactus_form_custom" inherit_id="website_form.contactus_form" priority="16">
+        <xpath expr="//form[@id='contactus_form']" position="replace">
+
+            <form id="contactus_form" action="/website_form/" method="post" enctype="multipart/form-data"
+                  class="o_mark_required" data-mark="*" data-model_name="mail.mail" data-success-mode="redirect"
+                  data-success-page="/contactus-thank-you">
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+                    <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                         data-type="char" data-name="Field">
+
+                        <label class="s_website_form_label" for="contact1">
+                            <span class="s_website_form_label_content">Nom</span>
+                            <span class="s_website_form_mark">*</span>
+                        </label>
+
+                        <input id="contact1" type="text" class="form-control s_website_form_input" name="Name"
+                               required=""/>
+
+
+                    </div>
+                </div>
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+                    <div class="form-group col-12 col-lg-6 s_website_form_field s_website_form_required"
+                         data-type="email"
+                         data-name="Field">
+
+                        <label class="s_website_form_label" for="contact3">
+                            <span class="s_website_form_label_content">Email</span>
+                            <span class="s_website_form_mark">*</span>
+                        </label>
+
+                        <input id="contact3" type="email" class="form-control s_website_form_input" name="email_from"
+                               required=""/>
+
+
+                    </div>
+                    <div class="form-group col-12 col-lg-6 s_website_form_field s_website_form_custom" data-type="char"
+                         data-name="Field">
+
+                        <label class="s_website_form_label" for="contact2">
+                            <span class="s_website_form_label_content">Téléphone</span>
+                        </label>
+                        <input id="contact2" type="tel" class="form-control s_website_form_input" name="Phone"/>
+
+                    </div>
+
+                </div>
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+
+                    <div class="form-group col-12 col-lg-6 s_website_form_field s_website_form_custom d-none"
+                         data-type="char"
+                         data-name="Field">
+
+                        <label class="s_website_form_label" for="contact4">
+                            <span class="s_website_form_label_content">Your Company</span>
+                        </label>
+
+                        <input id="contact4" type="text" class="form-control s_website_form_input" name="Partner Name"/>
+
+
+                    </div>
+                    <div class="form-group col-12 col-lg-6 s_website_form_field s_website_form_required"
+                         data-type="char"
+                         data-name="Field">
+
+                        <label class="s_website_form_label" for="contact5">
+                            <span class="s_website_form_label_content">Sujet</span>
+                            <span class="s_website_form_mark">*</span>
+                        </label>
+
+
+
+                    <select class="form-control s_website_form_input" id="contact5" name="subject"
+                               required="" >
+                      <option value="Commande">Commande</option>
+                      <option value="Service client">Service client</option>
+                    </select>
+
+
+
+                    </div>
+
+                </div>
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+                    <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                         data-type="text" data-name="Field">
+
+                        <label class="s_website_form_label" for="contact6">
+                            <span class="s_website_form_label_content">Message</span>
+                            <span class="s_website_form_mark">*</span>
+                        </label>
+
+                        <textarea id="contact6" class="form-control s_website_form_input_msg" name="Description" rows="7"
+                                  required="" placeholder="Comment pouvons-nous vous aider ?"/>
+                        <span>* Champs obligatoires</span>
+
+
+                    </div>
+                    <div class="form-group col-12 s_website_form_field s_website_form_dnone">
+
+                        <label class="s_website_form_label" for="contact7">
+                            <span class="s_website_form_label_content">Email To</span>
+                        </label>
+
+                        <input id="contact7" type="hidden" class="form-control s_website_form_input" name="email_to"/>
+
+
+                    </div>
+                </div>
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+
+                    <div class="form-group col-12 s_website_form_field s_website_form_custom form-check s_website_form_required"
+                         data-type="checkbox" data-name="Field">
+
+                        <input class="s_website_form_input_msg" name="email_from" required="required"
+                               type="checkbox" value="" id="confirm_input"/>
+                        <label class="form-check-label text-black" for="defaultCheck1" >
+                            J'ai lu <a href="/legal-notice" target="_blank" class="a-custom">les conditions générales</a> sur la protection des
+                            données et j'y adhère sans réserve.
+                        </label>
+
+
+                    </div>
+                </div>
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+                    <div class="form-group col-12 s_website_form_submit" data-name="Submit Button">
+                        <a href="#" role="button" style="height: 52px;padding-top: 15px;" class="btn btn-primary btn-lg s_website_form_send btn btn-primary btn-lg s_website_form_send w-100 w-lg-25">Envoyer</a>
+                        <span id="s_website_form_result"/>
+                    </div>
+                </div>
+            </form>
+
+        </xpath>
+
+    </template>
+</odoo>

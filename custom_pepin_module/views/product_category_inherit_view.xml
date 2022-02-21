@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+           <!-- Inherit Form View Product Template -->
+    <record id="pepinpomme_inherited_view_category_list_view" model="ir.ui.view">
+        <field name="name">product.public.category.list</field>
+        <field name="model">product.public.category</field>
+        <field name="inherit_id" ref="website_sale.product_public_category_tree_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='website_id']" position="after">
+               <field name="active" widget="boolean_toggle"/>
+                <button type="object" name="update_parent_cat" string="Delete parent cat" class="btn btn-danger"/>
+            </xpath>
+        </field>
+    </record>
+    </data>
+</odoo>

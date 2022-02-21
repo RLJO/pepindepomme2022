@@ -1,0 +1,105 @@
+<odoo>
+    <template id="confirmation_custom" inherit_id="website_sale.confirmation" priority="16">
+        <xpath expr="//div[@id='wrap']" position="replace">
+               <style>
+                h3{
+                font: normal normal bold 30px/29px Roboto;
+                letter-spacing: 0px;
+                color: #000000;
+                }
+                h4{
+                font: normal normal bold 20px/29px Roboto;
+                letter-spacing: 0px;
+                color: #000000;
+                }
+                p{
+                font: normal normal normal 14px/24px Roboto;
+                }
+                .btn-primary{
+                font: normal normal bold 16px/19px Roboto;
+                color: #FFFFFF;
+                background: #91B508;
+                }
+                .table-striped tbody tr:nth-of-type(odd){
+                background-color: transparent !important;
+                }
+                .text-right{
+                color: #000000 !important;
+                text-align: left !important;
+                }
+                .card-body .text-muted, .o_colored_level .card-body .text-muted{
+                color: #000000 !important;
+                }
+                span.oe_currency_value{
+                color: #000000 !important;
+                }
+                th{
+                 color: #000000 !important;
+                }
+                td{
+                 color: #000000 !important;
+                }
+                .mb{
+                margin-bottom:100px;
+                }
+            </style>
+            <div id="wrap" class="mb">
+                <div class="container main_container oe_website_sale py-2 ">
+                    <div class="col-12">
+
+
+
+        <div class="row">
+            <div class="col-xl">
+                <div class="wizard">
+                    <div class="progress-wizard">
+
+                          <div id="wizard-step10" data-oe-model="ir.ui.view" data-oe-id="1827" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/div[1]/div[1]/a[1]/div[1]" class="progress-wizard-step complete">
+                            <div class="progress-wizard-bar d-none d-md-block"></div>
+                            <span class="progress-wizard-dot d-none d-md-inline-block"></span>
+                            <div class="text-center progress-wizard-steplabel">Vérifier la commande</div>
+                          </div>
+                          <div id="wizard-step20" data-oe-model="ir.ui.view" data-oe-id="1827" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/div[1]/div[1]/a[2]/div[1]" class="progress-wizard-step complete">
+                            <div class="progress-wizard-bar d-none d-md-block"></div>
+                            <span class="progress-wizard-dot d-none d-md-inline-block"></span>
+                            <div class="text-center progress-wizard-steplabel">Adresse</div>
+                          </div>
+                          <div id="wizard-step40" data-oe-model="ir.ui.view" data-oe-id="1827" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/div[1]/div[1]/a[3]/div[1]" class="progress-wizard-step complete">
+                            <div class="progress-wizard-bar d-none d-md-block"></div>
+                            <span class="progress-wizard-dot d-none d-md-inline-block"></span>
+                            <div class="text-center progress-wizard-steplabel">Confirmer la commande</div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                        </div>
+                    <div class="row">
+                        <div class="col-12 col-xl">
+                            <div class="oe_cart">
+                                <h3 class="mt-4">Merci, votre commande est validée !</h3>
+                                <h4 class="mt-3">Numéro de commande : <em t-field="order.name"/> </h4>
+                                <p class="text-black mt-4">Vous allez recevoir un email de confirmation de commande ainsi que votre facture.</p>
+                                <p class="text-black m-0">Vous avez choisi de retirer votre commande dans notre entrepôt de Douai (59)</p>
+                                <p class="text-black m-0">Vous avez choisi la methode d'expédition : <b><span t-field="order.carrier_id.name"/></b></p>
+                                <p class="text-black m-0">Lorsque votre commande sera disponible vous recevrez un nouveau mail avec toutes les informations pratiques pour récupérer votre colis.</p>
+                                <p class="text-black mt-4 mb-4">Pour suivre votre commande, rendez-vous sur votre compte pepindepomme.com, dans <a href="/my/orders">"Mes commandes".</a></p>
+                                <a role="button" class="btn btn-primary float-left d-none d-xl-inline-block mb-4" href="/shop">
+                                        <span class="">Retour à la boutique</span>
+                                </a>
+                            </div>
+                        </div>
+                           <div class="col-12 col-xl-auto mt-4 mb-4">
+                            <t t-set="website_sale_order" t-value="order"/>
+                            <t t-call="website_sale.cart_summary">
+                                <t t-set="hide_coupon" t-value="1"/>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+
+    </template>
+</odoo>

@@ -1,0 +1,577 @@
+<odoo>
+
+    <template t-name="adress">
+
+        <t t-call="website.layout">
+            <style>
+                a.table_of_content_link.list-group-item.list-group-item-action.py-2.border-0.rounded-0:hover
+                {
+                background-color: transparent !important;
+                }
+            </style>
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_table_of_content pt24 pb24 o_cc o_cc1 o_colored_level">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-3 s_table_of_content_navbar_wrap s_table_of_content_navbar_sticky s_table_of_content_vertical_navbar d-print-none mb-5 d-lg-block o_not_editable "
+                                 data-name="Navbar">
+                                <div class="s_table_of_content_navbar list-group">
+                                    <div class="border-top pt-2">
+                                        <a href="/my/account"
+                                           class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                           style="color:  #000000; font: normal normal bold 14px/19px Roboto; ">
+                                            <img class="mb-2" style="height: 18px;width: 16px;margin-right: 16px !important;"
+                                                 src="/pepindepomme_custom_portal/static/src/img/user.png"/>
+                                            Informations personnelles
+                                            <i style="color: #000000 !important;"
+                                               class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                               aria-label="Fold"/>
+                                        </a>
+
+                                    </div>
+
+                                    <div class="border-top pt-2">
+                                        <a href="/my/adress"
+                                           class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                           style="color:  #91B508; font: normal normal bold 14px/19px Roboto; ">
+                                            <img class="mr-2 mb-2" style="height: 22px;width: 18px;margin-right: 14px !important;"
+                                                 src="/pepindepomme_custom_portal/static/src/img/map-pin-vert.png"/>
+                                            Mes adresses
+                                            <i style="color: #91B508 !important; padding-top: 5px;"
+                                               class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                               aria-label="Fold"/>
+                                        </a>
+
+                                    </div>
+
+                                    <div class="border-top pt-2">
+                                        <a href="/my/orders"
+                                           class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                           style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto;">
+                                            <img class="mr-2 mb-1" style="height: 16px;width: 22px;margin-right: 11px !important;"
+                                                 src="/pepindepomme_custom_portal/static/src/img/card.png"/>
+                                            Mes commandes
+                                            <i style="color: #000000 !important;"
+                                               class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                               aria-label="Fold"/>
+                                        </a>
+
+                                    </div>
+
+                                    <div class="border-top border-bottom pt-2">
+                                        <a href="/my/history"
+                                           class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0"
+                                           style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto;">
+                                            <img class="mr-2 mb-2" style="height: 20px;width: 18px;margin-right: 14px !important;"
+                                                 src="/pepindepomme_custom_portal/static/src/img/package.png"/>
+                                            Historique des commandes
+                                            <i style="color: #000000 !important;"
+                                               class="float-right text-muted fa fa-chevron-right" title="Fold"
+                                               aria-label="Fold"/>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-9 s_table_of_content_main oe_structure oe_empty o_colored_level"
+                                 data-name="Content" data-editor-message="GLISSEZ UN BLOC ICI">
+                                <div class="alert alert-danger" role="alert" t-if="error">
+                                    <h5 class="alert-heading" t-esc="error"/>
+
+                                </div>
+                                <div class="alert alert-success" role="alert" t-elif="success">
+                                    <h5 class="alert-heading m-0" t-esc="success"/>
+
+                                </div>
+                                <div style="margin-bottom:30px">
+                                    <h3 style="font: normal normal bold 30px/29px Roboto;color: #000000;">
+                                        Mes adresses
+                                    </h3>
+                                    <div class="text-right">
+                                        <a href="/web/session/logout?redirect=/" role="menuitem" class="dropdown-item"
+                                           style="text-decoration: underline;font: normal normal normal 14px/24px Roboto;color: #000000;">
+                                            Se déconnecter
+                                        </a>
+                                    </div>
+                                </div>
+                                <span style="color: #000000;font: normal normal bold 17px/20px Roboto;">Adresse de
+                                    facturation
+                                </span>
+                                <hr style="margin: 0;"/>
+
+
+                                <div class="row">
+                                    <div class="col-12 col-lg-5 py-3 o_colored_level">
+                                        <div class="card p-3 h-100 o_colored_level">
+                                            <div class="media">
+                                                <div class="w-75">
+
+
+                                                    <h6 style="margin: 0;font: normal normal normal 14px/20px Roboto; letter-spacing: 0px;color: #000000">
+                                                        <t t-value="adress.name" t-esc="user_id.partner_id.name"/>
+                                                    </h6>
+                                                    <p style="margin: 0;font: normal normal normal 14px/20px Roboto; letter-spacing: 0px;color: #000000">
+                                                        <t t-esc="user_id.partner_id.street"/>
+                                                    </p>
+                                                    <p style="margin: 0;font: normal normal normal 14px/20px Roboto; letter-spacing: 0px;color: #000000">
+                                                        <t t-esc="user_id.partner_id.country_id.name"/>
+                                                    </p>
+                                                    <p style="margin: 0;font: normal normal normal 14px/20px Roboto; letter-spacing: 0px;color: #000000">
+                                                        <t t-esc="user_id.partner_id.city"/>
+                                                    </p>
+                                                    <!--
+                                                    <a  href="/my/edit_adress?parent"
+                                                       style="     color: #ff5e17;     position: absolute;     top: 15%;     left: 75%; ">
+                                                        Modifier
+                                                    </a>-->
+                                                    <form action="/my/edit_adress" method="POST">
+                                                        <input type="hidden" name="csrf_token"
+                                                               t-att-value="request.csrf_token()"/>
+                                                        <input type="hidden" name="mode" value="biling"/>
+
+                                                        <button class="btn-link"
+                                                                style="background-color:transparent;border:none;color: #2E697D;position: absolute; top: 11.5%;left: 75%; ">
+                                                            Modifier
+                                                        </button>
+                                                    </form>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span style="color: #000000; font: normal normal bold 17px/20px Roboto;">
+                                    Adresse de livraison
+                                </span>
+                                <hr style="margin-top: 0;"/>
+                                <div class="products_pager form-inline justify-content-center mt-3"
+                                     style="    margin-left: 364px;">
+                                    <t t-call="website.pager">
+                                        <t t-set="_classes">mt-2 ml-md-2</t>
+                                    </t>
+                                </div>
+                                <div class="row">
+
+
+                                    <t t-foreach="adress" t-as="ship">
+                                        <div class="col-12 col-lg-5  py-3 o_colored_level">
+
+
+                                            <div class="card p-3 h-100 o_colored_level">
+
+                                                <div class="media">
+                                                    <div class="w-75">
+
+
+                                                        <h6 style="margin: 0;font: normal normal normal 14px/20px Roboto; letter-spacing: 0px;color: #000000;">
+                                                            <t t-value="adress.name" t-esc="ship.name"/>
+                                                        </h6>
+                                                        <p style="margin: 0;font: normal normal normal 14px/20px Roboto; letter-spacing: 0px;color: #000000;">
+                                                            <t t-esc="ship.street"/>
+                                                        </p>
+                                                        <p style="margin: 0;font: normal normal normal 14px/20px Roboto; letter-spacing: 0px;color: #000000;">
+                                                            <t t-esc="ship.country_id.name"/>
+                                                        </p>
+                                                        <p style="margin: 0;font: normal normal normal 14px/20px Roboto; letter-spacing: 0px;color: #000000;">
+                                                            <t t-esc="ship.city"/>
+                                                        </p>
+
+                                                        <!--   <a t-att-href="'/my/edit_adress?ship='+str(ship.id)"
+                                                              style="     color: #ff5e17;     position: absolute;     top: 15%;     left: 75%; ">
+                                                               Modifier
+                                                           </a>
+                                                           -->
+                                                        <form action="/my/edit_adress" method="POST">
+                                                            <input type="hidden" name="csrf_token"
+                                                                   t-att-value="request.csrf_token()"/>
+                                                            <input type="hidden" name="mode" value="shipping"/>
+                                                            <input type="hidden" name="ship" t-att-value="ship.id"/>
+                                                            <button class="btn-link"
+                                                                    style="background-color:transparent;border:none;color: #2E697D;position: absolute;top: 10%;left: 75%; ">
+                                                                Modifier
+                                                            </button>
+                                                        </form>
+                                                        <form action="/my/adress" method="POST">
+                                                            <input type="hidden" name="csrf_token"
+                                                                   t-att-value="request.csrf_token()"/>
+                                                            <input type="hidden" name="action" value="remove"/>
+                                                            <input type="hidden" name="ship" t-att-value="ship.id"/>
+                                                            <button type="submit" value=""
+                                                                    style="background-color:transparent;border:none;">
+                                                                <i class="fa fa-trash-o"
+                                                                   style="position: absolute;left: 85%;top: 60%;font-size: larger;font-weight: 700;"/>
+
+                                                            </button>
+                                                            <input type="hidden" name="submitted_sup" value="1"/>
+                                                            <input type="hidden" name="parter_supri"
+                                                                   t-att-value="ship.id"/>
+                                                        </form>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </t>
+
+
+                                </div>
+
+                                <form action="/my/add_adress" method="POST">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <input type="hidden" name="mode" value="new"/>
+
+                                    <button type="submit" href="" class="btn btn-secondary mb32 mb-5 d-xl-inline-block"
+                                            style="border: 2px solid #000000 !important;background: #FFFFFF 0% 0% no-repeat padding-box;letter-spacing: 0px;color: #000000 !important;font: normal normal bold 16px/19px Roboto;height: 52px;">
+                                        <span class="fa fa-plus mr-2 ml-2"/>
+                                        <span class="">Ajouter une nouvelle adresse</span>
+                                    </button>
+
+
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template t-name="add_adress">
+        <t t-call="website.layout">
+            <style>
+                label{
+                font: normal normal bold 14px/26px Roboto;
+                color: #000000;
+                }
+                .btnsec:hover{
+                color: #FFFFFF !important;
+                background-color: #63809c !important;
+                border-color: #5e7a94 !important;
+                }
+                .btnn{
+                background: #91B508 0% 0% no-repeat padding-box !important;
+                font: normal normal bold 16px/19px Roboto !important;
+                color: #FFFFFF !important;
+                }
+                .btnsec{
+                background: #F4F4F5 0% 0% no-repeat padding-box !important;
+                border:none !important;
+                font: normal normal normal 16px/19px Roboto !important;
+                color: #6C757D !important;
+                }
+            </style>
+            <div id="wrap" class="oe_structure oe_empty">
+                <div class="col-12 col-xl-6 order-xl-1 oe_cart  ml-lg-auto mr-lg-auto">
+
+
+                    <div class="col-12 text-center">
+
+                        <h2 class="mt64" style="font: normal normal bold 30px/29px Roboto;color: #000000;">
+                            Adresse de livraison
+                        </h2>
+
+                    </div>
+                    <section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block"
+                             data-name="Text">
+                        <form action="/my/add_adress" method="post" enctype="multipart/form-data"
+                              class="o_mark_required" data-mark="*" data-success-mode="redirect"
+                              data-success-page="/contactus-thank-you" data-model_name="mail.mail">
+                            <div class="">
+
+
+                                <div class="alert alert-success" role="alert" t-if="success">
+                                    <h4 class="alert-heading m-0" t-esc="success"/>
+
+                                </div>
+                                <div class="alert alert-danger" role="alert" t-if="error">
+                                    <h4 class="alert-heading" t-esc="error"/>
+
+                                </div>
+
+
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <label for="exampleInputEmail1">Nom*</label>
+                                    <br/>
+                                    <input t-value="checkout['name']" name="name"
+                                           t-att-value="'name' in checkout and checkout['name']" class="form-control" style="height: 36px;"
+                                           aria-describedby="emailHelp" required="true"/>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <label for="exampleInputEmail1">Téléphone*</label>
+                                    <br/>
+                                    <input name="tele" t-value="checkout['tele']" required="true" type="text" style="height: 36px;"
+                                           t-att-value="'tele' in checkout and checkout['tele']" class="form-control"
+                                           aria-describedby="emailHelp"/>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <label for="exampleInputEmail1">Email*</label>
+                                    <br/>
+                                    <input name="email" t-value="checkout['email']" required="true" type="text" style="height: 36px;"
+                                           t-att-value="'email' in checkout and checkout['email']" class="form-control"
+                                           aria-describedby="emailHelp"/>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <label for="exampleInputEmail1">Adresse*</label>
+                                    <br/>
+                                    <input name="adresse" t-value="checkout['adresse']" type="text" style="height: 36px;"
+                                           t-att-value="'adresse' in checkout and checkout['adresse']"
+                                           class="form-control" aria-describedby="emailHelp" required="true"/>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <label for="exampleInputEmail1">Complément d'adresse</label>
+                                    <br/>
+                                    <input t-value="checkout['complement_adress']" name="complement_adress" style="height: 36px;"
+                                           t-att-value="'complement_adress' in checkout and checkout['complement_adress']"
+                                           class="form-control" aria-describedby="emailHelp"/>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <div class="row">
+                                        <div class="o_colored_level col-lg-6">
+                                            <label for="exampleInputEmail1">Code postal*</label>
+                                            <br/>
+                                            <input name="code_post" t-value="checkout['code_post']" style="height: 36px;"
+                                                   t-att-value="'code_post' in checkout and checkout['code_post']"
+                                                   class="form-control" id="exampleInputEmail1"
+                                                   aria-describedby="emailHelp"/>
+
+
+                                        </div>
+                                        <div class="o_colored_level col-lg-6">
+                                            <label for="exampleInputEmail1">ville*</label>
+                                            <br/>
+                                            <input name="ville" required="true" t-value="checkout['ville']" style="height: 36px;"
+                                                   t-att-value="'ville' in checkout and checkout['ville']"
+                                                   class="form-control" id="exampleInputEmail1"
+                                                   aria-describedby="emailHelp"/>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <div class="row">
+                                        <div class="o_colored_level col-lg-6">
+                                            <label for="exampleInputEmail1">Pays*</label>
+                                            <br/>
+
+
+                                            <select name="country_id" id="country_id"
+                                                    class="browser-default custom-select" required="true" style="height: 36px;">
+                                                <option value=""/>
+                                                <t t-foreach="countries" t-as="c">
+
+                                                    <option t-att-value="c.id"
+                                                            t-att-selected="c.id == ('country_id' in checkout and  checkout['country_id']  and int(checkout['country_id']))">
+                                                        <t t-esc="c.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-4" style="font: normal normal normal 14px/24px Roboto;color: #000000;">*
+                                    Champs obligatoires
+                                </p>
+
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                <input type="hidden" name="submitted" value="1"/>
+
+
+                                <div class="d-flex justify-content-between">
+
+                                    <a role="button" href="/my/adress" class="btn btn-secondary btnsec" style="padding-top: 16px; height:52px">
+                                        <i class="fa fa-chevron-left mr-1"/>
+                                        <span>Retour</span>
+                                    </a>
+                                    <button type="submit" name="submit" class="btn btn-primary btnn">Suivant
+                                    </button>
+
+
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template t-name="edit_adress">
+        <t t-call="website.layout">
+            <style>
+                label{
+                font: normal normal bold 14px/26px Roboto;
+                color: #000000;
+                }
+                .btnsec:hover{
+                color: #FFFFFF !important;
+                background-color: #63809c !important;
+                border-color: #5e7a94 !important;
+                }
+                .btnn{
+                background: #91B508 0% 0% no-repeat padding-box !important;
+                font: normal normal bold 16px/19px Roboto !important;
+                color: #FFFFFF !important;
+                }
+                .btnsec{
+                background: #F4F4F5 0% 0% no-repeat padding-box !important;
+                border:none !important;
+                font: normal normal normal 16px/19px Roboto !important;
+                color: #6C757D !important;
+                }
+            </style>
+            <div id="wrap" class="oe_structure oe_empty">
+                <div class="col-12 col-xl-6 order-xl-1 oe_cart  ml-lg-auto mr-lg-auto">
+
+
+                    <div class="col-12 text-center">
+
+                        <h2 class="mt64" style="font: normal normal bold 30px/29px Roboto;color: #000000;">
+                            Adresse de livraison
+                        </h2>
+
+                    </div>
+                    <section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block"
+                             data-name="Text">
+                        <form action="/my/edit_adress" method="post" enctype="multipart/form-data"
+                              class="o_mark_required" data-mark="*" data-success-mode="redirect"
+                              data-success-page="/contactus-thank-you" data-model_name="mail.mail">
+                            <div class="">
+
+
+                                <div class="alert alert-success" role="alert" t-if="success">
+                                    <p class="alert-heading m-0" t-esc="success"/>
+
+                                </div>
+                                <div class="alert alert-danger" role="alert" t-if="error">
+                                    <p class="alert-heading" t-esc="error"/>
+
+                                </div>
+
+
+                                <div class="form-group" data-type="char" data-name="Field" >
+                                    <label for="exampleInputEmail1">Nom*</label>
+                                    <br/>
+                                    <input t-value="checkout['name']" name="name"
+                                           t-att-value="'name' in checkout and checkout['name']" class="form-control" style="height: 36px;"
+                                           aria-describedby="emailHelp" required="true"/>
+                                </div>
+
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <label for="exampleInputEmail1">Téléphone*</label>
+                                    <br/>
+                                    <input name="tele" t-value="checkout['tele']" required="true" type="text"
+                                           t-att-value="'tele' in checkout and checkout['tele']" class="form-control" style="height: 36px;"
+                                           aria-describedby="emailHelp"/>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <label for="exampleInputEmail1">Email*</label>
+                                    <br/>
+                                    <input name="email" t-value="checkout['email']" required="true" type="text"
+                                           t-att-value="'email' in checkout and checkout['email']" class="form-control" style="height: 36px;"
+                                           aria-describedby="emailHelp"/>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <label for="exampleInputEmail1">Adresse*</label>
+                                    <br/>
+                                    <input name="adresse" t-value="checkout['adresse']" type="text"
+                                           t-att-value="'adresse' in checkout and checkout['adresse']" style="height: 36px;"
+                                           class="form-control" aria-describedby="emailHelp"/>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <label for="exampleInputEmail1">Complément d'adresse</label>
+                                    <br/>
+                                    <input t-value="checkout['complement_adress']" name="complement_adress"
+                                           t-att-value="'complement_adress' in checkout and checkout['complement_adress']" style="height: 36px;"
+                                           class="form-control" aria-describedby="emailHelp"/>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <div class="row">
+                                        <div class="o_colored_level col-lg-6">
+                                            <label for="exampleInputEmail1">Code postal</label>
+                                            <br/>
+                                            <input name="code_post" t-value="checkout['code_post']" style="height: 36px;"
+                                                   t-att-value="'code_post' in checkout and checkout['code_post']"
+                                                   class="form-control" id="exampleInputEmail1"
+                                                   aria-describedby="emailHelp"/>
+
+
+                                        </div>
+                                        <div class="o_colored_level col-lg-6">
+                                            <label for="exampleInputEmail1">Ville*</label>
+                                            <br/>
+                                            <input name="ville" required="true" t-value="checkout['ville']"
+                                                   t-att-value="'ville' in checkout and checkout['ville']" style="height: 36px;"
+                                                   class="form-control" id="exampleInputEmail1"
+                                                   aria-describedby="emailHelp"/>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" data-type="char" data-name="Field">
+                                    <div class="row">
+                                        <div class="o_colored_level col-lg-6">
+                                            <label for="exampleInputEmail1">Pays*</label>
+                                            <br/>
+
+
+                                            <select name="country_id" id="country_id" style="height: 36px;"
+                                                    class="browser-default custom-select" required="true">
+                                                <option value=""/>
+                                                <t t-foreach="countries" t-as="c">
+
+                                                    <option t-att-value="c.id" style="height: 36px;"
+                                                            t-att-selected="c.id == ('country_id' in checkout and  checkout['country_id']  and int(checkout['country_id']))">
+                                                        <t t-esc="c.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <p class="mb-4" style="font: normal normal normal 14px/24px Roboto;color: #000000;">*
+                                    Champs obligatoires
+                                </p>
+
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                <input type="hidden" name="submitted" value="1"/>
+                                <input type="hidden" name="ship" t-att-value="ship"/>
+                                <input type="hidden" name="mode" t-att-value="mode or ''"/>
+
+
+                                <div class="d-flex justify-content-between">
+
+                                    <a role="button" href="/my/adress" class="btn btn-secondary btnsec" style="height: 52px;padding-top: 16px;">
+                                        <i class="fa fa-chevron-left"/>
+                                        <span>Retour</span>
+                                    </a>
+                                    <button type="submit" name="submit" class="btn btn-primary btnn">
+                                        Suivant
+                                    </button>
+
+
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

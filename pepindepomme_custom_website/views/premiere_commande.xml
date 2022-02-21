@@ -1,0 +1,206 @@
+<odoo>
+    <template id="premiere_commande" name="premiere commande">
+        <t t-call="website.layout">
+            <style>
+                .title{
+                text-align: left;
+                font: normal normal bold 24px/29px Roboto;
+                color: #000000;
+                }
+                .paragraph{
+                font: normal normal normal 14px/24px Roboto;
+                color: #000000;
+                text-align: left;
+                }
+                .underline{
+                text-decoration: underline;
+                font-weight:normal;
+                }
+                span{
+                font-weight: bold;
+                }
+                .bigtitle{
+                font: normal normal bold 36px/29px Roboto;
+                letter-spacing: 0px;
+                color: #000000;
+                text-align: center;
+                }
+                .greentitle{
+                font: normal normal bold 14px/24px Roboto;
+                letter-spacing: 0px;
+                color: #91B508;
+                }
+                .s_faq_collapse .accordion .card .card-header.collapsed:before{
+                float:right;
+                }
+                .s_faq_collapse .accordion .card .card-header:before {
+                content: '\f107';
+                float: right;
+                }
+                .s_faq_collapse .accordion .card .card-header.collapsed:before {
+                content: '\f105';
+                }
+                }
+            </style>
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_title pt32 o_colored_level pb16 " data-vcss="001" data-snippet="s_title"
+                         data-name="Title">
+                    <div class="s_allow_columns container">
+                        <h1 class="bigtitle">Premiere commande</h1>
+                    </div>
+                </section>
+                <section class="s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <h2 class="paragraph greentitle">PREMIÈRE COMMANDE MODE D'EMPLOI</h2>
+                    </div>
+                </section>
+                <section class=" s_faq_collapse o_colored_level pt0 pb0" data-name="Accordion">
+                    <div class="container">
+                        <p class="paragraph font-weight-bold mb-0">Quelles sont les étapes à suivre lors de votre
+                            première commande chez Pépin de pomme ?
+                        </p>
+                        <p class="paragraph">Les articles et les services proposés par Pépin de pomme, vous a conquis ?
+                            Vous souhaitez faire des achats sans plus attendre mais vous vous ne savez pas par où
+                            commencer ? Voici un guide qui vous montrera en 4 étapes la manière la plus efficace et
+                            facile pour passer vos commandes dans ce magasin en ligne dédié aux bébés et aux jeunes
+                            enfants. Suivez ces quelques consignes et le tour est joué !
+                        </p>
+                        <ol class="cat-list-number">
+                            <li class="text-black mb-2">
+                                <em>
+                                    <span>
+                                        <b>
+                                            <span>Mettez dans le panier les articles qui vous intéressent</span>
+                                        </b>
+                                    </span>
+                                </em>
+                                <br/>En parcourant le site et en entrant dans les différentes pages, vous trouverez
+                                surement les articles dont vous avez besoin. Lorsque vous sélectionnez le produit de
+                                votre choix, vous entrerez pour voir plus de détail. Cliquez juste sur « ajouter à ma
+                                liste » et il figurera dans votre panier. Le panier du site de Pépin de pomme se trouve
+                                en haut à droite, et il se remplira au fur et à mesure que vous ajoutez d’autres
+                                produits. Vous pouvez avoir le montant total de vos achats. Si vous êtes satisfaits,
+                                validez le panier. Autrement, il vous est permis de retirer ou d’ajouter d’autres
+                                articles avant de valider. Cliquez ensuite sur « continuer mes achats » et « étape
+                                suivante ».
+                            </li>
+                            <li class="text-black mb-2">
+                                <em>
+                                    <span>
+                                        <b>
+                                            <span>Identifiez-vous</span>
+                                        </b>
+                                    </span>
+                                </em>
+                                <br/>Lors de votre premier achat chez Pépin de pomme, vous devez passer par la case
+                                identification. Entrez dans le lien « inscription » et remplissez le formulaire qui
+                                demandera aussi vos coordonnées personnelles. Sachez que votre fidélité est récompensée
+                                avec Pépin de pomme, c’est pourquoi il est important de s’inscrire.
+                            </li>
+                            <li class="text-black mb-2">
+                                <em>
+                                    <span>
+                                        <span>La livraison</span>
+                                    </span>
+                                </em>
+                                <br/>La livraison est la finalisation de votre commande. Avec Pépin de pomme, choisissez
+                                entre la livraison via le transporteur Geodis Calberson, la livraison en point relais
+                                avec Ici relais, ou la livraison avec Exapaq. Cette étape est bien sécurisée et surtout
+                                rapide. Vous découvrirez les options de livraison et les paramètres qui s’y rattachent
+                                après avoir validé votre commande et effectué le paiement.
+                            </li>
+                            <li class="text-black mb-2">
+                                <em>
+                                    <span>
+                                        <b>
+                                            <span>La validation</span>
+                                        </b>
+                                    </span>
+                                </em>
+                                <br/>Cette étape est cruciale car une fois franchie, vous ne pourrez plus modifier votre
+                                commande. Mais avant cela, vous devez impérativement vérifier votre commande et lire
+                                attentivement les conditions de vente. Après cela, cliquez sur « valider la commande »
+                                et vous serez très vite contacté. Si vous choisissez le paiement bancaire, un autre
+                                formulaire à remplir vous sera fourni. Pour vos prochains achats, les démarches à suivre
+                                seront plus simples car vous avez déjà votre compte chez Pépin de pomme.Au cas où vous
+                                avez besoin de changer votre adresse de livraison, il vous suffit d’entrer dans la
+                                catégorie « changer d’adresse » avant de passer à la validation.
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="s_icon_block_2 pb32 o_colored_level pt0" style="border-top: solid 1px #CFCFD1"
+                         data-snippet="s_icon_block_2" data-name="Icon Block - 2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-4">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/delivery.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAAAXNSR0IArs4c6QAAAfhJREFUSEulloFRwzAMRdsNYIMwATABYQJgAsoEwASECSgTUCagTECYAJiAMgGMwH85K5cKx3GI7nRNLVl+kmUn81laTmW+HPBJme9lXKcc5gPBP2UvJgDUmnv8XwAWBgBZSb9GgBzJt5ROAqD8T2HRoUp5tkoDN1MB7hTgSvouPRyRPa4GwNzrztyfEK8dSmX2Jq8D6dIFyWExgJgv23lhBg9A2VkUoYQIXfwRQMggR1IAzG8hPMCLjGXPCmcBZgxALWc7BTt6Jr4l2EB4gEXIvHCrUAXKNrYCXQBCeohlrAe+g2OXgUaiF3LFtsAD2PwHPZDsLAYQ24Yx5SfuEEAZtqMBsG7vy27KMeyrwBZArORdGPZ9NwywhzTRn/Ps6H0FCtnRTdAtADNaDI4fDnaJMIkFGediMiE7egM/LwaAjbnEM6GhH6XNLRvrAXsBsTCKFEH9Qn2V6PO3+cyjmlGA1JasNIesubDo5FyxU0QFueJbkFgFSllRk/2wYLcXsNlR2uiZknrpeyNa09ckk/OWI1t7K9KMdhnZcWVPOaZeKg3QNwDuBSNlZ4v5vZVWOQDdSTTVs9SqQlxuyFUEoNQYkEgtfZWeSO0qBmqTA0CAhTS25wROffG0N54D5FZtXtO5APiSEd+HTfeGjCoXOPYX+POOYes78RdWz3e+V7JuFgAAAABJRU5ErkJggg=="
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Livraison
+                                        gratuite à partir de 89€
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png" alt=""
+                                     loading="lazy" data-original-title="" title="" aria-describedby="tooltip802397"
+                                     data-original-id="617"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png"
+                                     data-mimetype="image/png" data-resize-width="94"/>
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     alt="" loading="lazy" data-original-title="" title=""
+                                     aria-describedby="tooltip709349" data-original-id="618"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     data-mimetype="image/png" data-resize-width="54"/>
+                            </div>
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-8">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/secure.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/home/secure.png"
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Paiement
+                                        100% sécurisé
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Logo-CB.png" alt=""
+                                     loading="lazy"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png" alt=""
+                                     loading="lazy" data-original-id="598"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png"
+                                     data-mimetype="image/png" data-resize-width="44"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Paypal.png" alt=""
+                                     loading="lazy" data-original-id="599"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Paypal.png"
+                                     data-mimetype="image/png" data-resize-width="113"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/visa.png" alt=""
+                                     loading="lazy" data-original-id="600"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/visa.png"
+                                     data-mimetype="image/png" data-resize-width="65"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png" alt=""
+                                     loading="lazy" data-original-id="601"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png"
+                                     data-mimetype="image/png" data-resize-width="96"/>
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Image 102.png" alt=""
+                                     loading="lazy" data-original-id="620"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Image 102.png"
+                                     data-mimetype="image/png" data-resize-width="117"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

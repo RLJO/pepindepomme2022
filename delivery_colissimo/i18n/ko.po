@@ -1,0 +1,123 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* delivery_colissimo
+# 
+# Translators:
+# Martin Trigaux, 2021
+# JH CHOI <hwangtog@gmail.com>, 2021
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~14.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-14 10:28+0000\n"
+"PO-Revision-Date: 2021-09-14 12:21+0000\n"
+"Last-Translator: JH CHOI <hwangtog@gmail.com>, 2021\n"
+"Language-Team: Korean (https://www.transifex.com/odoo/teams/41243/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: delivery_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_choose_delivery_carrier__colissimo_brand
+#: model:ir.model.fields,field_description:delivery_colissimo.field_delivery_carrier__colissimo_brand
+msgid "Brand Code"
+msgstr ""
+
+#. module: delivery_colissimo
+#: model:ir.model,name:delivery_colissimo.model_res_partner
+msgid "Contact"
+msgstr "연락처"
+
+#. module: delivery_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_choose_delivery_carrier__shipping_country_code
+msgid "Country Code"
+msgstr "국가 코드"
+
+#. module: delivery_colissimo
+#: model:ir.model,name:delivery_colissimo.model_choose_delivery_carrier
+msgid "Delivery Carrier Selection Wizard"
+msgstr "배송업체 선택 마법사"
+
+#. module: delivery_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_choose_delivery_carrier__is_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_delivery_carrier__is_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_res_partner__is_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_res_users__is_colissimo
+msgid "Is colissimo"
+msgstr ""
+
+#. module: delivery_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_choose_delivery_carrier__colissimo_last_selected
+msgid "Last Relay Selected"
+msgstr ""
+
+#. module: delivery_colissimo
+#: model:delivery.carrier,name:delivery_colissimo.delivery_carrier_colissimo_be_lu
+#: model:delivery.carrier,name:delivery_colissimo.delivery_carrier_colissimo_es
+#: model:delivery.carrier,name:delivery_colissimo.delivery_carrier_colissimo_fr_nl
+#: model:product.product,name:delivery_colissimo.product_product_delivery_colissimo
+#: model:product.template,name:delivery_colissimo.product_product_delivery_colissimo_product_template
+msgid "Colissimo"
+msgstr ""
+
+#. module: delivery_colissimo
+#: code:addons/delivery_colissimo/models/sale_order.py:0
+#, python-format
+msgid ""
+"Colissimo mismatching between delivery method and shipping address."
+msgstr ""
+
+#. module: delivery_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_choose_delivery_carrier__colissimo_allowed_countries
+msgid "colissimo Allowed Countries"
+msgstr ""
+
+#. module: delivery_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_choose_delivery_carrier__colissimo_last_selected_id
+msgid "colissimo Last Selected"
+msgstr ""
+
+#. module: delivery_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_choose_delivery_carrier__colissimo_colLivMod
+#: model:ir.model.fields,field_description:delivery_colissimo.field_delivery_carrier__colissimo_packagetype
+msgid "colissimo Packagetype"
+msgstr ""
+
+#. module: delivery_colissimo
+#: code:addons/delivery_colissimo/wizard/choose_delivery_carrier.py:0
+#, python-format
+msgid "Please, choose a Parcel Point"
+msgstr ""
+
+#. module: delivery_colissimo
+#: model:ir.model,name:delivery_colissimo.model_sale_order
+msgid "Sales Order"
+msgstr "판매 주문"
+
+#. module: delivery_colissimo
+#: model:ir.model,name:delivery_colissimo.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "선적 방법"
+
+#. module: delivery_colissimo
+#: model:ir.model.fields,help:delivery_colissimo.field_choose_delivery_carrier__shipping_country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"두 개의 문자로 된 ISO 국가 코드.\n"
+"이 필드는 빠른 검색을 위해 사용할 수 있습니다."
+
+#. module: delivery_colissimo
+#: model:product.product,uom_name:delivery_colissimo.product_product_delivery_colissimo
+#: model:product.template,uom_name:delivery_colissimo.product_product_delivery_colissimo_product_template
+msgid "Units"
+msgstr "단위"
+
+#. module: delivery_colissimo
+#: model:ir.model.fields,field_description:delivery_colissimo.field_choose_delivery_carrier__shipping_zip
+msgid "Zip"
+msgstr "우편번호"

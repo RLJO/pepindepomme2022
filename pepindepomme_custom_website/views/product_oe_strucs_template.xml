@@ -1,0 +1,26 @@
+<odoo>
+    <template id="products_oe_structure_website_sale_products_1" name="Products (oe_structure_website_sale_products_1)"  inherit_id="website_sale.products" priority="16">
+<xpath expr="//*[hasclass('oe_structure')][@id='oe_structure_website_sale_products_1']" position="replace">
+    <div class="oe_structure oe_empty" id="oe_structure_website_sale_products_1" data-editor-message="DRAG BUILDING BLOCKS HERE">
+      <section class="s_banner_10 pt16 pb16 o_colored_level d-none d-lg-block" data-snippet="s_banner_10" data-name="Banner - 10">
+        <div class="container">
+          <div class="row s_nb_column_fixed">
+            <div class="col-12 o_colored_level">
+              <img src="/pepindepomme_custom_website/static/src/img/products/poussette.svg" class="img img-fluid w-100" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip914509" style="&#10;" data-original-id="9136" data-original-src="/web/image/9136-1167cde2/poussette.svg" data-mimetype="image/svg+xml" data-resize-width="1262"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_banner_10 o_colored_level d-md-block d-lg-none" data-snippet="s_banner_10" data-name="Banner - 10">
+        <div class="container">
+          <div class="row s_nb_column_fixed">
+            <div class="col-12 o_colored_level" style="padding:0">
+              <img src="/pepindepomme_custom_website/static/src/img/products/poussete-mobile.svg" class="img img-fluid w-100" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip914509" style="&#10;" data-original-id="9137" data-original-src="/web/image/9137-16479f51/poussete-mobile.svg" data-mimetype="image/svg+xml" data-resize-width="1292"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </xpath>
+    </template>
+</odoo>

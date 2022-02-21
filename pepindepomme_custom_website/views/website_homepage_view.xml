@@ -1,0 +1,821 @@
+<odoo>
+    <template id="website.homepage" name="Page d'acceuil">
+        <t t-call="website.layout">
+            <t t-set="pageName" t-value="'homepage'"/>
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_icon_block_13 pb-2 pt-2 o_colored_level undefined" data-snippet="s_icon_block_13"
+                         data-name="Icon Block - 13" style="background-color: #6D53AC">
+                    <link rel="stylesheet" href="https://use.typekit.net/vly4nzk.css"/>
+                    <div class="container">
+                        <div class="row s_nb_column_fixed text-lg-center">
+                            <div class="col-12 o_colored_level col-lg-12 pt0 d-none d-lg-block">
+                                <h6 class="h-bandeau-1">&amp;nbsp;Cumulez des points grâce à vos achats :
+                                    <span class="span-bandeau-1">100 points
+                                        fidélité = 5€ en bons d’achats
+                                    </span>
+                                </h6>
+                            </div>
+
+                            <div class="col-12 o_colored_level col-lg-12 pt0 text-center d-md-block d-lg-none ">
+                                <h6 class="h-bandeau-1">
+                                    &amp;nbsp;Cumulez des points grâce à vos achats :
+                                    <br/>
+                                    <span class="span-bandeau-1">100 points
+                                        fidélité = 5€ en bons d’achats
+                                    </span>
+                                    <br/>
+                                    <!--<a class="btn btn-lg ml-2 bandeau-plus-slide mb-2" href="/shop">EN SAVOIR PLUS
+                                    </a>-->
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- desktop view slide -->
+                <section class="s_banner_10 o_colored_level pt0 pb0 d-none d-lg-block" data-snippet="s_banner_10"
+                         data-name="Banner - 10">
+                    <div class="container-fluid">
+                        <div class="row s_nb_column_fixed">
+                            <div class="o_colored_level w-100" style="background:#000000">
+                                <a href="/shop/babyzen-yoyo2-cadre-chassis-932?search=yoyo#attr=4176">
+                                    <img src="/pepindepomme_custom_website/static/src/img/home/header_desktop.png"
+                                         class="img img-fluid shadow-sm w-100 " alt="" loading="lazy"
+                                         data-original-title="" title="" aria-describedby="tooltip627631"
+                                         data-original-id="884"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/home/Group 5209 (1).png"
+                                         data-mimetype="image/png" data-resize-width="1920"/>
+                                </a>
+                                <!--<div class="tp-banner-content banner-slide">
+                                    <a class="btn btn-lg btn-block pl-4 pr-4 btn-profite-slide" href="/shop">J’en profite !
+                                    </a>
+                                </div>-->
+                                <div class="tp-banner-content banner-ensavoirplus">
+                                    <a class="btn btn-ensavoirplus" href="/shop">En savoir plus
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end desktop view slide -->
+                <!-- medium view slide -->
+                <section class="s_banner_10 o_colored_level pt0 pb0 d-none d-md-block d-lg-none"
+                         data-snippet="s_banner_10" data-name="Banner - 10">
+                    <div class="container-fluid">
+                        <div class="row s_nb_column_fixed">
+                            <div class="o_colored_level w-100" style="background:#000000">
+                                <a href="/shop/babyzen-yoyo2-cadre-chassis-932?search=yoyo#attr=4176">
+                                    <img src="/pepindepomme_custom_website/static/src/img/home/header_tablet.png"
+                                         class="img img-fluid shadow-sm w-100 " alt="" loading="lazy"
+                                         data-original-title="" title="" aria-describedby="tooltip627631"
+                                         data-original-id="884"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/home/Group 5209 (1).png"
+                                         data-mimetype="image/png" data-resize-width="1920"/>
+                                </a>
+                                <!--<div class="tp-banner-content banner-slide">
+                                    <a class="btn btn-lg btn-block pl-4 pr-4 btn-profite-slide" href="/shop">J’en profite !
+                                    </a>
+                                </div>-->
+                                <div class="tp-banner-content banner-ensavoirplus">
+                                    <a class="btn btn-ensavoirplus" href="/shop">En savoir plus
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end medium view slide -->
+                <!-- mobile view slide -->
+                <section class="s_banner_10 o_colored_level pt0 pb0 d-sm-block d-md-none" data-snippet="s_banner_10"
+                         data-name="Banner - 10" style="">
+                    <div class="container-fluid">
+
+                        <div class="row s_nb_column_fixed">
+                            <div class="o_colored_level w-100 bg-cstm">
+                                <a href="/shop/babyzen-yoyo2-cadre-chassis-932?search=yoyo#attr=4176">
+                                    <img src="/pepindepomme_custom_website/static/src/img/home/header_mobile_f.png"
+                                         class="img img-fluid shadow-sm w-100" alt="" loading="lazy"
+                                         data-original-title="" title="" aria-describedby="tooltip627631"
+                                         style="height: 480px;" data-original-id="884"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/home/Slide_mobile_Partie1@2x.png"
+                                         data-mimetype="image/png" data-resize-width="1920"/>
+                                </a>
+                                <div class="tp-banner-content banner-ensavoirplus">
+                                    <a class="btn btn-ensavoirplus" href="/shop">En savoir plus
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="row s_nb_column_fixed">
+
+                            <div class="o_colored_level w-100">
+                                <img src="pepindepomme_custom_website/static/src/img/home/Slide_mobile_Partie2@2x.png" class="img img-fluid shadow-sm w-100" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip627631" style="height: 480px;" data-original-id="884" data-original-src="pepindepomme_custom_website/static/src/img/home/Slide_mobile_Partie2@2x.png" data-mimetype="image/png" data-resize-width="1920"/>
+                                <div class="tp-banner-content banner-slide-m">
+                                    <div class="p-2 mb-3 px-3 bg-white">
+                                        <p class="p-slide-1-m">
+                                            <var>429
+                                                <sup>€</sup>
+                                            </var>
+                                        </p>
+                                        <p class="p-slide-2-m" style="">
+                                            <var>21
+                                                <sup>€45</sup>
+                                            </var>
+                                        </p>
+                                        <p class="h-slide-1-m">
+                                            de remise
+                                            <br/>
+                                            en points fidélité
+                                        </p>
+                                        <p class="h-slide-2-m">
+                                            Sur le pack YOYO 6+
+                                            <br/>
+                                            de Babyzen
+                                        </p>
+                                    </div>
+                                    <a class="btn btn-lg btn-block pl-4 pr-4 btn-profite-slide-m" href="/shop">J’en profite !
+                                    </a>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </section>
+                <!-- end mobile view slide -->
+                <section class="s_heading_1 pt32 o_colored_level pb0" data-snippet="s_heading_1"
+                         data-name="Heading - 1">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-12 tp-heading-container text-center tp-line-thickness-normal tp-line-width-normal tp-line-bottom o_colored_level"
+                                 style="">
+                                <h2>
+                                    <font style="font: normal normal bold 30px/29px Roboto;" class="text-o-color-1">
+                                        Découvrez les univers Pépin De Pomme
+                                    </font>
+                                </h2>
+                                <p class="lead mb-0">
+                                    <font style="" class="text-black">Une large gamme de produits spécialement
+                                        sélectionnés.
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                        class="droggol_product_snippet s_category_snippet_wrapper bg-100 o_colored_level bg-white pt0 pb24"
+                        data-ds-id="s_category_snippet" data-snippet="s_category_snippet" data-name="Categories"
+                        data-hierarchical-category-params="{&quot;categories&quot;:[{&quot;id&quot;:3923,&quot;child&quot;:[]},{&quot;id&quot;:3935,&quot;child&quot;:[]},{&quot;id&quot;:3775,&quot;child&quot;:[]}]}"
+                        data-category-style="{&quot;categoryStyle&quot;:&quot;s_tp_category_style_4&quot;}" style="">
+                    <div class="container s_category_snippet dr_not_editable"/>
+                </section>
+                <section class="s_d_brand_snippet_wrapper pt32 o_colored_level pad-0" data-mode="grid"
+                         data-brand-count="8" data-snippet="s_d_brand_snippet" data-name="Brands">
+                    <div class="position-relative container">
+                        <h3 class="tp-underline-title pb-3"
+                            style="font: normal normal bold 30px/37px Roboto;letter-spacing: 0px;color: #000000;">
+
+                            Nos marques
+                        </h3>
+                        <div class="s_d_brand_snippet mt-4"/>
+                        <a class="btn btn-outline-secondary d_all_brands_btn d-none d-lg-block" href="/shop/all_brands"
+                           data-original-title="" title="" aria-describedby="tooltip264436">Voir toutes nos marques
+                        </a>
+                    </div>
+                    <div class=" w-100 text-center mt-4 d-md-block d-lg-none">
+                        <a class="btn btn-lg btn-outline-secondary brands_btn " href="/shop/all_brands"
+                           data-original-title="" title="" aria-describedby="tooltip264436">
+                            Voir toutes nos marques
+                        </a>
+                    </div>
+                </section>
+                <section class="s_heading_1 pt32 pb32 o_colored_level" data-snippet="s_heading_1"
+                         data-name="Heading - 1">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-12 tp-heading-container text-center tp-line-thickness-normal tp-line-width-normal tp-line-bottom o_colored_level">
+                                <h2>
+                                    <font style="font: normal normal bold 30px/29px Roboto;" class="text-o-color-1">Nos
+                                        coups de coeur
+                                    </font>
+                                </h2>
+                                <p class="lead mb-0">
+                                    <font style="color: rgb(33, 41, 45);">Nous ajoutons de nouveaux produits chaque
+                                        jour.
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--
+                <section
+                        data-user-params="{&quot;category_info&quot;:true,&quot;quick_view&quot;:true,&quot;add_to_cart&quot;:true,&quot;wishlist&quot;:true,&quot;comparison&quot;:true,&quot;description_sale&quot;:false,&quot;rating&quot;:true,&quot;label&quot;:false,&quot;ppr&quot;:4,&quot;col_size&quot;:3,&quot;images&quot;:false,&quot;layoutType&quot;:&quot;slider&quot;,&quot;snippetStyle&quot;:&quot;s_card_style_3&quot;,&quot;anyActionEnabled&quot;:true}"
+                        class="s_d_products_grid_wrapper droggol_product_snippet pb32 o_colored_level pt0"
+                        data-ds-id="s_d_products_grid" data-snippet="s_d_products_grid" data-name="Product hero Grid"
+                        data-products-params="{&quot;selectionType&quot;:&quot;manual&quot;,&quot;productIDs&quot;:[3,4,5,6,7,8,9,10,11]}"
+                        style="">
+                    <div class="s_d_products_grids dr_not_editable container"/>
+                </section>
+                -->
+                <!-- test widget -->
+
+                <section
+                        data-user-params="{&quot;category_info&quot;:true,&quot;quick_view&quot;:true,&quot;add_to_cart&quot;:true,&quot;wishlist&quot;:true,&quot;comparison&quot;:true,&quot;description_sale&quot;:false,&quot;rating&quot;:true,&quot;label&quot;:false,&quot;ppr&quot;:4,&quot;col_size&quot;:3,&quot;images&quot;:false,&quot;layoutType&quot;:&quot;slider&quot;,&quot;snippetStyle&quot;:&quot;s_card_style_3&quot;,&quot;anyActionEnabled&quot;:true}"
+                        class="s_d_products_grid_wrapper droggol_product_snippet pb32 o_colored_level pt0"
+                        data-ds-id="s_d_products_grid" data-snippet="s_d_products_grid" data-name="Product hero Grid"
+                        data-products-params="{&quot;selectionType&quot;:&quot;manual&quot;,&quot;productIDs&quot;:[883,884,893,943,890,920,893,881,893]}"
+                        style="">
+                    <div class="s_d_products_grids dr_not_editable container"/>
+
+                </section>
+
+                <!-- end test widget-->
+                <section class="s_banner_1 pt16 pb16 o_colored_level" data-snippet="s_banner_1" data-name="Banner - 1">
+                    <div class="container-fluid">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-12 col-lg-6 py-3 o_colored_level nopadding">
+                                <div class="position-relative tp-animation-scale">
+                                    <img class="img img-fluid w-100 c-banner"
+                                         src="/pepindepomme_custom_website/static/src/img/home/banner_2_bg.jpg" alt=""
+                                         loading="lazy" data-original-title="" title="" aria-describedby="tooltip521476"
+                                         data-original-id="450"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/home/banner_2_bg.jpg"
+                                         data-mimetype="image/jpeg" data-resize-width="690"/>
+                                    <div class="tp-banner-content tp-banner-custom">
+                                        <img src="pepindepomme_custom_website/static/src/img/home/babyzen white.png"
+                                             width="197px" height="60px" loading="lazy" data-original-title="" title=""
+                                             aria-describedby="tooltip510197" alt="" data-original-id="571"
+                                             data-original-src="/pepindepomme_custom_website/static/src/img/home/babyzen white.png"
+                                             data-mimetype="image/png" data-resize-width="302"/>
+                                        <h5 class="mt-2 bnr-h5 century-regular">
+                                            Légère et tellement confortable,
+                                        </h5>
+                                        <h3 class="o_default_snippet_text bnr-h3 century-bold">
+                                            YOYO² avec sa nacelle YOYO
+                                        </h3>
+                                        <div class="pt16">
+                                            <a href="/shop"
+                                               class="btn btn-primary btn-lg o_default_snippet_text bnr-btn">
+                                                En savoir plus
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 py-3 o_colored_level nopadding">
+                                <div class="position-relative tp-animation-scale">
+                                    <img class="img img-fluid w-100 c-banner"
+                                         src="/pepindepomme_custom_website/static/src/img/home/homepage_right_img@2x.png"
+                                         alt="" loading="lazy" data-original-title="" title=""
+                                         aria-describedby="tooltip969318" data-original-id="438"
+                                         data-original-src="pepindepomme_custom_website/static/src/img/home/homepage_right_img@2x.png"
+                                         data-mimetype="image/jpeg" data-resize-width="690"/>
+                                    <div class="tp-banner-content tp-banner-custom">
+                                        <img class="w-fl"
+                                             src="/pepindepomme_custom_website/static/src/img/home/cybex%20%281%29.svg"
+                                             loading="lazy" data-original-title="" title=""
+                                             aria-describedby="tooltip970300" alt="" data-original-id="441"
+                                             data-original-src="/pepindepomme_custom_website/static/src/img/home/cybex.png"
+                                             data-mimetype="image/png" data-resize-width="119"/>
+                                        <h5 class="mt-2 bnr-h5-1 century-bold">
+                                            Cloud Z i-Size
+                                        </h5>
+                                        <h3 class="bnr-h3-1 century-regular">
+                                            Voyage confortable
+                                        </h3>
+                                        <h3 class="bnr-h3-1 century-regular">
+                                            et ergonomique
+                                        </h3>
+                                        <div class="pt16">
+                                            <a href="/shop"
+                                               class="btn btn-primary btn-lg o_default_snippet_text bnr-btn">
+                                                Découvrir
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_heading_1 pt32 o_colored_level" data-snippet="s_heading_1"
+                         data-name="Custom Heading - 1">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-12 tp-heading-container text-center tp-line-thickness-normal tp-line-width-normal tp-line-bottom o_colored_level pt0">
+                                <h2>
+                                    <font color="#91b508" style="font: normal normal bold 30px/29px Roboto;">Les
+                                        meilleures ventes
+                                    </font>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                        class="droggol_product_snippet s_d_category_snippet_wrapper text-center o_colored_level pt0 pb0"
+                        data-ds-id="d_category_snippet" data-snippet="s_d_category_snippet"
+                        data-name="Product Category Tabs"
+                        data-category-params="{&quot;categoryIDs&quot;:[3924,4153,4173,3938,3926],&quot;sortBy&quot;:&quot;price_desc&quot;,&quot;limit&quot;:5,&quot;includesChild&quot;:true}"
+                        data-user-params="{&quot;show_similar&quot;:false,&quot;quick_view&quot;:false,&quot;add_to_cart&quot;:true,&quot;wishlist&quot;:false,&quot;comparison&quot;:false,&quot;description_sale&quot;:false,&quot;rating&quot;:true,&quot;label&quot;:true,&quot;ppr&quot;:4,&quot;col_size&quot;:3,&quot;images&quot;:false,&quot;layoutType&quot;:&quot;slider&quot;,&quot;category_info&quot;:false,&quot;snippetStyle&quot;:&quot;s_card_style_6&quot;,&quot;anyActionEnabled&quot;:true}"
+                        data-category-filter-style="{&quot;categoryFilterStyle&quot;:&quot;d_category_filter_style_2&quot;}">
+                    <div class="s_d_category_snippet container o_not_editable"/>
+
+                </section>
+                <section class="s_heading_1 pt32 o_colored_level" data-snippet="s_heading_1"
+                         data-name="Custom Heading - 1">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-12 tp-heading-container text-center tp-line-thickness-normal tp-line-width-normal tp-line-bottom o_colored_level">
+                                <h2>
+                                    <font style="font: normal normal bold 30px/29px Roboto;" class="text-o-color-1">Les
+                                        bons plans
+                                    </font>
+                                </h2>
+                                <p class="lead mb-0">
+                                    <font style="color: rgb(33, 41, 45);">Bons plans, promotions et déstockages.</font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_banner_1 pt16 pb16 o_colored_level d-none d-lg-block" data-snippet="s_banner_1"
+                         data-name="Banner - 1">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-12 col-lg-6 py-3 o_colored_level">
+                                <div class="position-relative tp-animation-scale">
+                                    <img class="img img-fluid h-240"
+                                         src="/pepindepomme_custom_website/static/src/img/banner-001.png" alt=""
+                                         loading="lazy" data-original-id="576"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/banner-001.png"
+                                         data-mimetype="image/png" data-resize-width="690"/>
+                                    <div class="tp-banner-content banner-2"
+                                         style="top:40% !important; left:43% !important;">
+                                        <h5 style="font: normal normal bold 14px/25px Roboto; color: #FFFFFF;">Sur le
+                                            poussette canne
+                                        </h5>
+                                        <h3 style="font: normal normal 900 27px/25px Roboto; color: #FFFFFF;">BABYZEN
+                                            YOYO2
+                                            <br/>
+                                        </h3>
+                                        <div class="pt16">
+                                            <a href="/shop" class="btn btn-primary btn-lg"
+                                               style="background:#fff; color:#000000; border:none; font: normal normal bold 16px/19px Roboto;"
+                                               data-original-title="" title="" aria-describedby="tooltip730027">J’en
+                                                profite !
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 py-3 o_colored_level" style="">
+                                <div class="position-relative tp-animation-scale">
+                                    <img class="img img-fluid h-240"
+                                         src="/pepindepomme_custom_website/static/src/img/banner-002.png" alt=""
+                                         loading="lazy" data-original-id="575"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/banner-002.png"
+                                         data-mimetype="image/png" data-resize-width="690" data-original-title=""
+                                         title="" aria-describedby="tooltip182739"/>
+                                    <div class="tp-banner-content banner-2">
+                                        <h5 style="font: normal normal bold 14px/25px Roboto; color: #FFFFFF;">
+                                            <font>Sur le siège auto</font>
+                                        </h5>
+                                        <h3 style="font: normal normal 900 27px/25px Roboto; color: #FFFFFF;">Cybex
+                                            Cloud Z i-Size
+                                            <br/>
+                                        </h3>
+                                        <div class="pt16">
+                                            <a href="/shop" class="btn btn-primary btn-lg"
+                                               style="background:#fff; color:#000000; border:none; font: normal normal bold 16px/19px Roboto;"
+                                               data-original-title="" title="" aria-describedby="tooltip730027">J’en
+                                                profite !
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--mobile-->
+                <section class="s_banner_1 pt16 pb16 o_colored_level d-md-block d-lg-none" data-snippet="s_banner_1"
+                         data-name="Banner - 1">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-12 col-lg-6 py-3 o_colored_level">
+                                <div class="position-relative tp-animation-scale">
+                                    <img class="img img-fluid"
+                                         src="/pepindepomme_custom_website/static/src/img/home/Group%205265.png" alt=""
+                                         loading="lazy" data-original-id="576"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/banner-001.png"
+                                         data-mimetype="image/png" data-resize-width="690"/>
+                                    <div class="tp-banner-content banner-2"
+                                         style="top:85% !important; left:14% !important;">
+                                        <div class="pt16">
+                                            <a href="/shop" class="btn btn-primary btn-lg"
+                                               style="background:#fff; color:#000000; border:none; font: normal normal bold 16px/19px Roboto;"
+                                               data-original-title="" title="" aria-describedby="tooltip730027">J’en
+                                                profite !
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 py-3 o_colored_level" style="">
+                                <div class="position-relative tp-animation-scale">
+                                    <img class="img img-fluid"
+                                         src="/pepindepomme_custom_website/static/src/img/home/Group%205269.png" alt=""
+                                         loading="lazy" data-original-id="575"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/banner-002.png"
+                                         data-mimetype="image/png" data-resize-width="690" data-original-title=""
+                                         title="" aria-describedby="tooltip182739"/>
+                                    <div class="tp-banner-content banner-2">
+                                        <div class="pt16">
+                                            <a href="/shop" class="btn btn-primary btn-lg"
+                                               style="background:#fff; color:#000000; border:none; font: normal normal bold 16px/19px Roboto;"
+                                               data-original-title="" title="" aria-describedby="tooltip730027">J’en
+                                                profite !
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--end mobile-->
+                <section class="s_icon_block_2 pb32 o_colored_level pt0" style="border-top: solid 1px #cfcfd1"
+                         data-snippet="s_icon_block_2" data-name="Icon Block - 2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-4">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/delivery.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAAAXNSR0IArs4c6QAAAfhJREFUSEulloFRwzAMRdsNYIMwATABYQJgAsoEwASECSgTUCagTECYAJiAMgGMwH85K5cKx3GI7nRNLVl+kmUn81laTmW+HPBJme9lXKcc5gPBP2UvJgDUmnv8XwAWBgBZSb9GgBzJt5ROAqD8T2HRoUp5tkoDN1MB7hTgSvouPRyRPa4GwNzrztyfEK8dSmX2Jq8D6dIFyWExgJgv23lhBg9A2VkUoYQIXfwRQMggR1IAzG8hPMCLjGXPCmcBZgxALWc7BTt6Jr4l2EB4gEXIvHCrUAXKNrYCXQBCeohlrAe+g2OXgUaiF3LFtsAD2PwHPZDsLAYQ24Yx5SfuEEAZtqMBsG7vy27KMeyrwBZArORdGPZ9NwywhzTRn/Ps6H0FCtnRTdAtADNaDI4fDnaJMIkFGediMiE7egM/LwaAjbnEM6GhH6XNLRvrAXsBsTCKFEH9Qn2V6PO3+cyjmlGA1JasNIesubDo5FyxU0QFueJbkFgFSllRk/2wYLcXsNlR2uiZknrpeyNa09ckk/OWI1t7K9KMdhnZcWVPOaZeKg3QNwDuBSNlZ4v5vZVWOQDdSTTVs9SqQlxuyFUEoNQYkEgtfZWeSO0qBmqTA0CAhTS25wROffG0N54D5FZtXtO5APiSEd+HTfeGjCoXOPYX+POOYes78RdWz3e+V7JuFgAAAABJRU5ErkJggg=="
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Livraison
+                                        gratuite à partir de 89€
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png" alt=""
+                                     loading="lazy" data-original-title="" title="" aria-describedby="tooltip802397"
+                                     data-original-id="617"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png"
+                                     data-mimetype="image/png" data-resize-width="94"/>
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     alt="" loading="lazy" data-original-title="" title=""
+                                     aria-describedby="tooltip709349" data-original-id="618"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     data-mimetype="image/png" data-resize-width="54"/>
+                            </div>
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-8">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/secure.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/home/secure.png"
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Paiement
+                                        100% sécurisé
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Logo-CB.png" alt=""
+                                     loading="lazy"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png" alt=""
+                                     loading="lazy" data-original-id="598"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png"
+                                     data-mimetype="image/png" data-resize-width="44"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Paypal.png" alt=""
+                                     loading="lazy" data-original-id="599"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Paypal.png"
+                                     data-mimetype="image/png" data-resize-width="113"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/visa.png" alt=""
+                                     loading="lazy" data-original-id="600"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/visa.png"
+                                     data-mimetype="image/png" data-resize-width="65"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png" alt=""
+                                     loading="lazy" data-original-id="601"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png"
+                                     data-mimetype="image/png" data-resize-width="96"/>
+                                <!--
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="pepindepomme_custom_website/static/src/img/home/Image 101.png" alt="" loading="lazy"
+                                     data-original-id="619" data-original-src="pepindepomme_custom_website/static/src/img/home/Image 101.png"
+                                     data-mimetype="image/png" data-resize-width="39"/>
+                                     -->
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Image 102.png" alt=""
+                                     loading="lazy" data-original-id="620"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Image 102.png"
+                                     data-mimetype="image/png" data-resize-width="117"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <style>
+                .century-bold{
+                font-family: century-gothic, sans-serif !important;
+                font-weight: 700 !important;;
+                font-style: normal !important;;
+                }
+                .century-regular{
+                font-family: century-gothic, sans-serif !important;;
+                font-weight: 400 !important;;
+                font-style: normal !important;;
+                }
+                .tp-line-bottom:after {
+                margin:auto !important;
+                }
+                .bnr-btn{
+                background:#fff;
+                color:#6C757D !important;
+                border:none;
+                font: normal normal bold 16px/19px Roboto;
+                }
+                .bnr-h5{
+                color:#fff;
+                font: normal normal normal 26px/30px Century Gothic Pro;
+                }
+                .bnr-h3{
+                color:#fff;
+                font: normal normal bold 26px/32px Century Gothic Pro;
+                }
+                .bnr-h5-1{
+                font: normal normal bold 26px/41px Century Gothic Pro;
+                color: #000000 !important;
+                }
+                .bnr-h3-1{
+                color: #BF0009 !important;
+                font: normal normal normal 21px/28px Century Gothic Pro;
+                }
+                .pos-btn{
+                position: absolute;
+                top: 87%;
+                }
+                .bg-cstm{
+                background: #000000;
+                }
+                .banner-slide{
+                position: absolute;
+                top: 90%;
+                left: 51.4%;
+                bottom: auto;
+                right: auto;
+                -webkit-transform: translate(-15%, -50%);
+                z-index: 2;
+                }
+                .banner-ensavoirplus{
+                position: absolute;
+                top: 3%;
+                left: 49%;
+                bottom: auto;
+                right: auto;
+                -webkit-transform: translate(-15%, -50%);
+                z-index: 2;
+                }
+                .banner-slide-m{
+                position: absolute;
+                top: 67%;
+                left: 60%;
+                bottom: auto;
+                right: auto;
+                -webkit-transform: translate(-15%, -50%);
+                z-index: 2;
+                }
+                .p-slide-1 {
+                font: normal normal 800 2.4rem/2rem roboto;
+                color: #000000;
+                margin: auto;
+                }
+                .p-slide-2 {
+                font: normal normal 800 2.8rem/4rem roboto;
+                color: #DB0062;
+                margin: auto;
+                }
+                .h-slide-1 {
+                font: normal normal bold 18px/23px roboto;
+                color: #DB0062;
+                margin: auto;}
+                .h-slide-2 {
+                font: normal normal bold 15px/20px roboto;
+                color: #000000;
+                margin: auto;}
+
+                .p-slide-1-m {
+                font: normal normal 800 20px/20px roboto;
+                letter-spacing: -0.82px;
+                color: #000000;
+                margin: auto;
+                }
+                .p-slide-2-m {
+                font: normal normal 800 26px/24px roboto;
+                letter-spacing: -1.56px;
+                color: #DB0062;
+                margin: auto;
+                }
+                .h-slide-1-m {
+                font: normal normal bold 13px/14px roboto;
+                letter-spacing: -0.25px;
+                color: #DB0062;
+                margin: auto;}
+                .h-slide-2-m {
+                font: normal normal bold 12px/15px roboto;
+                letter-spacing: -0.4px;
+                color: #000000;
+                margin: auto;}
+
+                .btn-profite-slide{
+                background-color: black !important;
+                color: white !important;
+                font: normal normal 16px/19px Roboto;
+                }
+                .btn-ensavoirplus{
+                font: normal normal normal 12px/17px Roboto;
+                color: #FFFFFF;
+                }
+                .btn-profite-slide-m{
+                background-color: black !important;
+                color: white !important;
+                font: normal normal 12px/14px Roboto !important;
+                }
+                .bandeau-plus-slide{
+                background: #FFC303 !important;
+                color: #000000 !important;
+                font: normal normal bold 10px/13px Roboto !important;
+                }
+                .span-slide-1{
+                color: #FFCE06;
+                font: normal normal bold 21px/31px Roboto;
+                }
+                .h-bandeau-1{
+                font: normal normal bold 24px/31px Roboto;
+                color: #FFFFFF;
+                margin:auto;
+                }
+                .span-bandeau-1 {
+                color: #FFCE06;
+                font: normal normal bold 21px/31px Roboto;
+
+                }
+                .nopadding {
+                padding-left : 0 !important;
+                padding-right : 0 !important;
+                padding : 0 ! important;
+                }
+
+                @media (min-width: 992px) {
+                .tp-banner-custom{
+                left:60% !important;
+                }
+                .banner-2{
+                top:30% !important;
+                left:47% !important;
+                }
+                }
+                @media (max-width: 767px) {
+                .banner-ensavoirplus {
+                top: 1.7% !important;
+                left: 42% !important;
+                }
+                }
+                @media (min-width: 993px) and (max-width: 1250px) {
+                a.btn.btn-light.w-100.d_action_btn{
+                font-size:13px;
+                }
+                .banner-2 {
+                top: 40% !important;
+                left: 47% !important;
+                }
+                .bnr-h3-1 {
+                color: #BF0009 !important;
+                font: normal normal normal 16px/24px Century Gothic Pro;
+                }
+                .bnr-h5-1 {
+                font: normal normal bold 20px/36px Century Gothic Pro;
+                color: #000000 !important;
+                }
+                .bnr-h5 {
+                color: #fff;
+                font: normal normal normal 20px/30px Century Gothic Pro;
+                margin: auto !important;
+                }
+                .bnr-h3 {
+                color: #fff;
+                font: normal normal bold 18px/24px Century Gothic Pro;
+                margin: auto;
+                }
+                }
+                @media (max-width: 991px) {
+                .banner-ensavoirplus {
+                position: absolute;
+                top: 3%;
+                left: 48%;
+                bottom: auto;
+                right: auto;
+                -webkit-transform: translate(-15%, -50%);
+                z-index: 2;
+                }
+                .tp-underline-title:after {
+                background-color: transparent;
+                }
+                .pad-0{
+                padding-bottom: 0 !important;
+                }
+                .tp-banner-custom{
+                left:52% !important;
+                }
+                .c-banner{
+                height:267px ;
+                }
+                .h-240{
+                height:240px;
+                }
+                .banner-2{
+                top:86% !important;
+                left:12% !important;
+                }
+                .h-bandeau-1{
+                font: normal normal 900 17px/22px Roboto;
+                color: #FFFFFF;
+                margin:auto;
+                margin-top:10px;
+                }
+                .span-bandeau-1 {
+                color: #FFCE06;
+                font: normal normal bold 15px/22px Roboto;
+
+                }
+                .bandeau-plus-slide {
+                background: none !important;
+                color: #ffffff !important;
+                font: normal normal normal 12px/25px Roboto;
+                padding: 0;
+                border-bottom: solid 1px #ffffff;
+                }
+                .d_all_brands_btn{
+                color: #000000 !important;
+                border: 2px solid #000000!important;
+                font: normal normal bold 16px/19px Roboto!important;
+                }
+                .brands_btn{
+                color: #000000 !important;
+                border: 2px solid #000000!important;
+                font: normal normal bold 16px/19px Roboto!important;
+                }
+                .bnr-h5{
+                font: normal normal normal 17px/19px Century Gothic Pro;
+                }
+                .bnr-h3{
+                font: normal normal bold 17px/19px Century Gothic Pro;
+                }
+                .bnr-btn{
+                display: block;
+                color:#6C757D !important;
+                }
+                .bnr-h5-1{
+                font: normal normal bold 17px/41px Century Gothic Pro;
+                color: #000000 !important;
+                }
+                .bnr-h3-1{
+                color: #BF0009 !important;
+                font: normal normal normal 17px/19px Century Gothic Pro;
+                }
+                .w-fl{
+                width:197px;
+                }
+                }
+
+                .d_all_brands_btn{
+                color: #000000 !important;
+                border: 2px solid #000000!important;
+                font: normal normal bold 16px/19px Roboto!important;
+                }
+                .dr-category-card {
+                cursor :pointer;
+                }
+                .dr-category-card:hover{
+                box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                transition: all .2s ease-in-out; }
+
+                .dr-category-card:hover .btn{
+                background-color: white !important;
+                color:black !important;
+
+                }
+
+            </style>
+        </t>
+    </template>
+</odoo>

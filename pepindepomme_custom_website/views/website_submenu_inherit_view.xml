@@ -1,0 +1,83 @@
+<odoo>
+    <template name="Submenu" id="website.submenu">
+        <style>
+            @media (min-width: 992px) {
+            .tp-special-menu{
+            background-color : #7A93AB !important;
+            color : white !important;
+            }
+            .tp-special-menu:nth-last-child(2){
+            background-color : #EC6500 !important;
+            color : white !important;
+            padding-left: 41px !important;
+            padding-right: 41px!important;
+            }
+            #wrapwrap &gt; header &gt; .navbar #top_menu &gt; .nav-item.tp-special-menu &gt; .nav-link, #wrapwrap &gt;
+            header &gt; .navbar #top_menu &gt; .nav-item.tp-special-menu &gt; .nav-link.active {
+            color : white !important;
+            }
+            a.nav-link {
+            color: unset !important;
+            }
+            #wrapwrap &gt; header &gt; .navbar #top_menu &gt; .nav-item:hover {
+            background-color: #F7F7F7;
+            }
+            #wrapwrap &gt; header &gt; .navbar #top_menu &gt; .nav-item:hover .nav-link{
+            border: none !important;
+            }
+            #wrapwrap &gt; header &gt; .navbar #top_menu &gt; .nav-item &gt; a.nav-link:before
+            {
+            background-color:transparent !important;
+            }
+            .tp-special-menu:last-child:hover{
+            background-color : #F7A492 !important; }
+            }
+            @media (max-width: 992px) {
+            .h-vh{
+            height: 100vh !important;
+            padding-top:40px !important;
+            }
+            #top_menu &gt; .nav-item{
+            font: normal normal 22px/25px Roboto !important;
+            letter-spacing: 0px !important;
+            color: #7A93AB !important;
+            }
+            #top_menu &gt; .nav-item:nth-child(2){
+            display:none !important;
+            }
+            .tp-special-menu:nth-last-child(2) > a{
+            background-color: #EC6500 !important;
+            color: #FFFFFF !important;
+            }
+            }
+        </style>
+
+        <t t-set="has_visible_submenu"
+           t-value="(submenu.is_mega_menu and submenu.is_visible) or submenu.child_id.filtered(lambda menu: menu.is_visible)"/>
+        <li t-if="submenu.is_visible and not has_visible_submenu" t-attf-class="#{item_class or ''}">
+            <a t-att-href="submenu.clean_url()"
+               t-attf-class="#{link_class or ''} #{'active' if submenu.clean_url() and unslug_url(request.httprequest.path) == unslug_url(submenu.clean_url()) else ''}"
+               role="menuitem" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
+                <span t-field="submenu.name"/>
+            </a>
+        </li>
+        <li t-if="has_visible_submenu"
+            t-attf-class="#{item_class or ''} dropdown #{         (submenu.clean_url() and submenu.clean_url() != '/' and any(request.httprequest.path == child.url for child in submenu.child_id if child.url) or          (submenu.clean_url() and request.httprequest.path == submenu.clean_url())) and 'active'         } #{submenu.is_mega_menu and 'position-static'}">
+            <a t-attf-class="#{link_class or ''} dropdown-toggle #{submenu.is_mega_menu and 'o_mega_menu_toggle'}"
+               data-toggle="dropdown" href="#">
+                <span t-field="submenu.name"/>
+            </a>
+            <div t-if="submenu.is_mega_menu" t-attf-class="dropdown-menu o_mega_menu #{submenu.mega_menu_classes}"
+                 data-name="Mega Menu" t-field="submenu.mega_menu_content"/>
+            <ul t-else="" class="dropdown-menu" role="menu">
+                <t t-foreach="submenu.child_id" t-as="submenu">
+                    <t t-call="website.submenu">
+                        <t t-set="item_class" t-value="None"/>
+                        <t t-set="link_class" t-value="'dropdown-item'"/>
+                    </t>
+                </t>
+            </ul>
+        </li>
+
+    </template>
+</odoo>

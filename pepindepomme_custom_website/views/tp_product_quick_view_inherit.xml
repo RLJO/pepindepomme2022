@@ -1,0 +1,196 @@
+<odoo>
+    <template id="tp_quick_view_custom" inherit_id="theme_prime.tp_product_quick_view" name="Quick view">
+        <xpath expr="//div[@id='product_details']" position="replace">
+            <style>
+                .css_attribute_color {
+                height: 22px !important;
+                width: 22px !important;
+                }
+                .dr-variant .radio_input_value .dr-variant-item.image img,.dr-variant .radio_input_value
+                .dr-variant-item.image {
+                border-radius: 50rem !important;
+                }
+                .dr-variant .radio_input_value .dr-variant-item.image img {
+                height: 30px;
+                width: 30px;
+                }
+                .text-orange-c{
+                color: #EC6500;
+
+                }
+
+                .attribute_name {
+                font: normal normal normal 16px/19px Roboto;
+                letter-spacing: 0px;
+                color: #000000 !important;
+                }
+                #add_to_cart {
+
+                }
+                .title-name{
+                font: normal normal bold 24px/29px Roboto;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;}
+
+            </style>
+            <div class="col-12 col-lg-6 col-xl-5 py-2" id="product_details">
+                <div t-if="product.dr_label_id"
+                     t-attf-class="tp-product-label tp-product-label-color-#{product.dr_label_id.color} mb-3">
+                    <span t-field="product.dr_label_id.name"/>
+                </div>
+                <!-- part brand-->
+                <div class="row align-items-center" t-if="product.dr_brand_id">
+                    <div class="col">
+                        <img t-if="product.dr_brand_id.id"
+                             t-attf-src="/web/image/dr.product.brand/#{product.dr_brand_id.id}/image"
+                             class="img sm-fluid mb-1"/>
+                    </div>
+                </div>
+                <!-- end part brand-->
+                <h3 class="text-truncate title-name" itemprop="name" t-field="product.name">Product Name</h3>
+                <div t-if="rating" t-raw="rating"/>
+                <!-- part reference -->
+
+                <!-- end part reference-->
+                <!-- <hr/>-->
+                <p t-field="product.description_sale"
+                   placeholder="A short description that will also appear on documents."/>
+                <form t-if="product._is_add_to_cart_possible()" class="d_cart_update_form" action="/shop/cart/update"
+                      method="POST">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <div class="js_product js_main_product">
+                        <t t-call="website_sale.product_price"/>
+
+                        <p style="font: normal normal normal 14px/26px Roboto;letter-spacing: 0px;">
+                            <b>
+                                <span class="text-orange-c">
+                                    Livraison GRATUITE
+                                </span>
+                            </b>
+                            <span clas="text-white">
+                                en France Métropolitaine
+                            </span>
+
+                        </p>
+                        <p style="font: normal normal bold 12px/16px Roboto; letter-spacing: 0px; color: #000000;">
+                            <i class="fa fa-circle text-primary"/>
+                            En stock - Chez vous dans 1 à 3 jours!
+                        </p>
+                        <div>
+
+                            <img src="/pepindepomme_custom_website/static/src/img/products/2020-09-oney-picto-oney (3).png"
+                                 class="img img-fluid" style="width: 250px;"/>
+
+
+                        </div>
+                        <hr/>
+                        <t t-placeholder="select">
+                            <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id"/>
+                            <input type="hidden" class="product_template_id" name="product_template_id"
+                                   t-att-value="product.id"/>
+                            <t t-if="combination" t-call="sale.variants">
+                                <t t-set="ul_class" t-value="'flex-column'"/>
+                                <t t-set="parent_combination" t-value="None"/>
+                            </t>
+                            <t t-else="">
+                                <ul class="d-none js_add_cart_variants"
+                                    t-att-data-attribute_exclusions="{'exclusions: []'}"/>
+                            </t>
+                        </t>
+                        <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not
+                            exist.
+                        </p>
+                        <div t-if="is_multiplier_active" class="css_quantity input-group" contenteditable="false">
+                            <div class="input-group-prepend">
+                                <a t-attf-href="#" class="btn btn-secondary js_add_cart_json  text-black"
+                                   aria-label="Remove one" title="Remove one">
+                                    <i class="fa fa-minus"/>
+                                </a>
+                            </div>
+                            <input type="text" class="form-control quantity" data-min="1" name="add_qty"
+                                   t-att-value="add_qty or 1"/>
+                            <div class="input-group-append">
+                                <a t-attf-href="#" class="btn btn-secondary float_left js_add_cart_json text-black"
+                                   aria-label="Add one" title="Add one">
+                                    <i class="fa fa-plus"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="availability_messages o_not_editable"/>
+                        <a role="button" id="add_to_cart"
+                           style="height: 52px;padding-top: 12px; font: normal normal bold 16px/19px Roboto;color: #FFFFFF;"
+                           class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block  w-100 w-md-50 text-white"
+                           href="#">
+                             <img src="/pepindepomme_custom_website/static/src/img/products/shopping-cart_add.svg" class="mr-2 mb-1" style="height: 21px;width: 22px;" alt=""
+                        loading="lazy"/>
+                            Ajouter au panier
+                        </a>
+                        <a t-if="is_buy_now_active" role="button" id="buy_now"
+                           class="btn btn-primary-soft ml-0 ml-sm-2 btn-lg mt16 d-block d-sm-inline-block" href="#">
+                            <i class="dri dri-bolt"/>
+                            Buy Now
+                        </a>
+                    </div>
+                </form>
+                <p t-elif="not product.active" class="alert alert-warning">This product is no longer available.</p>
+                <p t-else="" class="alert alert-warning">This product has no valid combination.</p>
+                <hr/>
+
+                <!--
+                    <t t-if="product.dr_brand_id">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-3 order-md-2" t-if="product.dr_brand_id.image" t-field="product.dr_brand_id.image" t-options="{'widget': 'image'}"/>
+                            <div class="col-12 col-md-9 mt-2 mt-md-0 order-md-1">
+                                <h6>
+                                    <a class="tp-link-dark" t-attf-href="/shop?brand=#{product.dr_brand_id.id}">
+                                        <span t-field="product.dr_brand_id.name"/>
+                                    </a>
+                                </h6>
+                                <p class="mb-0" t-field="product.dr_brand_id.description"/>
+                            </div>
+                        </div>
+                        <hr/>
+                    </t>
+                    -->
+                <div t-if="product.dr_tag_ids" class="row">
+                    <div class="col-12">
+                        <ul class="list-inline">
+                            <li t-foreach="product.dr_tag_ids" t-as="tag" class="list-inline-item mb-1 mr-1">
+                                <a t-attf-href="/shop?tag=#{tag.id}" class="badge badge-pill badge-light text-body">
+                                <span t-field="tag.name"
+                                      style="font: normal normal normal 12px/16px Roboto;letter-spacing: 0px;color: #939393;"/>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Part share
+                    <h6 class="d-inline-block mr-2">Share:</h6>
+                    <ul class="d_share_on list-inline d-inline-block mb-0">
+                        <li class="list-inline-item mr-0">
+                            <a t-attf-href="https://www.facebook.com/sharer/sharer.php?u=#{d_url_root}#{product.website_url}" t-attf-class="s_share_facebook" target="_blank">
+                                <i t-attf-class="fa fa-facebook rounded-circle m-1 d_social_icon"/>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-0">
+                            <a t-attf-href="https://twitter.com/intent/tweet?text=#{product.name}&amp;url=#{d_url_root}#{product.website_url}" t-attf-class="s_share_twitter" target="_blank">
+                                <i t-attf-class="fa fa-twitter rounded-circle m-1 d_social_icon"/>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-0">
+                            <a t-attf-href="mailto:?body=#{d_url_root}#{product.website_url}&amp;subject=#{product.name}" t-attf-class="s_share_email">
+                                <i t-attf-class="fa fa-envelope rounded-circle m-1 d_social_icon"/>
+                            </a>
+                        </li>
+                    </ul>
+                    End part Share -->
+            </div>
+        </xpath>
+
+    </template>
+</odoo>
+
+
+

@@ -1,0 +1,144 @@
+<odoo>
+    <template id="website_sale.checkout" priority="16">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Shop - Checkout</t>
+            <t t-set="no_footer" t-value="0"/>
+            <div id="wrap">
+                <div class="container oe_website_sale py-2">
+                    <t t-set="same_shipping"
+                       t-value="bool(order.partner_shipping_id==order.partner_id or only_services)"/>
+                    <div class="row">
+                        <div class="col-12">
+                            <t t-call="website_sale.wizard_checkout">
+                                <t t-set="step" t-value="20"/>
+                            </t>
+                        </div>
+                        <div class="col-12 col-xl-auto order-xl-2 d-none d-xl-block">
+                            <t t-call="website_sale.cart_summary">
+                                <t t-set="redirect" t-valuef="/shop/checkout"/>
+                            </t>
+                        </div>
+                        <div class="col-12 col-xl order-xl-1 oe_cart">
+                            <div class="row">
+                                    <div class="col-lg-12 mb-4">
+                                        <h3 class="mt16 mb4" style="font: normal normal bold 30px/29px Roboto;color: #000000;">Mes adresses</h3>
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3 class="o_page_header mb-0 mt8" style="font: normal normal bold 17px/20px Roboto;">Billing Address</h3>
+                                    <hr class="mt-0"></hr>
+                                </div>
+                                <div class="col-lg-6 one_kanban">
+                                    <t t-call="website_sale.address_kanban">
+                                        <t t-set="contact" t-value="order.partner_id"/>
+                                        <t t-set="selected" t-value="1"/>
+                                        <t t-set="readonly" t-value="1"/>
+                                    </t>
+                                </div>
+                            </div>
+                            <t t-if="not only_services" groups="sale.group_delivery_invoice_address">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h3 class="o_page_header mt16 mb-0" style="font: normal normal bold 17px/20px Roboto;">Shipping Address</h3>
+                                        <hr class="mt-0"></hr>
+                                    </div>
+                                </div>
+                                <div class="row all_shipping">
+                                    <div class="col-lg-12">
+                                        <div class="row mt8">
+
+                                            <t t-foreach="shippings.filtered(lambda r : not r.is_colissimo)" t-as="ship" >
+                                                <div class="col-md-12 col-lg-6 one_kanban">
+                                                    <t t-call="website_sale.address_kanban">
+                                                        <t t-set="actual_partner" t-value="order.partner_id"/>
+                                                        <t t-set="contact" t-value="ship"/>
+                                                        <t t-set="selected" t-value="order.partner_shipping_id==ship"/>
+                                                        <t t-set="readonly" t-value="bool(len(shippings)==1)"/>
+                                                        <t t-set="edit_billing" t-value="bool(ship==order.partner_id)"/>
+                                                    </t>
+                                                </div>
+                                            </t>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 one_kanban">
+                                                <form action="/shop/address" method="post" class="">
+                                                    <input type="hidden" name="csrf_token"
+                                                           t-att-value="request.csrf_token()"/>
+                                                    <a role="button" href="#"
+                                                       class="a-submit btn btn-primary mb16 text-white float-left mt16"
+                                                       style="border: 2px solid #000000 !important;background: #FFFFFF 0% 0% no-repeat padding-box;letter-spacing: 0px;color: #000000 !important;font: normal normal bold 16px/19px Roboto;height: 52px;padding-top: 14px">
+                                                        <i class="fa fa-plus"/>
+                                                        <span class="d-none d-lg-inline">Add an address</span>
+                                                    </a>
+                                                </form>
+                                            </div>
+                                </div>
+
+                            </t>
+                            <div class="d-flex justify-content-between mt-3" style="">
+                                <a role="button" href="/shop/cart" class="btn btn-secondary mb32" style="padding: 1rem 1rem;height: 52px;">
+                                    <i class="fa fa-chevron-left"/>
+                                    <span class="s-back">Return to Cart</span>
+                                </a>
+                                <a role="button" href="/shop/confirm_order" class="btn btn-primary mb32" style="padding: 1rem 1rem;height: 52px;">
+                                    <span class="s-next">Confirm</span>
+                                    <!--<i class="fa fa-chevron-right"/>-->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+        <style>
+            .o_page_header {
+            font: normal normal bold 30px/29px Roboto;
+            letter-spacing: 0px;
+            color: #000000;
+            border: none;
+            }
+            .s-back {
+            font: normal normal normal 16px/19px Roboto;
+            letter-spacing: 0px;
+            color: #6C757D;
+            }
+            .s-next {
+            font: normal normal bold 16px/19px Roboto;
+            color: #FFFFFF;
+            background: #91B508 !important;
+            }
+
+            .btn-ship > .btn-primary {
+            color : white !important;
+            }
+            .btn-ship > .btn-secondary {
+
+            color: #212529 !important;
+            background-color: #e0e2da !important;
+            border-color: #dadcd3 !important;
+            }
+            .card-footer {
+            background-color:white !important
+            }
+            .oe_cart .btn-secondary {
+            background: #F4F4F5 0% 0% no-repeat padding-box;
+            border: #F4F4F5;
+            color: #6C757D;
+            padding: 0.5rem 1rem;
+            }
+            .oe_cart .btn-secondary:hover {
+            color: #FFFFFF;
+            background-color: #63809c;
+            border-color: #5e7a94;
+            }
+            .btn.btn-primary {
+            font: normal normal bold 16px/19px Roboto;
+            color: #FFFFFF;
+            background: #91B508;
+            }
+        </style>
+
+    </template>
+</odoo>

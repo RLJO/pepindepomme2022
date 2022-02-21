@@ -1,0 +1,3091 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pepindepomme_custom_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-08 15:37+0000\n"
+"PO-Revision-Date: 2022-02-08 16:45+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: fr\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "\"Mes commandes\"."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cart_summary_custom
+msgid "&amp; Shipping"
+msgstr "&amp ; Livraison"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    choisir un produit en puériculture ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    créer ma propre liste de naissance ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    effectuer une commande ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    faire pour annuler ou modifier ma commande ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    faire pour se désabonner ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    parrainer mes amis ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    puis-je être informé de toutes les offres chez Pépin de pomme ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    savoir si Pépin de pomme est un site fiable ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    se déroule la livraison ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    s’inscrire à la newsletter de Pépin de pomme ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Comment\n"
+"                                    être au courant des promotions proposées par le site ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;De\n"
+"                                    quel délai je dispose pour retourner mes articles ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Devrais-je\n"
+"                                    créer un compte même si je suis abonné à la newsletter du site ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;En\n"
+"                                    cas de soucis ou de réclamation, comment y faire part ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Est-ce-que\n"
+"                                    les produits proposés par Pépin de pomme sont garantis"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Est-il\n"
+"                                    possible de payer en plusieurs tranches ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Est-il\n"
+"                                    possible que mon colis ne sera pas livré à la date convenue ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Et\n"
+"                                    si je n’arrive pas à payer au moment de la date convenue ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Je\n"
+"                                    souhaite partager des photos et des conseils sur le site. Est-ce possible ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Je\n"
+"                                    souhaite suivre ma commande, comment y procéder ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;J’ai\n"
+"                                    oublié mon mot de passe, que puis-je faire ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;La\n"
+"                                    réduction concernant le parrainage est-elle valable dans tous mes achats ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Le\n"
+"                                    produit comporte des défauts, est-il possible de l’échanger ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Liens\n"
+"                                    vers d'autres sites web"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Pourrait-on\n"
+"                                    voir les avis des clients concernat les produits vendus chez Pépin de pomme?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Puis\n"
+"                                    je payer mes achats avec ma carte cadeaux ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Puis-je\n"
+"                                    bénéficier d'un guide pour mes achats ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Puis-je\n"
+"                                    suivre les contributions effectuées sur ma liste ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quand\n"
+"                                    est-ce que les produits de ma liste de naissance me seront-envoyés ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que\n"
+"                                    faire en cas de perte de colis ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que\n"
+"                                    faire si des pièces manquent au produit?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que\n"
+"                                    faire si je ne peux pas récupérer mon colis ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que\n"
+"                                    faire si le produit choisi est plus cher qu'ailleurs ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Que\n"
+"                                    puis-je faire si mon colis n’est pas livré?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quelles\n"
+"                                    peuvent être les modalités de livraison ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quels\n"
+"                                    peuvent être les avantages du parrainage ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quels\n"
+"                                    peuvent être les avantages d’une liste de naissance sur Pépin de Pomme ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quels\n"
+"                                    peuvent être les documents utiles pour effectuer le paiement ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Quels\n"
+"                                    sont les modes de paiement acceptés chez Pépin de pomme ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Qu’en\n"
+"                                    est-il de ma sécurité ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Qu’en est-il\n"
+"                                    des points de fidélité ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Si\n"
+"                                    je souhaite récupérer mon colis après la date prévue, comment faire ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Un\n"
+"                                    remboursement est il possible en cas d’insatisfaction ou d’annulation de commande ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid ""
+"&amp;nbsp;09 72\n"
+"                                            44 96 58"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ". Updating this tab will update tab all product with"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "1 brumisateur"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "1 doudou et 1 sucette"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "1 gilet surtout si c’est en hiver"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "1 grand T-shirt et une paire de chaussette (pensez à attacher vos cheveux)"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "1 nid d’ange"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "1 ou 2 tenues pour les visites et la sortie de la maternité"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "1 robe de chambre et un peignoir"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"1 trousse de toilette comprenant 1 sortie de bain, 5 serviettes pour bébé, des\n"
+"                                    langes, du savon ou lait de toilette pour bébé, du sérum physiologique, du coton,\n"
+"                                    des lingettes, de l’éosine"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid "100 Points = 1 bon d'achat d'une valeur de 5€"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "10h-12h et 13h-17h"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "2 filets ombilicaux"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "2 gigoteuses"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "2 ou 3 bonnets et 2 moufles pour ses petites mains"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid "200 Points = 1 bon d'achat d'une valeur de 10€"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "3 brassière ou gilet en laine (et plus si c’est en hiver)"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "3 soutiens gorge d’allaitement"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid "300 Points = 1 bon d'achat d'une valeur de 15€"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "4 chemises de nuit boutonnées sur le devant pour l’allaitement"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "4 paires de chaussettes et une paire de chaussons"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid "400 Points = 1 bon d'achat d'une valeur de 20€"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "5 paires de chaussettes et 1 paire de chausson"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid "500 Points = 1 bon d'achat d'une valeur de 25€"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "6 bavoirs"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "6 pyjamas"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "6 serviettes de toilette"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid ""
+"7.1 Lieu de livraison La zone de livraison de Pepin &amp; Pepine SAS couvre la France (dont Monaco, la Corse et les DOM/"
+"TOM), la Belgique et le Luxembourg. Les produits ou services commandés sont livrés à l’adresse indiquée par le Client "
+"lors de la passation de la commande, et figurant dans l’email récapitulatif qui lui est adressé par Pepin &amp; Pepine "
+"SAS. 7.2 Modalités et délais de livraison Le délai maximal de livraison des produits commandés sur le site internet de "
+"Pepin &amp; Pepine SAS est de 10 jours ouvrés ( Hors mobilier qui pourra aller jusqu’à 12 semaines maximum ). Il "
+"comprend le délai de préparation de la commande ainsi que le délai d’expédition et de livraison par le transporteur. "
+"Les livraisons sont réalisées au domicile du Client ou à l’adresse indiquée par lui lors de la commande. Les frais de "
+"livraison sont à la charge du Client. Ils sont mentionnés dans les présentes conditions générales de vente, lors de la "
+"validation de la commande, ainsi que dans l’email récapitulatif de la commande. Les livraisons effectuées par "
+"l’intermédiaire en Colissimo , peuvent être suivies sur le site Internet https://www.laposte.fr/produits/presentation/"
+"suivre-une-lettre-un-colissimo-un-envoi-express Les livraisons effectuées par l’intermédiaire de Calberson, peuvent "
+"être suivies sur le site Internet www.calberson.com Les livraisons effectuées par l’intermédiaire de Chronopost , "
+"peuvent être suivies sur le site Internet https://www.chronopost.fr/fr/suivi-colis A réception du retour du colis pour "
+"cause de non présentation du Client au point de livraison choisi, Pepin &amp; Pepine SAS effectuera l’annulation et le "
+"remboursement de la commande. Pour les livraisons en France : La société Pepin &amp; Pepine SAS propose différents "
+"modes de livraison : Livraison par Chronopost 48 heures : la commande est livrée par Chronopost. A compter de la prise "
+"en charge par Chronopost, la livraison sera effectuée au domicile en 48 heures, jours ouvrés. En cas d’absence, le "
+"colis pourra être retiré dans un colis relais sur présentation d’un justificatif d’identité. En cas de non présentation "
+"dans le point ici relais dans un délai de 7 jours ouvrés, le colis sera retourné à Pepin &amp; Pepine SAS. Livraison "
+"dans un point relais Chronpost : la commande est livrée par Ici relais, remis contre signature. La livraison sera "
+"effectuée au point Relais choisi par le Client en 24 heures, jours ouvrés. Le colis pourra être retiré dans le point "
+"Relais choisi par le Client sur présentation d’un justificatif d’identité En cas de non présentation du Client au point "
+"Relais choisi par lui dans un délai de 8 jours ouvrés, le colis sera retourné à Pepin &amp; Pepine SAS. Livraison par "
+"Geodis ou TNT sous 5 jours ouvrés : la commande est livrée par Geodis ou TNT. A compter de la prise en charge par "
+"Geodis ou TNT, la livraison sera effectuée au domicile 5 jours ouvrés. En cas d’absence le client sera alerté pour une "
+"nouvelle présentation, au dela de 7 jours la commande sera automatiquement retourné à Pepin et pepine SAS, de nouveaux "
+"frais de livraisons pourront être appliqués. Livraison par Colissimo 48 heures : la commande est livrée par la poste. A "
+"compter de la prise en charge par la poste, la livraison sera effectuée au domicile sous 48 à 72h heures, 2 à 3 jours "
+"ouvrés. En cas d’absence, le colis pourra être retiré dans un colis relais sur présentation d’un justificatif "
+"d’identité. En cas de non présentation dans le point ici relais dans un délai de 7 jours ouvrés, le colis sera retourné "
+"à Pepin &amp; Pepine SAS. Pour les livraisons en Belgique : La société Pepin &amp; Pepine SAS propose différents modes "
+"de livraison en fonction du pays destinataire : Vers la Belgique Livraison par DPD 48 heures : la commande est livrée "
+"par DPD. A compter de la prise en charge par DPD, la livraison sera effectuée au domicile en 48 heures, jours ouvrés. "
+"En cas d’absence, le transporteur se représentera une fois. 7.3 Retard de livraison / Perte de colis En cas de retard "
+"de livraison, Pepin &amp; Pepine SAS s’engage à avertir le Client dans les plus brefs délais, par tout moyen de "
+"communication, ainsi qu’à lui indiquer la durée du retard estimée. En cas de perte du colis, Pepin &amp; Pepine SAS "
+"pourra procéder à une enquête auprès de services postaux ou du transporteur afin de le retrouver. Si la commande est "
+"retrouvée et sauf avis contraire du Client, elle est immédiatement réexpédiée au Client, aux frais exclusifs de Pepin "
+"&amp; Pepine SAS. Si la commande n’est pas reçue par le Client plus de 7 ouvrables jours après la date limite de "
+"livraison, le Client peut procéder à la résolution du contrat, en adressant à Pepin &amp; Pepine SAS une lettre "
+"recommandée avec accusé de réception l’informant de sa décision. En cas de résolution de la vente par le Client, dans "
+"les conditions ci-dessus décrites, Pepin &amp; Pepine SAS procédera alors au remboursement du Client dans les 30 jours, "
+"suivant le jour d’annulation de la commande. Le Client ne peut toutefois procéder à la résolution du contrat, si le "
+"retard de livraison est dû à un cas de force majeure au sens de la jurisprudence des tribunaux français ou belge. 7.4 "
+"Absence de livraison En cas d'absence de livraison, le Client devra prendre contact par email avec les services de "
+"Pepin &amp; Pepine SAS à l'adresse suivante : serviceclient@pepindepomme.com ou par téléphone au numéro suivant. Pour "
+"la France : 09 72 44 96 58. Si la commande n'est pas reçue par le Client plus de 7 jours ouvrés après la date limite de "
+"livraison , le Client peut procéder à la résolution du contrat, en adressant à Pepin &amp; Pepine SAS une lettre "
+"recommandée avec accusé de réception l'informant de sa décision. Si le Client ne souhaite pas procéder à la résolution "
+"du contrat ou si la date limite de livraison n'est pas dépassée d'au moins 7 jours ouvrés, Pepin &amp; Pepine SAS "
+"prendra contact avec le Client pour déterminer les modalités d'une seconde livraison. Si Pepin &amp; Pepine SAS ne peut "
+"prendre contact avec le Client, ou si la commande ne peut toujours pas être livrée lors de la seconde expédition, il "
+"sera alors procédé à l'annulation de la commande et au remboursement de plein droit du Client. Pepin &amp; Pepine SAS "
+"prend à sa charge exclusive l'ensemble des frais de garde et de retour qui pourraient lui être facturés par le "
+"transporteur. 7.5 Commande non conforme / Commande endommagée / Echanges Malgré tout le soin qu'apporte Pepin &amp; "
+"Pepine SAS à la préparation et l'expédition des colis, certaines commandes peuvent contenir des produits manquants, "
+"endommagés ou non conformes. En cas de produit(s) manquant(s), Pepin &amp; Pepine SAS sera tenu d'expédier le(s) dit(s) "
+"produit(s) au plus tôt. Les frais d'envoi engendrés par cette nouvelle expédition seront à la charge de Pepin &amp; "
+"Pepine SAS. En cas de produit(s) endommagés(s), le Client pourra : Soit refuser la livraison en indiquant le(s) "
+"motif(s) de refus sur le bon de livraison, Soit conserver la livraison et adresser une protestation motivée au "
+"transporteur, par lettre recommandée, dans les 3 jours, jours fériés non compris. En cas de livraison non conforme, le "
+"Client devra retourner le(s) produit(s) à Pepin &amp; Pepine SAS à l'adresse suivante : Pepin de Pomme, Service des "
+"retours – 26 Rue du Maréchal Leclerc à Flers en escrebieux 59128 France Le produit retourné devra l'être à l'état neuf, "
+"complet, dans son emballage d'origine, accompagné de tous ses étiquetages, accessoires, documentations et notices "
+"d'utilisation, ainsi que de la facture d'achat permettant à Pepin &amp; Pepine SAS d'identifier le Client. Pepin &amp; "
+"Pepine SAS informera le Client de la réception du produit retourné. Le Client aura alors la possibilité : Soit "
+"d'obtenir la livraison d'un produit identique au produit défaillant, Soit, s'il est impossible de livrer un produit "
+"identique au produit défaillant, d'obtenir la livraison d'un produit de qualité et de prix équivalents au produit "
+"défaillant, Soit, si cela est possible, de demander la réparation du produit défaillant, Soit d'obtenir le "
+"remboursement intégral du prix du produit commandé dans un délai de 30 jours. Les frais de retour et d'échange du "
+"produit endommagé ou non-conforme seront à la charge de Pepin &amp; Pepine SAS. Aucun échange de produit ou "
+"remboursement ne sera effectué s'il est révélé que la défaillance est imputable au Client et notamment si elle résulte "
+"d'un usage non conforme à son utilisation normale, d'une modification ou d'une adaptation du produit à l'initiative du "
+"Client ou d'un usage prolongé de la part du Client."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"8 body (préférez les body croisés devant pour éviter de malmener la tête du bébé\n"
+"                                    durant ses premiers jours de vie et mixez la taille naissance avec la taille 1 mois)"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid ""
+"8.1 Produits concernés Conformément aux dispositions de l’article L121-20 du Code de la consommation, le Client "
+"bénéficie du droit de se rétracter et de renvoyer les produits commandés durant un délai de 14 jours francs à compter "
+"de la livraison de ceux-ci. Lorsque ce délai expire un samedi, un dimanche ou un jour férié ou chômé, il est prorogé "
+"jusqu’au premier jour ouvrable suivant. Pepin &amp;amp; Pepine SAS porte ce délai à 30 jours francs afin de proposer à "
+"ses clients le service « satisfait, remboursé ou échangé » pendant 30 jours. 8.2 Modalités Le retour des produits "
+"faisant l’objet du droit de rétractation s’effectuera à l’adresse suivante : Pepin de Pomme, Service des retours – 26 "
+"rue du Maréchal Leclerc à Flers en escrebieux 59128 France Le remboursement du Client sera effectué par tout moyen de "
+"paiement à disposition de Pepin &amp;amp; Pepine SAS, et interviendra dans les 30 jours suivant la demande de "
+"rétractation, sous réserve que les produits aient été retournés à Pepin &amp;amp; Pepine SAS. Pepin &amp;amp; Pepine "
+"SAS pourra proposer au Client, en lieu et place du remboursement de la commande, un échange ou un avoir. Il "
+"appartiendra au Client de choisir s’il souhaite un remboursement, un échange ou un avoir. Le remboursement du Client "
+"comprendra la totalité des sommes versées par lui pour l’achat du produit (prix d’achat TTC, frais de traitement de la "
+"commande et de livraison du produit), non compris les frais de retour du produit qui resteront à sa charge. Le produit "
+"retourné devra l’être à l’état neuf, complet, avec son emballage d’origine, accompagné de tous ses étiquetages, "
+"accessoires, documentations et notices d’utilisation, ainsi que de la facture d’achat permettant à Pepin &amp;amp; "
+"Pepine SAS d’identifier le Client. Les produits retournés incomplets, portés, lavés, abîmés, salis ou endommagés par le "
+"Client ne seront pas repris par Pepin &amp;amp; Pepine SAS. Ne seront également pas repris par Pepin &amp;amp; Pepine "
+"SAS, les produits pour lesquels aucun élément ne permet d’identifier clairement le Client."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid ""
+"<b>\n"
+"                                <span class=\"text-orange-c\">\n"
+"                                    Livraison GRATUITE\n"
+"                                </span>\n"
+"                            </b>\n"
+"                            <span clas=\"text-white\">\n"
+"                                en France Métropolitaine\n"
+"                            </span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<b>\n"
+"                    <span class=\"text-orange-c\">\n"
+"                        Livraison GRATUITE\n"
+"                    </span>\n"
+"                </b>\n"
+"                <span clas=\"text-white\">\n"
+"                    en France Métropolitaine\n"
+"                </span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid "<b>069 89 52 00</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid "<b>09 72 44 96 58</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid "<b>Contactez aussi tôt que possible le service client de Pépin de pomme.</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.support_custom
+msgid ""
+"<b>En tant que professionnel dans le domaine de la vente de plus de 10000 références d’articles pour bébé et enfants, "
+"Pépin de pomme se doit de donner le meilleur support et garantie pour satisfaire sa clientèle.</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid "<b>Informations de la boutique</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid "<b>Pour la Belgique</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid "<b>Pour la France</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid ""
+"<b>Pépin de pomme : Un magasin en ligne pour faciliter au mieux la vie des parents Afin de permettre aux parents</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cart_summary_custom
+msgid "<b>Shipping:</b>"
+msgstr "<b>Livraison :</b>"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid ""
+"<b>• Il doit également être présenté dans son carton d’expédition afin d’assurer qu’il soit\n"
+"                                retourné en bon état.\n"
+"                            </b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid "<b>• Le produit doit être en état d’être revendu.</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid ""
+"<b>• Le produit retourné doit être bien emballé dans son emballage d’origine qui ne doit pas\n"
+"                                non plus être abîmé.\n"
+"                            </b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid ""
+"<b>• Si jamais le produit est endommagé, il ne pourra pas faire l’objet d’un\n"
+"                                remboursement.\n"
+"                            </b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid ""
+"<b>• Une lettre explicative dans laquelle est mentionnée votre de demande d’échange ou de\n"
+"                                remboursement.\n"
+"                            </b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid "<b>• Une photocopie de la facture de paiement.</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+msgid ""
+"<em>\n"
+"                                    <span>\n"
+"                                        <b>\n"
+"                                            <span>Identifiez-vous</span>\n"
+"                                        </b>\n"
+"                                    </span>\n"
+"                                </em>\n"
+"                                <br/>Lors de votre premier achat chez Pépin de pomme, vous devez passer par la case\n"
+"                                identification. Entrez dans le lien « inscription » et remplissez le formulaire qui\n"
+"                                demandera aussi vos coordonnées personnelles. Sachez que votre fidélité est "
+"récompensée\n"
+"                                avec Pépin de pomme, c’est pourquoi il est important de s’inscrire."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+msgid ""
+"<em>\n"
+"                                    <span>\n"
+"                                        <b>\n"
+"                                            <span>La validation</span>\n"
+"                                        </b>\n"
+"                                    </span>\n"
+"                                </em>\n"
+"                                <br/>Cette étape est cruciale car une fois franchie, vous ne pourrez plus modifier "
+"votre\n"
+"                                commande. Mais avant cela, vous devez impérativement vérifier votre commande et lire\n"
+"                                attentivement les conditions de vente. Après cela, cliquez sur « valider la commande »\n"
+"                                et vous serez très vite contacté. Si vous choisissez le paiement bancaire, un autre\n"
+"                                formulaire à remplir vous sera fourni. Pour vos prochains achats, les démarches à "
+"suivre\n"
+"                                seront plus simples car vous avez déjà votre compte chez Pépin de pomme.Au cas où vous\n"
+"                                avez besoin de changer votre adresse de livraison, il vous suffit d’entrer dans la\n"
+"                                catégorie « changer d’adresse » avant de passer à la validation."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+msgid ""
+"<em>\n"
+"                                    <span>\n"
+"                                        <b>\n"
+"                                            <span>Mettez dans le panier les articles qui vous intéressent</span>\n"
+"                                        </b>\n"
+"                                    </span>\n"
+"                                </em>\n"
+"                                <br/>En parcourant le site et en entrant dans les différentes pages, vous trouverez\n"
+"                                surement les articles dont vous avez besoin. Lorsque vous sélectionnez le produit de\n"
+"                                votre choix, vous entrerez pour voir plus de détail. Cliquez juste sur « ajouter à ma\n"
+"                                liste » et il figurera dans votre panier. Le panier du site de Pépin de pomme se "
+"trouve\n"
+"                                en haut à droite, et il se remplira au fur et à mesure que vous ajoutez d’autres\n"
+"                                produits. Vous pouvez avoir le montant total de vos achats. Si vous êtes satisfaits,\n"
+"                                validez le panier. Autrement, il vous est permis de retirer ou d’ajouter d’autres\n"
+"                                articles avant de valider. Cliquez ensuite sur « continuer mes achats » et « étape\n"
+"                                suivante »."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+msgid ""
+"<em>\n"
+"                                    <span>\n"
+"                                        <span>La livraison</span>\n"
+"                                    </span>\n"
+"                                </em>\n"
+"                                <br/>La livraison est la finalisation de votre commande. Avec Pépin de pomme, "
+"choisissez\n"
+"                                entre la livraison via le transporteur Geodis Calberson, la livraison en point relais\n"
+"                                avec Ici relais, ou la livraison avec Exapaq. Cette étape est bien sécurisée et "
+"surtout\n"
+"                                rapide. Vous découvrirez les options de livraison et les paramètres qui s’y rattachent\n"
+"                                après avoir validé votre commande et effectué le paiement."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.affiliation_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_livraison_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_paiement_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_et_remises_jumeaux
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_speciales_et_codes_promos
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.partenaires_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.personal_shopper
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.support_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"<font style=\"font: normal normal bold 22px/27px Roboto; color: #000000;\">&amp;nbsp;Livraison\n"
+"                                        gratuite à partir de 89€\n"
+"                                    </font>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cart_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<font style=\"font: normal normal bold 22px/27px Roboto; color: #000000;\">&amp;nbsp;Livraison\n"
+"                                    gratuite à partir de 89€\n"
+"                                </font>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.affiliation_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_livraison_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_paiement_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_et_remises_jumeaux
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_speciales_et_codes_promos
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.partenaires_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.personal_shopper
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.support_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"<font style=\"font: normal normal bold 22px/27px Roboto; color: #000000;\">&amp;nbsp;Paiement\n"
+"                                        100% sécurisé\n"
+"                                    </font>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cart_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<font style=\"font: normal normal bold 22px/27px Roboto; color: #000000;\">&amp;nbsp;Paiement\n"
+"                                    100% sécurisé\n"
+"                                </font>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<font style=\"font: normal normal bold 30px/29px Roboto;\" class=\"text-o-color-1\">\n"
+"                                        Produits récemment consultés\n"
+"                                    </font>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.posts_loop_custom
+msgid ""
+"<i class=\"dri dri-arrow-right-l\"/>\n"
+"                                EN SAVOIR PLUS"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid ""
+"<i class=\"dri dri-bolt\"/>\n"
+"                            Buy Now"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.suggested_list_custom
+msgid "<i class=\"fa fa-cart-plus\"/> Add to Cart"
+msgstr "<i class=\"fa fa-cart-plus\"/> Ajouter au panier"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid ""
+"<i class=\"fa fa-circle text-primary\"/>\n"
+"                            En stock - Chez vous dans 1 à 3 jours!"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<i class=\"fa fa-circle text-primary\"/>\n"
+"                En stock - Chez vous dans 1 à 3 jours!"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<span class=\"\" style=\"font: normal normal 900 14px/14px Roboto; letter-spacing: 0px; color: #6D53AC;\">En\n"
+"                            achetant cet article,\n"
+"                            <br/>\n"
+"                            vous gagnez :\n"
+"                        </span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "<span class=\"\">Retour à la boutique</span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<span class=\"fa fa-comments-o mr-1\"/>\n"
+"                                        Avis clients"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<span class=\"fa fa-file-text-o mr-1\"/>\n"
+"                                        Présentation"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<span class=\"fa fa-sliders mr-1\"/>\n"
+"                                        Caractéristiques"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "<span class=\"fa fa-truck\"/> Livraison gratuite à partir de 89€."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.auth_signup_fields_custom
+msgid ""
+"<span class=\"ml-2 cpan\">J’ai lu les conditions générales sur la protection des données et j’y adhère sans réserve. "
+"Lire les Conditions sur la protection des données</span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "<span class=\"s_website_form_label_content\">Email To</span>"
+msgstr "<span class=\"s_website_form_label_content\">Email à</span>"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid ""
+"<span class=\"s_website_form_label_content\">Email</span>\n"
+"                            <span class=\"s_website_form_mark\">*</span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid ""
+"<span class=\"s_website_form_label_content\">Message</span>\n"
+"                            <span class=\"s_website_form_mark\">*</span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid ""
+"<span class=\"s_website_form_label_content\">Nom</span>\n"
+"                            <span class=\"s_website_form_mark\">*</span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid ""
+"<span class=\"s_website_form_label_content\">Sujet</span>\n"
+"                            <span class=\"s_website_form_mark\">*</span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "<span class=\"s_website_form_label_content\">Téléphone</span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "<span class=\"s_website_form_label_content\">Your Company</span>"
+msgstr "<span class=\"s_website_form_label_content\">Votre société</span>"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid "<span class=\"text-black ml-2\">09 72 44 96 58</span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid ""
+"<span style=\"font: normal normal 14px/18px Roboto;letter-spacing: 0px;color: #FFFFFF;\">\n"
+"                                                Recherche\n"
+"                                            </span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"<span>\n"
+"                            <font style=\"font: normal normal 900 20px/15px Roboto; letter-spacing: 0px; color: #FFCE06;"
+"\">\n"
+"                                37,40€\n"
+"                            </font>\n"
+"                            <br/>\n"
+"                            <font style=\"font: normal normal normal 12px/15px Roboto; letter-spacing: 0px; color: "
+"#FFCE06;\">\n"
+"                                en bon d’achat\n"
+"                            </font>\n"
+"                            <br/>\n"
+"                            <font style=\"font: normal normal normal 12px/17px Roboto; letter-spacing: 0px; color: "
+"#FFCE06;\">\n"
+"                                (1496 points fidélité)\n"
+"                            </font>\n"
+"                        </span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "<span>* Champs obligatoires</span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid ""
+"<span>3.1 Langues</span> <br/> La langue disponible pour la prise de commandes par le Client sur le site de Pepin &amp; "
+"Pepine SAS est le <br/> français.<br/><br/> <span>3.1 : Identification</span><br/> Le Client n’a la possibilité de "
+"passer commande sur le Site Internet de Pepin &amp; Pepine SAS, qu’à la condition qu’il se soit au préalable clairement "
+"identifié. Pour obtenir son identification, le Client doit remplir, selon les indications qui lui sont fournies en "
+"ligne sur le Site Internet de pepindepomme.com, un formulaire mis à sa disposition où il mentionne les informations "
+"nécessaires à son identification et notamment, ses nom, prénom, numéro de téléphone, adresse électronique, adresse de "
+"facturation et de livraison, et le mot de passe qu’il a choisi. Pour passer commande sur le Site Internet de "
+"pepindepomme.com, le Client doit ensuite obligatoirement s’identifier en entrant son adresse email et son mot de passe. "
+"<br/><br/><span> 3.2 : Etapes de la prise de commande </span><br/> Le Client a la possibilité de passer commande à "
+"partir des références des offres de produits disponibles sur le Site Internet de Pepin &amp; Pepine SAS. Chacun des "
+"produits disponibles sur le Site Internet de Pepin &amp; Pepine SAS fait l’objet d’une fiche « produit » accompagnée de "
+"photographies, qui indique les principales caractéristiques techniques des produits proposés, sans que Pepin &amp; "
+"Pepine SAS ne puisse s’engager à leur exhaustivité. Toute commande du Client vaut acceptation sans réserve des prix et "
+"de la description des produits disponibles à la vente. A partir, des références disponibles sur le Site Internet de "
+"Pepin &amp; Pepine SAS, le Client sélectionne les produits dont il souhaite se porter acquéreur en cliquant sur le "
+"bouton « Commander ». A toutes les étapes de la prise de commande, le Client a la possibilité de consulter et de "
+"modifier le contenu de sa commande en cliquant sur le bouton « Mon panier ». Le Client ayant choisi les produits qu’il "
+"souhaite acquérir et vérifié le contenu de sa commande, peut procéder à la finalisation de sa commande, en cliquant sur "
+"le bouton « Finaliser ma commande ». Pour terminer et valider la commande, le Client doit, après avoir vérifié le "
+"récapitulatif de sa commande, puis consulté et accepté les présentes conditions générales de vente, entrer les "
+"différentes informations nécessaires à son paiement. La validation de la commande n’est considérée comme définitive et "
+"n’engage les Parties qu’à compter du paiement du prix de la commande par le Client. Lorsque le Client a validé sa "
+"commande, celle-ci est enregistrée par Pepin &amp; Pepine SAS, qui envoie sans délai au Client un email de "
+"confirmation, à l'adresse indiquée par lui. L'email de conformation récapitule l'ensemble des informations relatives à "
+"la commande, qui constituent les éléments du contrat de vente entre les Parties. Cet email mentionne également "
+"l'adresse à laquelle seront livrés les produits commandés par le Client, ainsi que les frais de livraison à payer. Des "
+"frais variables complémentaires sur la catégorie mobilier pourrons être demandés en fonction de la localisation du "
+"client et la configuration de la commande. Sauf preuve contraire, les données enregistrées par les services de Pepin "
+"&amp; Pepine SAS constituent la preuve de l'ensemble des éléments relatifs à la commande, notamment quant à sa nature, "
+"son contenu, son prix et sa date. Afin de lutter contre la fraude, Pepin &amp; Pepine SAS se réserve le droit de "
+"demander au Client tout document nécessaire à la vérification de son identité, de l'authenticité de son moyen de "
+"paiement et/ou de son domicile. Les données seront collectées Conformément à la loi n ° 2004-801 du 6 août 2004 "
+"relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel et "
+"modifiant la loi n °78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, le Client dispose "
+"d'un droit d'accès, de modification et de suppression des informations qui le concernent, et qu'il peut exercer à tout "
+"moment auprès de Pepin &amp; Pepine SAS."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid ""
+"<span>6.1 Montant du paiement</span><br/> Le montant total (frais de traitement et de livraison compris) du paiement dû "
+"par le Client est indiqué au moment de la validation définitive de la commande, ainsi que dans l’email récapitulatif de "
+"la commande.<br/><br/>  <span>6.2 Modes de paiement</span> <br/> Le Client pourra régler ses commandes par les modes de "
+"paiement suivants :<br/> <span class=\"underline\">• Par carte bancaire :</span><br/> Pepin &amp; Pepine SAS n’accepte "
+"que les cartes bancaires françaises ou belges CB et Visa et les cartes bancaires internationales Eurocard et "
+"Mastercard. Par conséquent tout autre carte bancaire sera refusée. Le Client devra indiquer le numéro apparent de sa "
+"carte bancaire, sa date d’expiration, le nom de son titulaire, ainsi que les trois derniers chiffres du numéro inscrit "
+"au dos de la carte à coté de la signature. Le processus de paiement est protégé par le système de cryptage SSL (Secure "
+"Socket Layer). En outre, Pepin &amp; Pepine SAS a adopté d’autres systèmes de brouillage et de cryptage afin de "
+"protéger toutes les données sensibles liées au paiement, Conformément à la réglementation en vigueur, Pepin &amp; "
+"Pepine SAS ne conserve pas les détails bancaires relatifs au Client. En effet, seul le gestionnaire des terminaux de "
+"paiement de Pepin &amp; Pepine SAS, à savoir le Crédit Mutuel - CYBERMUT dispose de ces informations. Il appartient "
+"donc au Client d’enregistrer et imprimer le certificat de paiement s’il désire conserver les détails bancaires de "
+"l’opération. <br/><br/> <span class=\"underline\">• En 3X 4X avec frais : </span><br/> Paiement de votre commande en 3 "
+"ou 4 fois par CB à partir de 100€ d’achats jusqu’à 3000€ avec Oney Bank. https://www.payplug.com/hubfs/CGV%20PayPlug"
+"%20Oney%20pour%20CGV%20site%20marchand.pdf « <br/><br/><span class=\"underline\"> • Par Carte Cadeau Pepin &amp; Pepine "
+"SAS : </span><br/> Tout client étant en possession d’une carte cadeau Pepin &amp; Pepine SAS peut l’utiliser lors d’une "
+"commande sur le site https://www.pepindepomme.com ou en magasin. La carte cadeau Pepin &amp; Pepine SAS est utilisable "
+"en une ou plusieurs fois. Sa validité est de 6 mois <br/><br/> <span> 6.3 Litiges / Refus de paiement </span> <br/>En "
+"cas de refus de paiement adressé par la banque du Client, Pepin &amp; Pepine SAS se réserve le droit de suspendre à "
+"tout moment l’exécution et la livraison de ladite commande. Cette suspension se prolongera jusqu’au complet paiement du "
+"prix par le Client. En outre, Pepin &amp; Pepine SAS se réserve le droit de refuser ou d’annuler toute commande d’un "
+"Client lorsqu’il existerait tout litige relatif au paiement ou au retour de commandes antérieures. <br/><br/> <span>6.4 "
+"Réserve de propriété </span><br/> Pepin &amp; Pepine SAS se réserve la pleine et entière propriété des produits "
+"commandés jusqu’au complet paiement du prix par le Client."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"A la clôture de votre demande, vous\n"
+"                                            pouvez recevoir un bon d’achat de jusqu’à 10% de la totalité des achats\n"
+"                                            effectués à partir de votre liste de naissance."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid "A short description that will also appear on documents."
+msgstr "Une courte description qui apparaîtra également sur les documents."
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.affiliation_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.partenaires_custom
+msgid "A venir"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "AIDE"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid "AVEC PÉPIN DE POMME, VOUS ÊTES SATISFAIT OU REMBOURSÉ !"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "Abonnement"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid ""
+"Abonnez-vous à notre newsletter pour recevoir des\n"
+"                                <br/>\n"
+"                                offres de réduction anticipée et des informations sur\n"
+"                                <br/>\n"
+"                                les nouveaux produits."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Accessoires"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Account"
+msgstr "Mon compte"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Account Info"
+msgstr "Infos sur le compte"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid "Add one"
+msgstr "Ajouter un"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid "Address"
+msgstr "Adresse"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "Adresse"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.affiliation_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Affiliation"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid ""
+"Afin de maintenir la confiance de notre aimable clientèle, nous mettons en\n"
+"                            place un programme fidélité qui a pour objectif de vous récompenser. Comptez sur nous pour\n"
+"                            vous aider à choisir les meilleurs équipements dont votre enfant a besoin pour s’épanouir "
+"et\n"
+"                            effectuez vos achats en ligne."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid ""
+"Afin de permettre aux parents d’offrir le meilleur pour leur bébé, le magasin en ligne Pépin de pomme a été fondé en "
+"2010 par un groupe de parents experts en puériculture et liste de naissance. Nous vous proposons plus de 10 000 "
+"références de vêtements, de jouets, de poussettes, de sièges-auto, de sacs à langer, d’articles de mobilier et déco… "
+"Pépin de pomme vous donne également des conseils pratiques pour choisir les équipements ou accessoires qu’il vous faut "
+"pour accueillir convenablement votre enfant ou lui permettre de s’épanouir au quotidien. Le magasin est géré par une "
+"équipe professionnelle et passionnée qui est aussi composée de parents avec les mêmes soucis que vous concernant les "
+"enfants. Le magasin réunit tout ce dont vous aurez besoin pour l’éveil, le repas, le bain, les sorties de bébé dès la "
+"naissance jusqu’à environ 6 ans."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid "Ajouter au panier"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid "Article 1 : Définitions"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid "Article 2 : Objet"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid "Article 3 : Commandes"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid "Article 4 : Disponibilites des produits"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid "Article 5 : Prix"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid "Article 6 : Paiement"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid "Article 7 : Livraison"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid "Article 8 : Droit de rétractation - Retour des produits"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "Autres services"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid "Avec Pépin de Pomme, vous êtes satisfait ou remboursé !"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_paiement_custom
+msgid ""
+"Avec Pépin de pomme, la qualité et la sureté sont les maîtres-mots, tant au niveau des articles proposés et des "
+"services qu’au niveau des paiements. Afin de donner satisfaction à tous les clients qui peuvent avoir chacun le mode de "
+"paiement qui les convient, Pépin de pomme propose 4 modes de paiement pour <b>vos achats en ligne 100% sécurisé.</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid ""
+"Avec votre partenaire professionnel Pépin de Pomme, 0.5€ d’achat est\n"
+"                            équivalent à 1 point."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cart_summary_custom
+msgid "Billing"
+msgstr "Facturation"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid "Bon d'achat uniquement valable sur www.pepindepomme.com."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "CATALOGUE"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "Catalogue"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Ce cas est rare, mais s’il se\n"
+"                                            présente, Pépin de pomme vous en fera part rapidement. Il vous indiquera\n"
+"                                            également la durée du retard estimée."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+msgid ""
+"Cette dernière étape consiste à fixer votre liste de naissance. La clôture s’active automatiquement 1 mois environ "
+"après la date de votre accouchement que vous avez préalablement défini avec votre liste de naissance. Avec ce système, "
+"vous bénéficierez jusqu’à 10% du montant total en bons d’achat avec une validité de 1 an. Alors n’attendez plus et fiez-"
+"vous à Pépin de pomme."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"Cette liste convient pour un séjour de 4 jours à la maternité mais si vous\n"
+"                            accoucherez par césarienne, ce qui implique que vous y passerez plus de temps, augmentez "
+"les\n"
+"                            nombres de vêtements pour bébé."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_speciales_et_codes_promos
+msgid ""
+"Chez Pépin de Pomme, nous faisons en sorte que tout le monde soit satisfait. Notre équipe de parents experts en "
+"puériculture et en liste de naissance met tout en œuvre pour vous permettre de donner le meilleur à votre enfant sans "
+"pour autant vous ruiner."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_livraison_custom
+msgid ""
+"Chez Pépin de pomme, le magasin en ligne dédié aux besoins de la petite enfance, les mesures de sécurité au niveau du "
+"paiement et de la livraison rassurent les acheteurs. Pour vous faire parvenir les articles que vous avez achetés, le "
+"magasin vous propose trois solutions de <b>livraison pratique et sécurisées.</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Chèques cadeaux"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Close"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+msgid "Clôturez votre liste de naissance"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "Commande"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "Comment pouvons-nous vous aider ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Conditions Générales de Vente"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Conditions générales de vente"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid "Conditions pour pouvoir exercer le droit de rétraction :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "Confirmer la commande"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.auth_signup_fields_custom
+msgid "Connectez-vous"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Connexion"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Contact Us"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Content of this tab is linked with"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Continuer"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Cookies"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.web_login_custom
+msgid "Créer mon compte"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Créer un compte"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+msgid "Créez votre liste de naissance"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"Cumulez des points grâce à vos achats :\n"
+"                                <span class=\"span-bandeau-1\" style=\"font: normal normal 900 14px/17px Roboto; letter-"
+"spacing: 0px; color: #FFCE06;\">100 points\n"
+"                                    fidélité = 5€ en bons d’achats\n"
+"                                </span>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_et_remises_jumeaux
+msgid ""
+"C’est comme un rêve qui se réalise ! Vous allez avoir de magnifiques\n"
+"                            jumeaux et depuis cette merveilleuse nouvelle, vous êtes aux anges ! Effectivement, avoir\n"
+"                            des jumeaux constitue plusieurs avantages pour les parents. Seulement, il faut redoubler "
+"les\n"
+"                            préparatifs surtout en termes de fournitures. Avec Pépin de Pomme, vous n’avez aucun souci "
+"à\n"
+"                            vous faire car nous avons concocté pour vous des offres et remises pour jumeaux."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Dans ce cas, les frais de\n"
+"                                            recouvrement seront à votre charge."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Des biberons"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+msgid ""
+"Des conseillers en puériculture qui sont également des parents avec les mêmes soucis que vous se feront une joie de "
+"vous aider à établir votre liste de naissance. Vous pouvez également effectuer des recherches ou demander l’avis de vos "
+"amis qui sont déjà parents. Sur le site de Pépin de pomme, vous trouverez absolument tout le nécessaire. Ce magasin en "
+"ligne met à votre disposition une grande variété d’articles des marques les plus connues mais à mini-prix. Si vous "
+"effectuez un premier achat sur Pépin de pomme, vous devez d’abord créer votre compte et donner quelques informations "
+"sur vous (nom, adresse, contacts…). Ensuite, à partir de votre liste, sélectionnez les articles qui vous plaisent et "
+"dont vous aurez besoin parmi les différentes catégories sur le site de Pépin de pomme. Vous découvrirez également des "
+"produits que vous pourrez ajouter à votre liste de naissance. En effet, Pépin de pomme expose souvent des nouveautés "
+"qui aideront considérablement les parents dans leurs tâches quotidiennes avec bébé."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Des lingettes"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Des mouchoirs en papier"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Des serviettes hygiéniques"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Des slips jetables"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model:ir.model.fields,field_description:pepindepomme_custom_website.field_delivery_carrier__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Données Personnelles"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid ""
+"Du lundi\n"
+"                                            au vendredi"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid ""
+"Du lundi au vendredi* :<br/>\n"
+"                   10:00 - 12:00 et 13:00 - 17:00<br/>\n"
+"                   *sauf les jours fériés"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid ""
+"Du lundi au vendredi*:<br/>10:00 - 12:00 et 13:00 - 17:00<br/>*sauf\n"
+"                                    les jours fériés"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Déconnexion"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Echanges et retours"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cart_summary_custom
+msgid "Edit"
+msgstr "Modifier"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"En cas de pièces manquantes ou de\n"
+"                                            produits non-conformes, faites une réclamation chez Pépin de pomme. Nous\n"
+"                                            expédierons au plus vite les pièces qui manquent et les frais seront à "
+"notre\n"
+"                                            charge."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"En parrainant vos amis, sachez que\n"
+"                                            vous gagnerez 5% de remise sur votre prochaine commande. Vos amis peuvent\n"
+"                                            également bénéficier de cette offre puisqu’ils gagnent aussi 5% de "
+"réduction\n"
+"                                            sur leurs premières commandes. Cette offre est valable pendant un an.\n"
+"                                            Au-delà de ce délai, elle n’est plus récupérable."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "En savoir plus"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "Envoyer"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "FAQ"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "FAQ - Foire aux questions"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid ""
+"Google\n"
+"                                        Maps"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Guides d'achat"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid "Horaires magasin :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid "Horaires service client :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid "Horaires service client:"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model:ir.model.fields,field_description:pepindepomme_custom_website.field_delivery_carrier__id
+msgid "ID"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "INFORMATIONS"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model:ir.model.fields,field_description:pepindepomme_custom_website.field_delivery_carrier__icon
+msgid "Icon"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"Il est important de tout prévoir à l’avance car le jour J, vous n’aurez\n"
+"                            plus la tête à préparer quoique ce soit. Cette liste correspond à un séjour d’environ 4\n"
+"                            jours à la maternité et réunit tout ce dont vous aurez besoin dès l’entrée à la sortie de "
+"la\n"
+"                            maternité. Cette liste n’est pas exhaustive."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Il est tout à fait possible de\n"
+"                                            partager vos photos sur Pépin de pomme si vous êtes déjà membre. Rejoignez\n"
+"                                            également Pépin de pomme dans les réseaux sociaux et n’hésitez pas à faire\n"
+"                                            part de vos conseils."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "J'ai lu"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+msgid ""
+"La création de la liste de naissance constitue une étape cruciale pour les parents en attente d’un heureux évènement. "
+"Cette liste déterminera la totalité des matériels, équipements et articles nécessaires pour accueillir bébé dans les "
+"meilleures conditions et pour prendre soin de lui. Il est ainsi très important de s’assurer de la qualité de ces "
+"derniers qui doivent également respecter les normes requises pour les tout-petits. Avec Pépin de pomme, vous trouverez "
+"tout ce dont vous aurez besoin que ce soit pour habiller bébé, son bain, son éveil, ses repas, sa chambre, ses sorties, "
+"sa protection et beaucoup d’autres encore…"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "La liste de naissance"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"La réduction de 5% n’est valable\n"
+"                                            uniquement que pour votre prochain achat. Et du côté de vos amis "
+"parrainés,\n"
+"                                            l’offre est valable pour leur premier achat."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "La valise de maternité"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model:ir.model.fields,field_description:pepindepomme_custom_website.field_delivery_carrier____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid ""
+"Le bon d'achat est cumulable avec les offres en cours et utilisable sur\n"
+"                            tous les produits."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"Le dossier obstétrique et anesthésique, la carte de groupe sanguin, et le document\n"
+"                                    de reconnaissance anténatale"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"Le grand jour approche à grand pas et vous mourrez d’impatience de\n"
+"                            rencontrer enfin votre petit trésor mais en attendant, vous avez tout le temps de tout\n"
+"                            préparer. D’ailleurs, la préparation de votre valise de maternité fait surement partie de\n"
+"                            vos principales préoccupations. Dans ce sens, il vaut mieux être prévoyante pour éviter le\n"
+"                            stress du dernier moment mais surtout pour rester sereine jusqu’à l’arrivée du grand jour.\n"
+"                            Il est ainsi conseillé de commencer à préparer votre valise de maternité dès le début du\n"
+"                            troisième trimestre grossesse. Pour que tout se déroule bien pour vous, et pour vous aider\n"
+"                            un peu, voici une liste complète de tout ce que doit contenir votre fameuse valise pour "
+"vous\n"
+"                            et votre bébé."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid ""
+"Le magasin en ligne Pépin de pomme est également un grand spécialiste de textiles et met à votre disposition du prêt-à-"
+"porter pour toutes les occasions. Pour les futurs parents en attente d’un heureux évènement, des spécialistes en liste "
+"de naissance sauront vous conseiller pour accueillir bébé dans les meilleures conditions. De plus, vous pouvez "
+"consulter à tout moment tous les articles disponibles car le site https://www.pepindepomme.com et ses équipes "
+"dynamiques et sympathiques sont à votre disposition 24h/24 et 7j/7. La livraison se fera dans les meilleurs délais et "
+"les offres spéciales ainsi que les nouveautés sont nombreuses. Il est aussi à noter que le paiement est totalement "
+"sécurisé."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Le processus de paiement sur Pépin\n"
+"                                            de Pomme est protégé par le système de cryptage SSL. Nous avons également\n"
+"                                            adopté d’autres systèmes de cryptage et de brouillage dans le but de\n"
+"                                            protéger toutes les données personnelles liées au paiement."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+msgid ""
+"Les articles et les services proposés par Pépin de pomme, vous a conquis ?\n"
+"                            Vous souhaitez faire des achats sans plus attendre mais vous vous ne savez pas par où\n"
+"                            commencer ? Voici un guide qui vous montrera en 4 étapes la manière la plus efficace et\n"
+"                            facile pour passer vos commandes dans ce magasin en ligne dédié aux bébés et aux jeunes\n"
+"                            enfants. Suivez ces quelques consignes et le tour est joué !"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Les articles proposés par le site Pépin de pomme sont tous des produits de\n"
+"                                            marque authentique et originale. Ils répondent aux normes européennes, ce\n"
+"                                            qui fait qu’ils répondent tous aux besoins sanitaires des bébés. Ils sont\n"
+"                                            garantis suivant l’article L 211-1 du Code de Consommation et la garantie\n"
+"                                            des vices cachés du Code civil. Par contre, si un produit livré subit des\n"
+"                                            dommages résultant du client, comme une réparation ou une modification, le\n"
+"                                            produit ne peut en aucun cas être garanti."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Les dossiers et documents :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid ""
+"Les fiches produit disponibles sur le Site Internet de Pepin &amp; Pepine SAS indiquent la disponibilité des produits "
+"proposés à la vente. Cette mention n’a qu’un caractère purement indicatif et ne saurait engager Pepin &amp; Pepine SAS. "
+"Dans l’éventualité d’une indisponibilité totale ou partielle d’un produit, le Client en sera informé par Pepin &amp; "
+"Pepine SAS, dans les plus brefs délais, et par courrier électronique. En application de l’article L.121-20-3 du Code de "
+"la consommation, en cas d’indisponibilité d’un produit, après validation de la commande, le Client disposera alors de "
+"la faculté de : soit être livré d’un produit de substitution de qualité et prix équivalent, soit être remboursé du prix "
+"du produit commandé dans un délai maximum de 30 jours suivant sa commande, soit patienter jusqu’à la livraison du "
+"produit commandé. Pepin &amp; Pepine SAS s’engage à informer le Client des délais de livraison de ses propres "
+"fournisseurs. Les frais de livraison d’un nouveau produit seront supportés par Pepin &amp; Pepine SAS. Dans le cas où "
+"l’article de substitution ne conviendrait pas au Client, celui-ci peut exercer son droit de rétractation. Les frais de "
+"retour du produit de substitution seront à la charge de Pepin &amp; Pepine SAS."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Les livraisons sont réalisées à\n"
+"                                            l’adresse que vous avez mentionnée pendant la commande. Les frais seront\n"
+"                                            ainsi à votre charge selon les conditions de vente du site qui vous sont\n"
+"                                            envoyées par email. Pour les livraisons en France, Pépin de pomme propose\n"
+"                                            une livraison par Exapaq en 48 heures ainsi qu’une livraison dans un point\n"
+"                                            relais en 24 heures. Pour les livraisons en Belgique, la livraison se fera\n"
+"                                            par Dpd en 48 heures et se fera à votre domicile."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.support_custom
+msgid ""
+"Les parents qui font leurs achats en ligne sur Pépin de pomme bénéficient donc d’un SAV. Vous y trouverez des "
+"accessoires, des pièces détachées de qualité et des guides d’installation des articles. Ce service après-vente concerne "
+"la grande majorité des articles dont la qualité est assurée."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid ""
+"Les prix annoncés sur le Site Internet de Pepin &amp; Pepine SAS sont indiqués en euros et toutes taxes comprises. Ils "
+"tiennent compte d’éventuelles réductions accordées par Pepin &amp; Pepine SAS, ainsi que de la taxe sur la valeur "
+"ajoutée (TVA) au taux en vigueur au jour de validation de la commande par le Client. Les prix annoncés sur le site ne "
+"comprennent pas les frais liés au traitement de la commande (préparation logistique et expédition), ni les frais de "
+"livraison de la commande. Néanmoins le prix facturé et qui sera à payer par le Client sera celui en vigueur au jour de "
+"la validation définitive de la commande. Aucune modification du prix à payer ne pourra intervenir postérieurement à la "
+"validation de la commande par le Client. Toutefois, Pepin de pomme se réserve le droit de ne pas honorer la commande "
+"dans le cas où le prix indiqué serait à 0 ou largement en dessous du prix du marché du à une erreur d’encodage. Dans ce "
+"cas, le remboursement aurait lieu directement et sans délai. Aucun recours du client ne sera accepté."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_speciales_et_codes_promos
+msgid ""
+"Les promos sont publiées sur le site Pépin de Pomme, découvrez-les sans plus attendre ! Vous serez ravi de constater la "
+"baisse des prix pouvant aller jusqu’à moins -50%."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid ""
+"Les présentes conditions générales de vente définissent de manière exhaustive l’ensemble des droits et <br/> "
+"obligations entre Pepin &amp; Pepine SAS et le Client souhaitant acquérir des biens proposés à la vente sur le site <br/"
+"> Internet ou au magasin de Pepin &amp; Pepine SAS. L’ensemble des modalités de la vente, entre Pepin &amp; Pepine <br/"
+"> SAS et le Client seront régies par les présentes conditions générales. Elles régissent toutes les étapes de la <br/> "
+"vente, de la passation de commande à la garantie des produits commandés, en passant par le paiement, la <br/> livraison "
+"et la rétractation du Client. <br/> Le Client du magasin ou du site https://www.pepindepomme.com reconnaît, de manière "
+"préalable et <br/> expresse à la passation de toute commande avoir pris connaissance et accepté sans réserve les "
+"présentes <br/> conditions générales de vente."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid ""
+"Les présentes conditions générales de vente sont conclues entre : <br/> D'une part :<br/> La société Pepin &amp; Pepine "
+"SAS, SAS de droit français au capital de 10 000 €, spécialisée dans la vente d'articles de puériculture et de vêtements "
+"d'enfants - dont le siège social est situé 26 rue du Marechal Leclerc 59128 <br/>France et représentée par Monsieur "
+"Alexandre Berthe en sa qualité de Gérant. <br/>ci-après dénommée «le Vendeur» ou «Pepin &amp; Pepine SAS» <br/> Et "
+"d'autre part : <br/> La personne physique non commerçante, âgée d'au moins 18 ans, ayant la capacité juridique de "
+"contracter par elle-même ou par l'intermédiaire d'une personne dépositaire de l'autorité parentale, son tuteur, ou son "
+"curateur,<br/> et souhaitant effectuer un achat via le Site Internet «https://www.pepindepomme.com».<br/> ci après "
+"dénommée «le Client»<br/> Ensemble dénommées «les Parties»"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Liste de naissance"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Liste de souhaits ("
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "Livraison"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Livret de famille"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Login"
+msgstr "Connexion"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Logout"
+msgstr "Déconnexion"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid ""
+"Lorsque votre commande sera disponible vous recevrez un nouveau mail avec toutes les informations pratiques pour "
+"récupérer votre colis."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid ""
+"Lundi : 10:00 - 12:30 et 14:00 - 19:30<br/>\n"
+"                   Mardi : 09:30 - 12:30 et 14:00 - 19:30<br/>\n"
+"                   Mercredi : 09:30 - 12:30 et 14:00 - 19:30<br/>\n"
+"                   Jeudi : 09:30 - 12:30 et 14:00 - 19:30<br/>\n"
+"                   Vendredi : 09:30 - 12:30 et 14:00 - 19:30<br/>\n"
+"                   <b>Fermé samedi et dimanche</b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "Ma commande"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Ma liste de souhaits"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Mentions Légales"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Mentions légales"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "Merci, votre commande est validée !"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Mobilier"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Mode de livraison"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Mode de paiment"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_livraison_custom
+msgid "Modes de livraison"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_paiement_custom
+msgid "Modes de paiements"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid ""
+"Mon\n"
+"                                                        compte"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid ""
+"Mon\n"
+"                                                        panier"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Mon compte"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Mon panier"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.personal_shopper
+msgid ""
+"Même si on retrouve sur le marché différents produits spécialement dédiés\n"
+"                            aux bébés, les parents ont souvent du mal à faire leur choix surtout si l’achet se fait en\n"
+"                            ligne. Grâce au service personal shopper de Pépin de pomme, faire du shopping en ligne\n"
+"                            devient facile et agréable.\n"
+"\n"
+"                            Profitez de ce service gratuitement et obtenez des conseils ou de bonnes idées qui vous\n"
+"                            faciliteront la vie considérablement. Des agents spécialisés et très sympathiques se "
+"feront\n"
+"                            une joie de vous donner entière satisfaction en vous proposant les produits parfaitement\n"
+"                            adaptés à vos besoins et à ceux de votre enfant dans ce magasin en ligne\n"
+"\n"
+"                            Parmi les avantages que vous obtiendrez en profitant de cette prestation, vous aurez un\n"
+"                            accompagnement personnalisé, ainsi qu’un gain de temps. Vous n’aurez plus aucun souci à "
+"vous\n"
+"                            faire par rapport à la qualité des produits achetés. Pour ce faire, rien de plus facile,\n"
+"                            prenez contact avec pépin de pomme et faites votre demande. Vous devez seulement préciser\n"
+"                            votre besoin, la date limite que vous imposez et votre budget. Une conseillère du magasin "
+"en\n"
+"                            ligne vous contactera dans de brefs"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Même si vous êtes abonné à la newsletter de Pépin de pomme,\n"
+"                                            cela ne vous permet pas d’effectuer des achats. La newsletter vous met au\n"
+"                                            courant des actualités et des promotions en cours. Par contre, si vous\n"
+"                                            envisagez de faire des achats sur le site, créer un compte personnel est\n"
+"                                            recommandé."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Next"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "No Specifications"
+msgstr "Pas de spécifications"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.posts_loop_custom
+msgid "Nos guides d'achat et conseils"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Nos marques"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Nous contacter"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid "Nous contacter par e-mail :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+msgid "Nous contacter par téléphone :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid "Nous contacter par téléphone:"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid ""
+"Nous nous réservons le droit d'annuler le code en cas de retour\n"
+"                            d'article."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Nouveautés"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "Numéro de commande :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_et_remises_jumeaux
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_speciales_et_codes_promos
+msgid "OFFRES SPÉCIALES ET CODES PROMOS"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_et_remises_jumeaux
+msgid "Offres Et Remises Jumeaux"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Offres et remises jumeaux"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_speciales_et_codes_promos
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Offres spéciales et codes promos"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.404_custom
+msgid "On dirait que vous êtes arrivé au mauvais endroit."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Orders"
+msgstr "Ordres"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Oui, vous avez la possibilité\n"
+"                                            d’effectuer vos achats avec votre carte cadeaux. Elle est aussi utilisable\n"
+"                                            plusieurs fois avec une validité de 6 mois."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.personal_shopper
+msgid "PERSONAL SHOPPER AVEC PÉPIN DE POMME"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+msgid "PREMIÈRE COMMANDE MODE D'EMPLOI"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "Paiement"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "Parrainage"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.partenaires_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Partenaires"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.payment_custom
+msgid "Pay Now"
+msgstr "Payez maintenant"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.posts_loop_custom
+msgid ""
+"Pepin de Pomme, spécialiste du bébé et de l’enfant, accompagne les jeunes parents dans leurs choix\n"
+"                    en matériel de puériculture.\n"
+"                    <br/>\n"
+"                    Guides, conseils et astuces sont prodigués par nos experts de l’enfance.\n"
+"                    <br/>\n"
+"                    Si vous avez des questions auxquelles vous ne trouvez pas de réponses,\n"
+"                    n’hésitez pas à nous contacter afin que nous vous répondions directement."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.personal_shopper
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Personal Shopper"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.personal_shopper
+msgid "Personal Shopper avec Pépin de pomme"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_livraison_custom
+msgid ""
+"Peu importe le mode de livraison choisi, vous devez ouvrir votre colis à la présence du livreur avant de signer la "
+"réception. Cela vous permettra de vérifier si le produit est cassé ou s’il correspond bien à celui que vous avez "
+"commandé. Si vous constatez une casse ou une détérioration qui n’a pas été mentionnée par le vendeur, n’acceptez pas la "
+"commande et notifiez cela sur le récépissé du transporteur ou du livreur. N’oubliez pas non plus d’aviser le magasin ou "
+"le vendeur sur cette avarie. Une pièce d’identité doit être présentée durant les livraisons."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Plan du site"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cookies_bar_custom
+msgid "Politique relative aux cookies"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Pour bébé"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid ""
+"Pour bénéficier de ce programme, il vous suffit de vous abonner à notre\n"
+"                            site. Le processus d’inscription est très simple. On vous demande de remplir un petit\n"
+"                            formulaire qui résume les informations générales vous concernant comme votre nom, votre\n"
+"                            adresse électronique et votre date de naissance. Une fois que vous êtes enregistré, vous\n"
+"                            pouvez voir le catalogue de nos produits en ligne et passer à l’achat."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_speciales_et_codes_promos
+msgid ""
+"Pour cela, nous proposons constamment des offres promotionnelles sur divers articles qui vous intéressent. Nous mettons "
+"également à votre disposition des codes promos qui vous permettent de bénéficier de réduction lorsque vous passez vos "
+"commandes sur Pépin de Pomme."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pour commander, sélectionnez le\n"
+"                                            produit qui vous intéresse et cliquez sur « Commander ». Validez ensuite\n"
+"                                            votre choix en cliquant sur « Finaliser ma commande». Vous avez la\n"
+"                                            possibilité de vérifier votre commande et de la suivre. Pensez également à\n"
+"                                            lire toutes les conditions prévues pour la vente ainsi que le paiement."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pour créer votre compte personnel,\n"
+"                                            accédez directement à l’accueil du site. En haut à droite, cliquez sur « "
+"Mon\n"
+"                                            Compte », suivez ensuite les recommandations pour connaitre toutes les\n"
+"                                            étapes."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pour créer votre liste de naissance,\n"
+"                                            entrez dans le menu « Espace liste de naissance » puis suivez le guide. "
+"Vous\n"
+"                                            avez la possibilité de partager votre liste avec vos proches et d’acheter\n"
+"                                            des produits sur une liste que ces derniers ont crée."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Pour le séjour à la maternité :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Pour l’accouchement :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pour mieux faciliter vos achats,\n"
+"                                            Pépin de pomme met à votre disposition des guides et conseils concernant "
+"les\n"
+"                                            articles. En visitant le site, vous trouverez tout ce que vous devez "
+"savoir\n"
+"                                            sur un produit y compris ses critères d’évaluation. Les conseillers "
+"clients\n"
+"                                            restent également à votre disposition pour toute question."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pour pouvoir parrainer vos amis, il\n"
+"                                            vous suffit d’avoir votre propre compte sur Pépin de pomme et d’effectuer "
+"au\n"
+"                                            moins une fois des achats."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_et_remises_jumeaux
+msgid ""
+"Pour pouvoir partager votre liste de naissance pour jumeaux, vous devriez\n"
+"                            être membre de la communauté Pépin de Pomme en vous inscrivant en ligne. Ensuite, vous\n"
+"                            pouvez choisir les articles pour vos jumeaux et prévenir vos proches de l’ouverture de "
+"votre\n"
+"                            liste."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pour que votre demande soit prise en\n"
+"                                            compte, retournez le produit au plus tard dans les 7 jours à compter de la\n"
+"                                            livraison."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "Pour suivre votre commande, rendez-vous sur votre compte pepindepomme.com, dans"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pour toutes informations, les\n"
+"                                            conseillers clients sont à votre disposition. Vous pouvez contacter le "
+"site\n"
+"                                            si vous avez des questions."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pour une facilité de paiement, Pépin\n"
+"                                            de pomme vous offre la possibilité de payer vos achats en 2 ou 3 tranches "
+"et\n"
+"                                            sans aucun frais. Par ailleurs, si vous optez pour le paiement en 2\n"
+"                                            tranches, le paiement de la moitié du prix total se fera chaque mois à la\n"
+"                                            date de la prise en compte de votre commande. Par contre si vous optez "
+"pour\n"
+"                                            le paiement en 3 tranches, le tiers du prix se paiera chaque mois. En "
+"effet,\n"
+"                                            vous pouvez choisir cette option au moment de l’enregistrement de votre\n"
+"                                            commande."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Pour vous :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pour vous inscrire à la newsletter,\n"
+"                                            il vous suffit de vous rendre à la rubrique « Newsletter » dans le menu\n"
+"                                            Accueil. Ensuite, tapez votre adresse email. Vous recevrez des emails pour\n"
+"                                            vous mettre au courant de toutes les offres disponibles sur le site comme\n"
+"                                            les promotions ou les actualités."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+msgid "Premiere commande"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Première commande"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Prev"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid "Product Name"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Produits similaires"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Programme fidélité"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Promenade"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Promos"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid "Préambule"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.mode_livraison_custom
+msgid "Précaution durant la livraison"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid ""
+"Précisez votre nom, le numéro de votre commande et la raison de votre\n"
+"                            rétraction.\n"
+"                            <br/>\n"
+"                            Si vous obtenez l’accord de pouvoir exercer votre droit de rétraction par le service "
+"client,\n"
+"                            l’on vous donnera l’adresse précise pour retourner le colis."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_speciales_et_codes_promos
+msgid ""
+"Puisque nous faisons tout pour faciliter la vie de notre clientèle, nous avons établi une stratégie marketing direct "
+"qui vous informe en temps réel de nos offres de dernière minute ainsi que nos codes promos. Ce qu’il vous reste à "
+"faire, c’est de vous abonner à notre newsletter. Ce faisant, vous pourrez être facilement informé via tout appareil sur "
+"lequel vous êtes. Grâce à cette technique, vous seriez peut-être le premier à profiter de nos offres spéciales pour "
+"shopper malin !"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Puériculture"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.posts_loop_custom
+msgid "Puériculture • Décoration • Vêtements pour enfants"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+msgid "PÉPIN DE POMME - LE SPÉCIALISTE DE LA LISTE DE NAISSANCE"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid "PÉPIN DE POMME RÉCOMPENSE VOTRE FIDÉLITÉ !"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid ""
+"Pépin de Pomme 2021 ®. Tout droits réservés. Pépin de pomme urban, Pépin de pomme basics et\n"
+"                            P’tit pépin sont des marques déposées de Pépin de pomme.\n"
+"                            <br/>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cookies_bar_custom
+msgid "Pépin de Pomme et le respect de votre vie privée"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cookies_bar_custom
+msgid ""
+"Pépin de Pomme utilise des cookies pour s’assurer que le site internet fonctionne de manière idéale; pour la\n"
+"                                                personnalisation du contenu et des publicités, pour que les\n"
+"                                                fonctionnalités sur les réseaux sociaux soient disponibles et pour\n"
+"                                                analyser le trafic. Pépin de Pomme partage aussi des informations à\n"
+"                                                propos de votre navigation sur notre site web, avec nos partenaires\n"
+"                                                analytiques, nos partenaire publicitaires, ainsi que ceux des "
+"différents\n"
+"                                                réseaux sociaux."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+msgid "Pépin de pomme : spécialiste de la liste de naissance"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid ""
+"Pépin de pomme a pour principal objectif de donner entière satisfactions\n"
+"                            aux clients tant au niveau des articles proposés qu’au niveau des services. Les articles\n"
+"                            proposés sur notre magasin en ligne peuvent faire objet de rétraction si jamais le produit\n"
+"                            acheté ne convient pas au client. Pour exercer votre droit de rétraction, vous disposez de "
+"7\n"
+"                            jours à compter du jour de la réception du produit livré. Cela se fait conformément aux\n"
+"                            législations en vigueur en matière de vente en ligne.<b>Une fois ces 7 jours (une semaine)\n"
+"                                dépassés, vous ne pourrez plus demander un échange ou un remboursement.\n"
+"                            </b>"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pépin de pomme fait tout son\n"
+"                                            possible pour vous mettre au courant des promotions en cours. A part la\n"
+"                                            newsletter, dans la rubrique « Promotion », vous trouverez la totalité des\n"
+"                                            articles à prix réduit pour faire vos achats à prix malin."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pépin de pomme offre à ses clients\n"
+"                                            des points de fidélité à chaque achat effectué. Vous pouvez cumuler vos\n"
+"                                            points et à 300 points, vous avez l’opportunité de gagner un bon d’achat "
+"de\n"
+"                                            10€ valable pour tout autre achat sur le site."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pépin de pomme répond aux besoins\n"
+"                                            des parents. Pour mieux vous rassurer, nous dévoilons sur notre site "
+"toutes\n"
+"                                            les informations légales nous concernant. Vous pouvez également joindre "
+"nos\n"
+"                                            conseillers clients par téléphone au 09 72 44 96 58 du lundi au samedi, de\n"
+"                                            9h à 17h. Vous pouvez aussi envoyer directement un email via\n"
+"                                            serviceclient@pepindepomme.com."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pépin de pomme vous contactera pour\n"
+"                                            la date de livraison. Les produits commandés seront livrés au plus tard "
+"dans\n"
+"                                            les 10 jours comprenant ainsi la préparation de la commande, l’expédition "
+"et\n"
+"                                            la livraison."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pépin de pomme vous informe de\n"
+"                                            toutes les offres disponibles en vous envoyant régulièrement un email. "
+"Nous\n"
+"                                            vous communiquerons aussi toutes les actualités, les bons plans, les\n"
+"                                            promotions et les achats qui sont effectués."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Pépin de pomme vous tient informé de\n"
+"                                            toute action qui s’effectue sur le site ainsi que sur votre compte\n"
+"                                            personnel. Ainsi, dès que vos proches effectueront leurs achats, vous "
+"serez\n"
+"                                            prévenu directement par mail."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid ""
+"Pépin de pomme, boutique en ligne spécialisée dans la petite enfance, s’engage à donner des produits de qualité qui "
+"assurent confort et sécurité pour nos bouts de chou. Afin de garantir un meilleur retour vis-à-vis des clients, Pépin "
+"de pomme propose des paramètres de remboursement si jamais le produit acheté ne convient pas ou ne satisfait pas le "
+"client. Celui-ci dispose de 7 jours pour exercer le droit de rétraction. Le produit peut alors soit être échangé, soit "
+"être remboursé. Pour ce second cas, Pépin de pomme doit remettre au client la totalité du prix de l’article au plus "
+"tard 30 jours après la rétraction. Un produit endommagé, cassé ou qui n’est pas présenté dans son emballage d’origine "
+"en bon état ne peut pas faire objet de rétraction, autrement dit, il ne sera pas repris. Si vous souhaitez remettre un "
+"produit acheté, vous devez impérativement contacter le service client de Pépin de pomme et leur donner votre nom, votre "
+"numéro de commande et la raison de la rétraction. Une copie de la facture est aussi nécessaire mais pas obligatoire. "
+"N’oubliez pas de préciser si vous avez besoin d’un échange ou d’un remboursement. Les frais relatant de cette démarche "
+"sont à la charge du client. Notre service client est joignable :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid "Période de validité d'un point : 90 jours"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.premiere_commande
+msgid ""
+"Quelles sont les étapes à suivre lors de votre\n"
+"                            première commande chez Pépin de pomme ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.qsn_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Qui sommes nous?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "RESTEZ INFORMÉ"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Recherche"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Rechercher un produit..."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid "Remove one"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.404_custom
+msgid "Retour à l’accueil"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.payment_custom
+msgid "Return to Cart"
+msgstr "Retour au panier"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.404_custom
+msgid ""
+"Revenez à la page précédente ou\n"
+"                                    <br/>\n"
+"                                    essayez d’utiliser notre recherche pour trouver quelque chose de spécifique."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Référence :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "SERVICE CLIENT"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "SERVICES"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_speciales_et_codes_promos
+msgid ""
+"Sachez que ces offres promotionnelles peuvent s’appliquer sur tous nos produits : poussettes, accessoires, jouets et "
+"même sur les prêt-à-porter pour votre petit bout d’chou."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid "Satisfait ou"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Satisfait ou remboursé"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid ""
+"Selon la législation, les clients déterminés comme étant professionnels ne bénéficient pas de ce droit de rétraction."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "Service client"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid "Services"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model:ir.model,name:pepindepomme_custom_website.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Méthodes d'expédition"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Si ce cas se présente, Pépin de\n"
+"                                            pomme fera une enquête auprès des services postaux ainsi qu’auprès du\n"
+"                                            transporteur. Une fois le colis retrouvé, Pépin de pomme se chargera des\n"
+"                                            frais pour vous le réexpédier. Dans le cas contraire, vous pouvez annuler\n"
+"                                            votre commande et jouir de votre droit de remboursement."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid ""
+"Si le droit de rétraction peut être exercé, les frais de retour sont à la\n"
+"                            charge du client. Si après la réception de votre colis, vous n’êtes pas satisfait du "
+"produit\n"
+"                            ou que celui-ci ne convient pas à vos attentes, voici les démarches à suivre et les\n"
+"                            conditions :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.support_custom
+msgid ""
+"Si le produit acheté ne bénéficie plus de garantie, des pièces de rechange sont disponibles au sein du magasin et il "
+"vous est conseillé de contacter le service client pour être guidé. De plus Pépin de pomme développe le concept "
+"satisfait ou remboursé. Vous pouvez donc jouir de votre droit de rétraction de 7 jours si jamais le produit ne vous "
+"convient pas. Avec cet échange facile, vous serez sûr de trouver satisfaction pour le bien de votre tout petit."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Si lors de votre recherche sur le\n"
+"                                            site Pépin de Pomme, vous constatez que le produit que vous envisagez\n"
+"                                            d’acheter est plus cher que sur un autre site, veuillez contacter\n"
+"                                            directement nos conseillers clients ou envoyez un mail. Nous prendrons\n"
+"                                            rapidement part de votre demande."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.support_custom
+msgid ""
+"Si votre article est encore sous garantie, il vous suffit de remplir de remplir le formulaire SAV avec les informations "
+"obligatoires comme la description du problème ou encore le numéro de commande pour bénéficier de ce service."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Si vous avez oublié votre mot de\n"
+"                                            passe, n’ayez crainte puisque vous avez la possibilité de le redéfinir. Il\n"
+"                                            suffit seulement de cliquer sur la mention « mot de passe oublié » dans le\n"
+"                                            menu « Mon compte » et d’entrer un nouveau."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Si vous constatez des défauts sur le\n"
+"                                            produit livré, vous avez la possibilité de refuser la livraison en "
+"précisant\n"
+"                                            les motifs. En d’autres termes, vous pouvez garder le produit mais "
+"adressez\n"
+"                                            une protestation au transporteur par lettre recommandée dans les 3 jours "
+"au\n"
+"                                            plus tard."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Si vous envisagez de vous\n"
+"                                            désabonner, entrez dans la rubrique « Newsletter ». Vous y trouverez la\n"
+"                                            mention « Se désinscrire », puis cliquez."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Si vous envisagez d’annuler votre\n"
+"                                            commande ou de la modifier, cliquez sur « Mon panier »."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Si vous n’avez pas reçu votre colis\n"
+"                                            après 7 jours de la date limite de livraison, vous pouvez faire une\n"
+"                                            réclamation chez Pépin de pomme. Ainsi, nous pourrons vous rembourser dans\n"
+"                                            les 30 jours en cas d’annulation de commande. Or, si la date limite de\n"
+"                                            livraison n’est pas encore dépassée, nous pouvons vous proposer une "
+"seconde\n"
+"                                            livraison et prenons en notre compte l’ensemble des frais."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Si vous souhaitez suivre votre\n"
+"                                            commande, entrez dans la rubrique « Suivi de commande » et remplissez le\n"
+"                                            formulaire. Si vous avez déjà effectué des commandes chez Pépin de pomme, "
+"il\n"
+"                                            suffit de vous identifier en tapant votre adresse email ainsi que votre "
+"mot\n"
+"                                            de passe. Par contre, s’il s’agit de votre première commande, tapez votre\n"
+"                                            adresse email et créez votre propre compte."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Si vous êtes absent pendant la date\n"
+"                                            prévue pour la livraison, le colis sera retiré dans un point relais et si\n"
+"                                            vous ne vous présentez pas dans un délai de 7 jours, il sera retourné à\n"
+"                                            Pépin de pomme."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_et_remises_jumeaux
+msgid ""
+"Si vous êtes futur parent de jumeaux, doublez votre bonheur car nous vous\n"
+"                            offrons la possibilité de créer une liste de naissance pour jumeaux et de la partager sur\n"
+"                            notre site. A la clôture de cette liste, vous recevrez une remise spéciale jumeaux qui "
+"vous\n"
+"                            permettra de mieux économiser. D’un autre côté, vous pouvez aussi partager votre liste de\n"
+"                            naissance pour jumeaux avec vos proches afin qu’ils puissent vous offrir ce dont vous avez\n"
+"                            réellement besoin."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Siège-auto"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+msgid "Sollicitez votre entourage et suivez en temps réel les contributions pour votre liste de naissance"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Suivi de commande"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Support et Garantie"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.support_custom
+msgid "Support et garantie"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Sur chaque article proposé chez\n"
+"                                            Pépin de Pomme, vous pouvez voir les notes proposées par les clients. Vous\n"
+"                                            pouvez aussi consulter les avis des clients dans la rubrique « Avis\n"
+"                                            certifiés ». Les notations sont effectuées sous forme d’étoiles et sont\n"
+"                                            collectés par eKomi pour déterminer leur authenticité."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Tag:"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Thanks"
+msgstr "Merci"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid ""
+"This combination does not\n"
+"                            exist."
+msgstr ""
+"Cette combinaison n'existe pas\n"
+"                            existe pas."
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid ""
+"This is a preview of the recently viewed products by the user.\n"
+"                                    <br/>\n"
+"                                    Once the user has seen at least one product this snippet will be visible."
+msgstr ""
+"This is a preview of the recently viewed products by the user.\n"
+"                                    <br/>\n"
+"                                    Once the user has seen at least one product this snippet will be visible."
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid "This product has no valid combination."
+msgstr "Ce produit n'a pas de combinaison valide."
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.tp_quick_view_custom
+msgid "This product is no longer available."
+msgstr "Ce produit n'est plus disponible."
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.cookies_bar_custom
+msgid "Tout accepter"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Tout ce qu’il faut savoir avant de commander sur Pépin de\n"
+"                            pomme"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Un remboursement est possible dans\n"
+"                                            un délai de 30 jours. Par contre, les produits ainsi retournés doivent "
+"être\n"
+"                                            à l’état neuf avec étiquettes, accessoires, documents et la facture d’achat."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Un sac à linge sale"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"Un trousseau de toilette (avec brosse à dent, brosse à cheveux, soins pour mamelon,\n"
+"                                    gel douche, crème anti-vergeture…)"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Uncategorized"
+msgstr "Non classé"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid ""
+"Une fois le produit remis entre les mains de Pépin de pomme et suite à\n"
+"                            l’application de l’expertise des techniciens, le remboursement de l’article sera effectué\n"
+"                            dans les 30 jours au plus tard suivant votre demande de rétraction. Il est à noter que les\n"
+"                            articles ayant été en contact direct avec le corps (tétine, tire-lait, coquilles de\n"
+"                            protection…) ne peuvent être échangés ni remboursés."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Une fois que vos proches ont\n"
+"                                            effectué leurs achats sur le site de Pépin de pomme, les produits seront\n"
+"                                            livrés en fonction de la date prévue. D’un autre côté, vous pouvez les\n"
+"                                            récupérer si vous en avez l’opportunité."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Une fois votre commande faite, un\n"
+"                                            responsable vous contactera et vous informera des pièces importantes, à\n"
+"                                            savoir votre carte d’identité, une copie de votre carte bancaire et une\n"
+"                                            attestation de domicile."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.liste_naissance
+msgid ""
+"Une fois votre liste établie, faites-en part avec vos proches. Ils aimeraient surement participer à la réunion de tous "
+"ces articles. C’est également un bon moyen d’éviter de se retrouver avec des produits, vêtements ou jouets identiques "
+"ou qui ne conviennent pas à votre bébé. N’oubliez pas de leur préciser qu’ils trouveront tout cela chez Pépin de pomme. "
+"Depuis votre compte client, vous suivrez en temps réel tous les mouvements de votre liste de naissance dus aux "
+"contributions de vos proches qui souhaitent vous faire plaisir et donner leur part. Il est même envisageable de "
+"recevoir des mails vous signalant les achats effectués pour réunir les articles dans votre liste de naissance. A la fin "
+"de votre liste, vous obtiendrez un récapitulatif de tous les cadeaux que votre famille ou vos amis ont pu faire pour "
+"que vous puissiez les remercier."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Valise de maternité"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "Voir la description"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Voir la liste de souhaits"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Voir mon panier"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"Votre carnet de maternité sur laquelle sont annotés tous vos rendez-vous médicaux et\n"
+"                                    suivis de grossesse"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "Votre dossier d’inscription à la maternité ou numéro de dossier"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.template_footer_header_pepin_de_pomme
+msgid "Votre email ..."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid ""
+"Votre numéro d’allocataire CAF, votre carte de Sécurité Sociale et votre carte de\n"
+"                                    mutuelle"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "Vous allez recevoir un email de confirmation de commande ainsi que votre facture."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.auth_signup_fields_custom
+msgid "Vous aves déjà un compte ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "Vous avez choisi de retirer votre commande dans notre entrepôt de Douai (59)"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "Vous avez choisi la methode d'expédition :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Vous avez la possibilité de\n"
+"                                            récupérer votre colis dans un point relais au plus tard dans les 7 jours."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Vous avez la possibilité de payer\n"
+"                                            d’une part par cartes bancaires françaises, belges CB, Visa, Eurocard et\n"
+"                                            Mastercard. Pour ce type de paiement, indiquez le numéro de votre carte, "
+"sa\n"
+"                                            date d’expiration, votre nom ainsi que les trois derniers chiffres du "
+"numéro\n"
+"                                            inscrit au dos de la carte. D’autre part, le virement bancaire est aussi\n"
+"                                            possible mais n’oubliez pas de mentionner le numéro de votre commande. "
+"Vous\n"
+"                                            avez également la possibilité de payer avec votre carte cadeau."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.echanges_custom
+msgid "Vous devez oinde à votre colis :"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.web_login_custom
+msgid "Vous n'avez pas encore de compte ?"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.faq_custom
+msgid ""
+"Vous pouvez facilement votre choix de produit grâce aux rubriques que nous\n"
+"                                            vous proposons dont « premier bébé », « sortie bébé »…"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid ""
+"Vous serez notifié par mail lorsque votre bon d’achat sera validé. Il est à\n"
+"                            noter que cette récompense est validée pour tout achat de plus de 50 €."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.offres_et_remises_jumeaux
+msgid ""
+"Vous suivrez en temps réels via votre compte client ou par mail les achats\n"
+"                            déjà effectués. Après avoir clôturé votre liste, vous recevrez votre remise jumeaux qui "
+"peut\n"
+"                            aller jusqu’à 10% du montant total de votre liste. Vous pouvez demander la clôture de "
+"votre\n"
+"                            liste ou sinon, elle se fait automatiquement 30 jours après votre accouchement."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.confirmation_custom
+msgid "Vérifier la commande"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#. openerp-web
+#: code:addons/pepindepomme_custom_website/static/src/xml/card_style_inherit_view.xml:0
+#, python-format
+msgid "asmaa yeees"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.programme_fidelite
+msgid "etc..."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid "les conditions générales"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "or"
+msgstr "ou"
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.valise_de_maternite
+msgid "paquet de couches nouveau-nés"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.satisfait_custom
+msgid "remboursé"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.contactus_form_custom
+msgid ""
+"sur la protection des\n"
+"                            données et j'y adhère sans réserve."
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.product_custom
+msgid "tag"
+msgstr ""
+
+#. module: pepindepomme_custom_website
+#: model_terms:ir.ui.view,arch_db:pepindepomme_custom_website.legal_notice
+msgid ""
+"«Client» : désigne la personne physique qui agit pour des besoins privés, à des fins non commerciales, et en dehors de "
+"tout exercice d’une activité professionnelle. «Site internet» : Le Site Internet désigné par les présentes conditions "
+"générales de vente, est celui de Pepin &amp; Pepine SAS, auquel il est possible d’accéder via le réseau Internet à "
+"l’adresse suivante : https://www.pepindepomme.com. «Vente» : Désigne l’acte translatif de propriété réalisé entre Pepin "
+"&amp; Pepine SAS et le Client, et effectué de manière exclusive via le Site Internet de pepin de pomme."
+msgstr ""

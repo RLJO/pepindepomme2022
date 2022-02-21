@@ -1,0 +1,165 @@
+<odoo>
+
+    <template t-name="history" name="Historique">
+         <style>
+            a.table_of_content_link.list-group-item.list-group-item-action.py-2.border-0.rounded-0:hover {
+            background-color: transparent !important;
+            }
+            address{
+            font: normal normal normal 14px/24px Poppins !important;
+            letter-spacing: 0px;
+            color: #000000 !important;
+            margin: 0 !important;
+            text-align: left;
+
+            }
+             .o_portal_my_security, .o_portal_my_details {
+             box-shadow:none !important;
+             }
+        </style>
+        <t t-call="portal.frontend_layout">
+            <t t-set="is_portal" t-value="True"/>
+
+        <!--    <div t-if="not no_breadcrumbs and not my_details and not breadcrumbs_searchbar" class="o_portal container mt-3">
+                <div class="row align-items-center bg-white no-gutters border rounded">
+                    <div class="col-10">
+                        <t t-call="portal.portal_breadcrumbs"/>
+                    </div>
+                    <div t-if="prev_record or next_record" class="col-2 flex-grow-0 text-center">
+                        <t t-call="portal.record_pager"/>
+                    </div>
+                </div>
+            </div>
+            -->
+            <div id="wrap" class="o_portal_wrap">
+                <div class="container mb64">
+
+                        <div class="row justify-content-between mt-4">
+                            <div t-attf-class="col-12 col-md col-lg-6">
+                                <t t-raw="0"/>
+                            </div>
+                            <div id="o_my_sidebar" class="pt-3 pt-lg-0 col-12 o_my_sidebar">
+                                <div class="o_my_contact" t-if="sales_user">
+                                    <t t-call="portal.portal_contact"/>
+                                </div>
+
+                                <div class="o_portal_my_details">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-3 s_table_of_content_navbar_wrap s_table_of_content_navbar_sticky s_table_of_content_vertical_navbar d-print-none mb-5 d-lg-block o_not_editable " data-name="Navbar">
+                                                <div class="s_table_of_content_navbar list-group" style="">
+
+                                                    <div class="border-top pt-2">
+                                                        <a href="/my/account" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto;">
+                                                            <img  class="mr-2 mb-2" style="height: 18px;width: 16px;margin-right: 10px !important;" src="/pepindepomme_custom_portal/static/src/img/user.png" />
+                                                            Mes Informations
+                                                            <i style="color: #000000 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="border-top pt-2">
+                                                        <a href="/my/adress" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto;padding-left: 5.2%;">
+                                                            <img  class="mr-2 mb-2" style="height: 22px;width: 18px; margin-right: 12px !important;" src="/pepindepomme_custom_portal/static/src/img/map-pin.png" />
+                                                            Mes adresses
+                                                            <i style="color: #000000 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="border-top pt-2">
+                                                        <a href="/my/orders" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto; padding-left: 4.3%;">
+                                                            <img  class="mr-2 mb-1" style="height: 16px;width: 22px;margin-right: 12px !important;" src="/pepindepomme_custom_portal/static/src/img/card.png" />
+                                                            Mes commandes
+                                                            <i style="color: #000000 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="border-top border-bottom pt-2">
+                                                        <a href="/my/history" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #91B508; height: 40px;font: normal normal bold 14px/19px Roboto; padding-left: 4.3%;">
+                                                            <img  class="mr-2 mb-2" style="height: 20px;width: 18px;margin-right: 14px !important;" src="/pepindepomme_custom_portal/static/src/img/package-vert.png" />
+                                                            	Historique des commandes
+                                                            <i style="color: #91B508 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                                        </a>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 s_table_of_content_main oe_structure oe_empty o_colored_level" data-name="Content" data-editor-message="GLISSEZ UN BLOC ICI">
+                                                <div>
+                                                    <h3 style="font: normal normal bold 30px/29px Roboto; color: #000000;">
+                                                       Historique d'achats
+                                                    </h3>
+
+                                                    <div t-if="documents">
+                                                        <table class="mb16 table js_cart_lines" id="cart_products">
+                                    <thead>
+                                        <tr>
+                                            <th style="color:#000000">Commande</th>
+
+                                            <th style="color:#000000" class="text-center">Date création</th>
+                                            <th style="color:#000000" class="text-center">Prix</th>
+                                            <th style="color:#000000" class="th-subtotal">Action</th>
+                                        </tr>
+                                    </thead>
+                                                        <tbody>
+                                                        <t t-foreach="documents" t-as="document">
+                                                            <tr>
+                                                                <td><span t-esc="document.name"/></td>
+                                                                <td><span t-field="document.create_date"/></td>
+                                                                <td><span >*****</span></td>
+                                                                <td><a  t-att-href="'/web/content/%s?download=true' %(document.id)" style="font: normal normal normal 14px/24px Roboto;color: #000000;text-decoration: underline;">
+
+                                                                    <i class="fa fa-file-text-o"/>
+                                                        Télécharger commande
+                                                    </a></td>
+                                                            </tr>
+
+
+
+
+                                                        </t>
+                                                        </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+                       <style>
+                a.table_of_content_link.list-group-item.list-group-item-action.py-2.border-0.rounded-0:hover
+                {
+                background-color: transparent !important;
+                }
+                main{
+                background-color:white !important;
+                }
+                .lbl{
+                font: normal normal bold 14px/26px Roboto;
+                color: #000000;
+                .para{
+                font: italic normal normal 12px/20px Roboto;
+                color: #6C757D;
+                }
+                .o_portal_my_home{
+                display:none;
+                }
+            </style>
+
+        </t>
+
+    </template>
+</odoo>

@@ -1,0 +1,228 @@
+<odoo>
+
+
+    <template name="Portal Layout" t-name="portal.portal_layout">
+         <style>
+            a.table_of_content_link.list-group-item.list-group-item-action.py-2.border-0.rounded-0:hover {
+            background-color: transparent !important;
+            }
+            address{
+            font: normal normal normal 14px/24px Poppins !important;
+            letter-spacing: 0px;
+            color: #000000 !important;
+            margin: 0 !important;
+            text-align: left;
+            }
+             div.o_portal_my_details{
+             box-shadow:none !important;
+             }
+             table thead th thead{
+             border: 1px solid #D8DADB !important ;
+             }
+             th{
+             border-top: none !important;
+             }
+             tr{
+             border-top: none !important;
+             }
+             .table thead th {
+             border-bottom: 1px solid #DEE2E6 !important;
+             }
+
+        </style>
+        <t t-call="portal.frontend_layout">
+            <t t-set="is_portal" t-value="True"/>
+
+            <div t-if="not no_breadcrumbs and not my_details and not breadcrumbs_searchbar" class="o_portal container mt-3">
+                <div class="row align-items-center bg-white no-gutters border rounded">
+                    <div class="col-10">
+                        <t t-call="portal.portal_breadcrumbs"/>
+                    </div>
+                    <div t-if="prev_record or next_record" class="col-2 flex-grow-0 text-center">
+                        <t t-call="portal.record_pager"/>
+                    </div>
+                </div>
+            </div>
+            <div id="wrap" class="o_portal_wrap">
+                <div class="container mb64">
+                    <t t-if="my_details">
+                        <div class="row justify-content-between mt-4">
+                            <div t-attf-class="col-12 col-md col-lg-6">
+                                <t t-raw="0"/>
+                            </div>
+                            <div id="o_my_sidebar" class="pt-3 pt-lg-0 col-12 o_my_sidebar">
+                                <div class="o_my_contact" t-if="sales_user">
+                                    <t t-call="portal.portal_contact"/>
+                                </div>
+
+                                <div class="o_portal_my_details">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-3 s_table_of_content_s commnavbar_wrap s_table_of_content_navbar_sticky s_table_of_content_vertical_navbar d-print-none mb-5 d-lg-block o_not_editable " data-name="Navbar">
+                                                <div class="s_table_of_content_navbar list-group" style="">
+
+                                                    <div class="border-top pt-2">
+                                                        <a href="/my/account" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto;">
+                                                            <img  class="mr-2 mb-2" style="height: 18px;width: 16px;margin-right: 12px !important;" src="/pepindepomme_custom_portal/static/src/img/user.png" />
+                                                            Mes Informations
+                                                            <i style="color: #000000 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="border-top pt-2">
+                                                        <a href="/my/adress" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto;">
+                                                            <img  class="mr-2 mb-2" style="height: 22px;width: 18px;margin-right: 10px !important;" src="/pepindepomme_custom_portal/static/src/img/map-pin.png" />
+                                                            Mes adresses
+                                                            <i style="color: #000000 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="border-top pt-2">
+                                                        <a href="/my/orders" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto; padding-left: 4.3%;">
+                                                            <img  class="mr-2 mb-1" style="height: 16px;width: 22px;margin-right: 13px !important;" src="/pepindepomme_custom_portal/static/src/img/card.png" />
+                                                            Mes commandes
+                                                            <i style="color: #000000 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="border-top border-bottom pt-2">
+                                                        <a href="/my/history" class="table_of_content_link list-group-item list-group-item-action py-2 border-0 rounded-0" style="color: #000000; height: 40px;font: normal normal bold 14px/19px Roboto; padding-left: 4.3%;">
+                                                            <img  class="mr-2 mb-2" style="height: 20px;width: 18px;margin-right: 16px !important;" src="/pepindepomme_custom_portal/static/src/img/package.png" />
+                                                            Historique des commandes
+                                                            <i style="color: #000000 !important;" class="float-right text-muted fa fa-chevron-right" title="Fold" aria-label="Fold"/>
+                                                        </a>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 s_table_of_content_main oe_structure oe_empty o_colored_level" data-name="Content" data-editor-message="GLISSEZ UN BLOC ICI">
+                                                <div>
+                                                    <h3 style="font: normal normal bold 30px/29px Roboto; color: #000000;">
+                                                        Bonjour
+                                                        <t t-esc="user_id.partner_id.name"/>
+                                                        ,
+                                                    </h3>
+                                                    <div class="text-right">
+                                                    <a href="/web/session/logout?redirect=/" role="menuitem" class="dropdown-item" style="text-decoration: underline;font: normal normal normal 14px/24px Roboto;color: #000000;">
+                                                        Se déconnecter
+                                                    </a>
+                                                    </div>
+                                                </div>
+
+                                                <t t-set="order" t-if="user_id.partner_id.sale_order_ids" t-value="user_id.partner_id.sale_order_ids[0]"/>
+                                                <t t-else="" t-set="order" t-value="False"/>
+<t t-if="order">
+    <span style="font: normal normal bold 20px/29px Roboto; letter-spacing: 0px;color: #000000;">
+                                                    Votre dernière commande :
+                                                </span>
+                                                <p style="font: normal normal bold 16px/19px Roboto;letter-spacing: 0px;color: #000000;opacity: 1;">
+                                                    <a t-att-href="order.get_portal_url()" style="font: normal normal bold 16px/19px Roboto;letter-spacing: 0px;color: #000000;opacity: 1; margin-top:30px;">
+                                                        <t t-esc="order.name"/>
+                                                        |
+                                                        <span t-field="order.create_date"/>
+                                                    </a>
+                                                </p>
+                                                <table class="mb16 table js_cart_lines" id="cart_products" t-if="order">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="color: #000000;">Article</th>
+                                                            <th style="width:28% !important"/>
+                                                            <th style="color: #000000;" class="text-center">Quantité</th>
+                                                            <th style="color: #000000;" class="text-center">Prix</th>
+
+                                                            <th style="color: #000000;width:30% !important" class="th-subtotal">Livraison</th>
+                                                            <th style="color: #000000;" class="text-center td-action"/>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr t-foreach="order.order_line" t-as="line">
+                                                            <td colspan="2" t-if="not line.product_id.product_tmpl_id" class="td-img"/>
+                                                            <td align="center" t-if="line.product_id.product_tmpl_id" class="td-img">
+                                                                <span t-field="line.product_id.image_128" t-options="{'widget': 'image', 'qweb_img_responsive': False, 'class': 'rounded o_image_64_max'}"/>
+                                                            </td>
+
+
+                                                            <td t-if="line.product_id.product_tmpl_id" class="td-product_name">
+                                                                <div>
+                                                                    <a class="tp-link-dark" href="/shop/602450-image-imprime-helices-2-m-decoration-49-x-2-x-69-cm-24#attr=">
+                                                                        <b>
+                                                                            <span style="font: normal normal bold 14px/26px Roboto;color: #000000;" t-field="line.name_short">
+                                                                            </span>
+                                                                        </b>
+                                                                    </a>
+                                                                    <p t-field="line.product_id.product_tmpl_id.website_description" style="font: normal normal normal 14px/24px Poppins;letter-spacing: 0px; color: #000000; "/>
+
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center td-price" style="padding-top: 4%;">
+
+                                                                <span class="color: #000000;" t-esc="int(line.product_uom_qty)"/>
+
+                                                            </td>
+                                                            <td class="text-center td-price" name="price" style="padding-top: 4%;">
+                                                                <span t-field="line.price_total" style="white-space: nowrap;font: normal normal normal 14px/24px Poppins !important;letter-spacing: 0px;color: #615C6E !important;"/>
+
+                                                            </td>
+                                                            <td class="text-center td-subtotal" style="     padding-top: 1%; ">
+                                                                <div>
+                                                                    <t style="font: normal normal normal 14px/24px Roboto;color: #000000;margin: 0;" t-esc="order.partner_shipping_id" t-options="dict(widget='contact', fields=['address'], no_marker=True)"/>
+
+                                                                    <span style="font: normal normal bold 14px/24px Roboto;color: #000000;float: left;">Livraison prévue le :</span>
+                                                                    <span style="font: normal normal bold 14px/24px Roboto;color: #00B74F;" t-field="order.commitment_date"/>
+                                                                </div>
+                                                            </td>
+
+
+                                                        </tr>
+                                                    </tbody>
+
+
+                                                </table>
+</t>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <t t-raw="0"/>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template name="My Portal" t-name="portal.portal_my_home">
+        <style>
+            main {
+            background-color: white;
+
+            }
+        </style>
+        <t t-call="portal.portal_layout">
+            <t t-set="my_details" t-value="True"/>
+
+            <div class="o_portal_my_home" style="display:none;">
+                <div class="oe_structure" id="oe_structure_portal_my_home_1"/>
+                <h3>Documents</h3>
+
+                <div class="o_portal_docs list-group">
+                </div>
+            </div>
+            <div class="oe_structure" id="oe_structure_portal_my_home_2" style="display:none;"/>
+
+
+        </t>
+    </template>
+
+
+</odoo>
+

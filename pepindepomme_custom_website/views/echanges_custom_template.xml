@@ -1,0 +1,210 @@
+<odoo>
+    <template id="echanges_custom" name="Echanges &amp; retours">
+        <t t-call="website.layout">
+            <style>
+                .title{
+                text-align: left;
+                font: normal normal bold 24px/29px Roboto;
+                color: #000000;
+                }
+                .paragraph{
+                font: normal normal normal 14px/24px Roboto;
+                color: #000000;
+                text-align: left;
+                }
+                .underline{
+                text-decoration: underline;
+                font-weight:normal;
+                }
+                span{
+                font-weight: bold;
+                }
+                .bigtitle{
+                font: normal normal bold 36px/29px Roboto;
+                letter-spacing: 0px;
+                color: #000000;
+                text-align: center;
+                }
+                .greentitle{
+                font: normal normal bold 14px/24px Roboto;
+                letter-spacing: 0px;
+                color: #91B508;
+                }
+
+                .img-icon {
+                width: 21px;
+                height: 21px;
+
+                }
+            </style>
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_title pt32 o_colored_level pb16" data-vcss="001" data-snippet="s_title"
+                         data-name="Title">
+                    <div class="s_allow_columns container">
+                        <h1 class="bigtitle">Echanges et retours</h1>
+                    </div>
+                </section>
+                <section class="s_text_block pt32 o_colored_level mb32" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                        <p class="paragraph">Pépin de pomme a pour principal objectif de donner entière satisfactions
+                            aux clients tant au niveau des articles proposés qu’au niveau des services. Les articles
+                            proposés sur notre magasin en ligne peuvent faire objet de rétraction si jamais le produit
+                            acheté ne convient pas au client. Pour exercer votre droit de rétraction, vous disposez de 7
+                            jours à compter du jour de la réception du produit livré. Cela se fait conformément aux
+                            législations en vigueur en matière de vente en ligne.<b>Une fois ces 7 jours (une semaine)
+                                dépassés, vous ne pourrez plus demander un échange ou un remboursement.
+                            </b>
+                        </p>
+                        <p class="paragraph">Si le droit de rétraction peut être exercé, les frais de retour sont à la
+                            charge du client. Si après la réception de votre colis, vous n’êtes pas satisfait du produit
+                            ou que celui-ci ne convient pas à vos attentes, voici les démarches à suivre et les
+                            conditions :
+                        </p>
+                        <p class="paragraph">
+                            <b>Contactez aussi tôt que possible le service client de Pépin de pomme.</b>
+                        </p>
+                    </div>
+                    <div class="container fluid">
+                        <div class="row w-50 ">
+                            <div class="col-12 col-lg-6">
+                                <p class="paragraph greentitle mb-0">Horaires service client:</p>
+                                <p class="paragraph">Du lundi au vendredi*:<br/>10:00 - 12:00 et 13:00 - 17:00<br/>*sauf
+                                    les jours fériés
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-4">
+                                <p class="paragraph greentitle mb-0">Nous contacter par téléphone:</p>
+                                <img class="img-fluid o_we_custom_image img-icon "
+                                     src="/pepindepomme_custom_website/static/src/img/annex/phone.svg" alt=""
+                                     loading="lazy" data-original-id="33998"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/annex/phone.svg"
+                                     data-mimetype="image/png" data-resize-width="24"/>
+                                <span class="text-black ml-2">09 72 44 96 58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="paragraph">Précisez votre nom, le numéro de votre commande et la raison de votre
+                            rétraction.
+                            <br/>
+                            Si vous obtenez l’accord de pouvoir exercer votre droit de rétraction par le service client,
+                            l’on vous donnera l’adresse précise pour retourner le colis.
+                        </p>
+                    </div>
+                    <div class="container">
+                        <p class="paragraph greentitle mb-0">Vous devez oinde à votre colis :</p>
+                        <p class="paragraph mb-0">
+                            <b>• Une lettre explicative dans laquelle est mentionnée votre de demande d’échange ou de
+                                remboursement.
+                            </b>
+                        </p>
+                        <p class="paragraph">
+                            <b>• Une photocopie de la facture de paiement.</b>
+                        </p>
+                    </div>
+                    <div class="container">
+                        <p class="paragraph greentitle mb-0">Conditions pour pouvoir exercer le droit de rétraction :
+                        </p>
+                        <p class="paragraph mb-0">
+                            <b>• Le produit retourné doit être bien emballé dans son emballage d’origine qui ne doit pas
+                                non plus être abîmé.
+                            </b>
+                        </p>
+                        <p class="paragraph mb-0">
+                            <b>• Il doit également être présenté dans son carton d’expédition afin d’assurer qu’il soit
+                                retourné en bon état.
+                            </b>
+                        </p>
+                        <p class="paragraph mb-0">
+                            <b>• Le produit doit être en état d’être revendu.</b>
+                        </p>
+                        <p class="paragraph mb-0">
+                            <b>• Si jamais le produit est endommagé, il ne pourra pas faire l’objet d’un
+                                remboursement.
+                            </b>
+                        </p>
+                    </div>
+                    <div class="container mt-4">
+                        <p class="paragraph">Une fois le produit remis entre les mains de Pépin de pomme et suite à
+                            l’application de l’expertise des techniciens, le remboursement de l’article sera effectué
+                            dans les 30 jours au plus tard suivant votre demande de rétraction. Il est à noter que les
+                            articles ayant été en contact direct avec le corps (tétine, tire-lait, coquilles de
+                            protection…) ne peuvent être échangés ni remboursés.
+                        </p>
+                    </div>
+                </section>
+                <section class="s_icon_block_2 pb32 o_colored_level pt0" style="border-top: solid 1px #CFCFD1"
+                         data-snippet="s_icon_block_2" data-name="Icon Block - 2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-4">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/delivery.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAAAXNSR0IArs4c6QAAAfhJREFUSEulloFRwzAMRdsNYIMwATABYQJgAsoEwASECSgTUCagTECYAJiAMgGMwH85K5cKx3GI7nRNLVl+kmUn81laTmW+HPBJme9lXKcc5gPBP2UvJgDUmnv8XwAWBgBZSb9GgBzJt5ROAqD8T2HRoUp5tkoDN1MB7hTgSvouPRyRPa4GwNzrztyfEK8dSmX2Jq8D6dIFyWExgJgv23lhBg9A2VkUoYQIXfwRQMggR1IAzG8hPMCLjGXPCmcBZgxALWc7BTt6Jr4l2EB4gEXIvHCrUAXKNrYCXQBCeohlrAe+g2OXgUaiF3LFtsAD2PwHPZDsLAYQ24Yx5SfuEEAZtqMBsG7vy27KMeyrwBZArORdGPZ9NwywhzTRn/Ps6H0FCtnRTdAtADNaDI4fDnaJMIkFGediMiE7egM/LwaAjbnEM6GhH6XNLRvrAXsBsTCKFEH9Qn2V6PO3+cyjmlGA1JasNIesubDo5FyxU0QFueJbkFgFSllRk/2wYLcXsNlR2uiZknrpeyNa09ckk/OWI1t7K9KMdhnZcWVPOaZeKg3QNwDuBSNlZ4v5vZVWOQDdSTTVs9SqQlxuyFUEoNQYkEgtfZWeSO0qBmqTA0CAhTS25wROffG0N54D5FZtXtO5APiSEd+HTfeGjCoXOPYX+POOYes78RdWz3e+V7JuFgAAAABJRU5ErkJggg=="
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Livraison
+                                        gratuite à partir de 89€
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png" alt=""
+                                     loading="lazy" data-original-title="" title="" aria-describedby="tooltip802397"
+                                     data-original-id="617"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png"
+                                     data-mimetype="image/png" data-resize-width="94"/>
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     alt="" loading="lazy" data-original-title="" title=""
+                                     aria-describedby="tooltip709349" data-original-id="618"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png"
+                                     data-mimetype="image/png" data-resize-width="54"/>
+                            </div>
+                            <div class="col-12 py-3 text-center o_colored_level col-lg-8">
+                                <h5 class="mt-3">
+                                    <img class="img-fluid o_we_custom_image"
+                                         src="/pepindepomme_custom_website/static/src/img/home/secure.png" alt=""
+                                         loading="lazy" data-original-id="596"
+                                         data-original-src="/pepindepomme_custom_website/static/src/img/home/secure.png"
+                                         data-mimetype="image/png"/>
+                                    <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Paiement
+                                        100% sécurisé
+                                    </font>
+                                </h5>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Logo-CB.png" alt=""
+                                     loading="lazy"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png" alt=""
+                                     loading="lazy" data-original-id="598"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png"
+                                     data-mimetype="image/png" data-resize-width="44"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Paypal.png" alt=""
+                                     loading="lazy" data-original-id="599"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Paypal.png"
+                                     data-mimetype="image/png" data-resize-width="113"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/visa.png" alt=""
+                                     loading="lazy" data-original-id="600"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/visa.png"
+                                     data-mimetype="image/png" data-resize-width="65"/>
+                                <img class="img-fluid o_we_custom_image mr-4 mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png" alt=""
+                                     loading="lazy" data-original-id="601"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png"
+                                     data-mimetype="image/png" data-resize-width="96"/>
+                                <img class="img-fluid o_we_custom_image mt-2"
+                                     src="/pepindepomme_custom_website/static/src/img/home/Image 102.png" alt=""
+                                     loading="lazy" data-original-id="620"
+                                     data-original-src="/pepindepomme_custom_website/static/src/img/home/Image 102.png"
+                                     data-mimetype="image/png" data-resize-width="117"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

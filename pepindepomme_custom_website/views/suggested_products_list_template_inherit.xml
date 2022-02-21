@@ -1,0 +1,10 @@
+<odoo>
+    <template id="suggested_list_custom" inherit_id="website_sale.suggested_products_list" priority="16">
+ <xpath expr="//table[@id='suggested_products']//a[hasclass('js_add_suggested_products')]" position="replace">
+            <a role="button" class="btn btn-link text-primary js_add_suggested_products">
+                <i class="fa fa-cart-plus"/> Add to Cart
+            </a>
+        </xpath>
+
+    </template>
+</odoo>

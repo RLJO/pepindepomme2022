@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<odoo>
+    <template id="assets_frontend" name="wbssiterelay assets" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+
+            <script  type="text/javascript" src="/website_sale_delivery_mondialrelay/static/src/js/website_sale_delivery_mondialrelay.js"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,35 @@
+<odoo>
+    <template id="website_sale_delivery.payment_delivery_methods" priority="16">
+    <div class="row">
+        <div class="col-12 col-lg-10">
+        <input t-att-value="delivery.id" t-att-id="'delivery_%i' % delivery.id" type="radio" name="delivery_type" t-att-checked="order.carrier_id and order.carrier_id.id == delivery.id and 'checked' or False" t-att-class="'d-none' if delivery_nb == 1 else ''"/>
+        <label class="label-optional" t-field="delivery.name"/>
+        </div>
+        <div class="col-12 col-lg-2">
+
+        <t t-set="badge_class" t-value="(delivery_nb != 1 and 'float-right ' or '') + 'badge badge-secondary'"/>
+
+        <t t-if="delivery.delivery_type == 'fixed'">
+          <div t-if="delivery.fixed_price &gt; 0.0" t-att-class="badge_class">
+            <t t-esc="delivery.rate_shipment(website_sale_order)['price'] if delivery.free_over else delivery.fixed_price" t-options="{&quot;widget&quot;: &quot;monetary&quot;,                            &quot;from_currency&quot;: website_sale_order.currency_id if delivery.free_over else delivery.product_id.company_id.currency_id or website_sale_order.company_id.currency_id,                            &quot;display_currency&quot;: website_sale_order.currency_id}"/>
+          </div>
+          <div t-else="" t-att-class="badge_class">Free</div>
+        </t>
+
+
+        <t t-else="">
+            <div t-attf-class="#{badge_class} o_wsale_delivery_badge_price">Select to compute delivery rate</div>
+        </t>
+
+        <t t-if="delivery.website_description">
+          <div>
+             <span t-field="delivery.website_description" class="text-muted mt8"/>
+
+          </div>
+
+        </t>
+
+        </div>
+    </div>
+    </template>
+</odoo>

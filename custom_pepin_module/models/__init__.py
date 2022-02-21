@@ -1,0 +1,2 @@
+from . import product_category_inherit,product_template_inherit
+from . import export_product_inherit

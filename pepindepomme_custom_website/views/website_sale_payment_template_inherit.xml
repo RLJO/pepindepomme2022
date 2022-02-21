@@ -1,0 +1,148 @@
+<odoo>
+    <template id="payment_custom" inherit_id="website_sale.payment">
+        <xpath expr="//div[@id='wrap']" position="after">
+            <style>
+                #shipping_and_billing .btn-outline:hover {
+                background-color: #7A93AB !important;
+                color: black !important;
+                }
+                .list-group-item.o_delivery_carrier_select{
+                margin-bottom: 1.5rem !important;
+                }
+                h3.mb24{
+                font: normal normal bold 30px/29px Roboto;
+                color: #000000;
+                }
+                .oe_cart .btn-secondary{
+                background: #F4F4F5 0% 0% no-repeat padding-box;
+                border: #F4F4F5;
+                color: #6C757D;
+                padding: 1rem 1rem;
+                height: 52px;
+                }
+                .oe_cart .btn-secondary:hover {
+                color: #FFFFFF;
+                background-color: #63809c;
+                border-color: #5e7a94;
+                }
+                .oe_cart .btn.btn-primary{
+                font: normal normal bold 16px/19px Roboto;
+                color: #FFFFFF;
+                background: #91B508;
+                padding: 1rem 1rem;
+                height: 52px;
+                }
+
+
+                th{
+                font: normal normal normal 14px/24px Roboto;
+                color: #000000;
+                }
+                td{
+                color: #000000;
+                }
+                tr{
+                background-color: transparent !important;
+                }
+                td.text-right{
+                text-align: left !important;
+                }
+                .card-body .text-muted, .o_colored_level .card-body .text-muted{
+                color: #000000 !important;
+                font: normal normal normal 14px/24px Roboto;
+                }
+                td.text-center.text-xl-right.border-0{
+                display:none;
+                }
+                .btn-outline{
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border: 2px solid #000000;
+                font: normal normal bold 16px/19px Roboto;
+                color: #000000;
+                }
+                span.payment_option_name1{
+                font-size:17px !important;
+                font-weight:bold !important;
+                font-family:Roboto !important;
+                color: #000000 !important;
+                }
+                .text-p{
+                font: normal normal normal 12px/24px Roboto;
+                color: #939393;
+                }
+                .float-right.badge.badge-secondary{
+                font: normal normal bold 17px/20px Roboto !important;
+                color: #00B74F !important;
+                background-color: transparent !important;
+                }
+                label {
+                font: normal normal bold 17px/20px Roboto;
+                color: #000000;
+                margin-left:10px;
+                }
+                span.text-muted.mt8{
+                font: normal normal normal 14px/24px Roboto !important;
+                color: #000000 !important;
+                padding: 0em 0.8em;
+                }
+                div.float-right.badge.badge-secondary{
+                float:none !important;
+                padding: 0em 0.8em;
+                text-align:left !important;
+                white-space: normal !important;
+                }
+                div.col-12.col-lg-10 > img{
+                margin-left:15px;
+                }
+                div.text-center.progress-wizard-steplabel{
+                color:black !important;
+                }
+                span.w-100.o_force_ltr.d-block{
+                margin-top:15px;
+                }
+                @media (max-width: 992px) {
+                #cart_products{
+                margin-top:15px;
+                }
+                #top_menu_container #top_menu_collapse #top_menu > .nav-item > .nav-link {
+                background: white;
+                border-bottom: none;
+                }
+                }
+            </style>
+        </xpath>
+
+        <xpath expr="//t[@t-call='payment.payment_tokens_list']" position="replace">
+
+            <t t-call="payment.payment_tokens_list">
+                <t t-set="mode" t-value="'payment'"/>
+                <t t-set="submit_txt">Pay Now</t>
+                <t t-set="submit_class" t-value="'btn btn-primary'"/>
+                <t t-set="pms" t-value="tokens"/>
+                <t t-set="form_action" t-value="'/shop/payment/token'"/>
+                <t t-set="prepare_tx_url" t-value="'/shop/payment/transaction/'"/>
+                <t t-set="partner_id" t-value="partner"/>
+
+                <t t-set="back_button_icon_class" t-value="'fa-chevron-left'"/>
+                <t t-set="back_button_txt">Return to Cart</t>
+                <t t-set="back_button_class" t-value="'btn btn-secondary'"/>
+                <t t-set="back_button_link" t-value="'/shop/cart'"/>
+            </t>
+        </xpath>
+        <xpath expr="//div[@id='payment_method']" position="attributes">
+            <attribute name="class" remove="mb-4" separator=" "/>
+        </xpath>
+
+        <xpath expr="//div[@id='shipping_and_billing']" position="replace">
+
+        </xpath>
+        <xpath expr="//t[@t-call='website_sale.cart_summary']" position="replace">
+
+             <t t-call="website_sale.cart_summary">
+                 <t t-set="show_method" t-value="True"/>
+             </t>
+
+        </xpath>
+
+    </template>
+</odoo>

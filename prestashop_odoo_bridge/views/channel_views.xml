@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="prestashop_odoo_bridge.multi_channel_view_form" model="ir.ui.view">
+            <field name="name">multi.channel.sale.inherited</field>
+            <field name="model">multi.channel.sale</field>
+            <field name="inherit_id" ref="odoo_multi_channel_sale.multi_channel_view_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name = 'configuration']" position="after">
+                    <page string="Prestashop" name="prestashop" attrs="{'invisible':[('channel','!=', 'prestashop')]}">
+                        <h2 style="margin-top: 10px !important;background-color: #e9ecef;padding-left: 8px;">
+                            Prestashop Default Settings
+                        </h2>
+                        <p class="text-muted" style="margin-left:5%">
+                            Default Configuration For Odoo Multichannel Prestashop Connector.
+                        </p>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane" />
+                                <div class="o_setting_right_pane">
+                                    <label string="Default Tax Rule" for="ps_default_tax_rule_id" />
+                                    <div class="text-muted">
+                                            Default Tax Rule Id for prestashop
+                                        </div>
+                                    <div class="text-muted">
+                                        <b>
+                                            <field name="ps_default_tax_rule_id" groups="base.group_no_one" />
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane" />
+                                <div class="o_setting_right_pane">
+                                    <label string="Default Product Type" for="ps_default_product_type" />
+                                    <div class="text-muted">
+                                            Default Product Type for prestashop
+                                        </div>
+                                    <div class="text-muted">
+                                        <b>
+                                            <field name="ps_default_product_type" groups="base.group_no_one" />
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane" />
+                                <div class="o_setting_right_pane">
+                                    <label string="Default Tax Type" for="default_tax_type" />
+                                    <div class="text-muted">
+                                            Default Tax Type for prestashop
+                                        </div>
+                                    <div class="text-muted">
+                                        <b>
+                                            <field name="default_tax_type" groups="base.group_no_one" />
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 o_setting_box">
+                                <div class="o_setting_left_pane" />
+                                <div class="o_setting_right_pane">
+                                    <label string="Prestashop Language Id" for="ps_language_id" />
+                                    <div class="text-muted">
+                                            Default Language Id for prestashop
+                                        </div>
+                                    <div class="text-muted">
+                                        <b>
+                                            <field name="ps_language_id" attrs="{'required':[('channel','=', 'prestashop')]}" groups="base.group_no_one" />
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

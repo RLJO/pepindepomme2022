@@ -1,0 +1,12 @@
+<odoo>
+    <template id="website.option_header_brand_logo" inherit_id="website.placeholder_header_brand">
+
+        <xpath expr="//*[@id='o_fake_navbar_brand']" position="replace">
+        <a href="/" t-attf-class="navbar-brand logo #{_link_class}">
+            <span class="d-none d-lg-block" t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name"/>
+            <img src="/pepindepomme_custom_website/static/src/img/home/pepindepomme%20logo.svg" style="margin-left: 90%;" class="img img-fluid d-md-block d-lg-none" alt="" loading="lazy"/>
+        </a>
+    </xpath>
+    </template>
+
+</odoo>

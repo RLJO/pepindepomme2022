@@ -1,0 +1,65 @@
+Legend
+
++ Features
+- Bugs
+
+	------------------------------ Version 1.6.1 (01-06-2020) --------------------------------
+	+ [Fix] creating product feeds while importing orders.
+	
+	------------------------------ Version 1.6.1 (04-06-2020) --------------------------------
+	+ [FIX] import_operation.xml file
+	+ [FIX] added action_prestashop_export_template method
+	+ [FIX] added shipping line in order feeds.
+	+ [FIX] changed the filter method in import process.
+
+	------------------------------ Version 1.6.1 (05-06-2020) --------------------------------
+	+ [ADD] tax name while importing taxes instead of VAT.
+	+ [ADD] import category while importing products.
+	
+	------------------------------ Version 1.6.1 (08-06-2020) --------------------------------
+	+ [REM] decrease the number of API calls.
+	+ [ADD] API limit functionality with import process.
+	
+	------------------------------ Version 1.6.1 (09-06-2020) ---------------------------------
+	+ [ADD] remove single line type from import_order.py file.
+
+	------------------------------Version 1.6.1 (22-06-2020) ----------------------------------
+	+ [ADD] import date updation for cron processes.
+
+	------------------------------ Version 1.6.1 (25-06-2020) --------------------------------
+	+[ADD] description to import attributes and import products
+	+[ADD] try except statement to API calls in import partner.
+
+	------------------------------ Version 1.6.1 (15-06-2020) --------------------------------
+	+[ADD] updated code for export product and added the variant export update functionality
+	+[FIX] Fixed the code for extraprice update.
+
+	------------------------------ Version 1.6.1 (17-06-2020) --------------------------------
+	+[FIX] fix the code for exporting the extra category instance wise.
+	+[FIX] fix the code for description_sale and description field.
+	+[FIX] fix the code for import order same_shipping_billing field and added customer name in shipping address and  billing address
+	+[ADD] added sort functionality to the prestashop API.
+ 
+	------------------------------ Version 1.6.2 (21-07-2020) --------------------------------
+	+[FIX] updated the code for export attributes and remove the multiple search conditions in export process.
+
+	------------------------------ Version 1.6.3 (24-07-2020) --------------------------------
+	+[FIX] updated the code for export attributes and remove multiple try and except statements.
+	+[FIX] updated the code for export category process.
+	+[FIX] updated the code for export product process and remove multiple tery and except process.
+	+[FIX] fixed the description and description_sale Field export.
+	+[FIX]updated the code for create combination method and changed the code for attribute and value.
+	+[FIX] updated the code for prestashop_update_quantity method.
+	+[FIX] reduce the overall code complexity for export process.
+
+	-------------------------------Version 1.6.4 (12-08-2020) -----------------------------------
+	+[FIX] Fixed the import cron process.
+	+[ADD] set import cron date if from_cron is true.
+
+	-------------------------------Version 1.6.5 (17-08-2020) -----------------------------------
+	+[REM] removed the apitransaction file.
+	+[REM] removed the create remote object code.
+
+	-------------------------------Version 1.6.5 (04-01-2021) -----------------------------------
+	+[FIX] change object to dictionary for category id in export category process.
+ 

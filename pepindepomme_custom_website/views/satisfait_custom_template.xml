@@ -1,0 +1,103 @@
+<odoo>
+    <template id="satisfait_custom" name="Satisfait | Remboursé">
+            <t t-call="website.layout">
+        <style>
+            .title{
+            text-align: left;
+            font: normal normal bold 24px/29px Roboto;
+            color: #000000;
+            }
+            .paragraph{
+            font: normal normal normal 14px/24px Roboto;
+            color: #000000;
+            text-align: left;
+            }
+            .underline{
+            text-decoration: underline;
+            font-weight:normal;
+            }
+            span{
+            font-weight: bold;
+            }
+            .bigtitle{
+            font: normal normal bold 36px/29px Roboto;
+            letter-spacing: 0px;
+            color: #000000;
+            text-align: center;
+            }
+            .greentitle{
+            font: normal normal bold 24px/29px Roboto;
+            letter-spacing: 0px;
+            color: #91B508;
+            }
+        </style>
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_title pt16 o_colored_level pt32 pb16" data-vcss="001" data-snippet="s_title" data-name="Title">
+        <div class="s_allow_columns container d-none d-lg-block">
+          <h1 class="bigtitle">Satisfait ou remboursé</h1>
+        </div>
+         <div class="s_allow_columns container d-md-block d-lg-none text-center">
+          <p class="bigtitle mb-2">Satisfait ou</p>
+          <p class="bigtitle">remboursé</p>
+        </div>
+      </section>
+      <section class="s_text_block pt32 o_colored_level mb64" data-snippet="s_text_block" data-name="Text">
+        <div class="container s_allow_columns d-md-block d-lg-none">
+          <p class="paragraph greentitle" style="text-align:center">AVEC PÉPIN DE POMME, VOUS ÊTES SATISFAIT OU REMBOURSÉ !</p>
+        </div>
+        <div class="container s_allow_columns d-none d-lg-block">
+          <p class="paragraph greentitle">Avec Pépin de Pomme, vous êtes satisfait ou remboursé !</p>
+        </div>
+        <div class="container fluid">
+              <p class="paragraph">Pépin de pomme, boutique en ligne spécialisée dans la petite enfance, s’engage à donner des produits de qualité qui assurent confort et sécurité pour nos bouts de chou. Afin de garantir un meilleur retour vis-à-vis des clients, Pépin de pomme propose des paramètres de remboursement si jamais le produit acheté ne convient pas ou ne satisfait pas le client. Celui-ci dispose de 7 jours pour exercer le droit de rétraction. Le produit peut alors soit être échangé, soit être remboursé. Pour ce second cas, Pépin de pomme doit remettre au client la totalité du prix de l’article au plus tard 30 jours après la rétraction. Un produit endommagé, cassé ou qui n’est pas présenté dans son emballage d’origine en bon état ne peut pas faire objet de rétraction, autrement dit, il ne sera pas repris. Si vous souhaitez remettre un produit acheté, vous devez impérativement contacter le service client de Pépin de pomme et leur donner votre nom, votre numéro de commande et la raison de la rétraction. Une copie de la facture est aussi nécessaire mais pas obligatoire. N’oubliez pas de préciser si vous avez besoin d’un échange ou d’un remboursement. Les frais relatant de cette démarche sont à la charge du client. Notre service client est joignable :</p>
+        <div class="row w-50 ">
+          <div class="col-12 col-lg-3">
+            <p class="paragraph mb-0"><b>Pour la France</b></p>
+            <p class="paragraph"><b>09 72 44 96 58</b></p>
+          </div>
+          <div class="col-12 col-lg-9 mb-2">
+            <p class="paragraph mb-0"><b>Pour la Belgique</b></p>
+            <p class="paragraph"><b>069 89 52 00</b></p>
+          </div>
+        </div>
+        </div>
+        <div class="container s_allow_columns">
+          <p class="paragraph">Selon la législation, les clients déterminés comme étant professionnels ne bénéficient pas de ce droit de rétraction.</p>
+        </div>
+      </section>
+      <section class="s_icon_block_2 pb32 o_colored_level pt0" style="border-top: solid 1px #CFCFD1" data-snippet="s_icon_block_2" data-name="Icon Block - 2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 py-3 text-center o_colored_level col-lg-4">
+              <h5 class="mt-3">
+                <img class="img-fluid o_we_custom_image" src="/pepindepomme_custom_website/static/src/img/home/delivery.png" alt="" loading="lazy" data-original-id="596" data-original-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAVCAYAAAAnzezqAAAAAXNSR0IArs4c6QAAAfhJREFUSEulloFRwzAMRdsNYIMwATABYQJgAsoEwASECSgTUCagTECYAJiAMgGMwH85K5cKx3GI7nRNLVl+kmUn81laTmW+HPBJme9lXKcc5gPBP2UvJgDUmnv8XwAWBgBZSb9GgBzJt5ROAqD8T2HRoUp5tkoDN1MB7hTgSvouPRyRPa4GwNzrztyfEK8dSmX2Jq8D6dIFyWExgJgv23lhBg9A2VkUoYQIXfwRQMggR1IAzG8hPMCLjGXPCmcBZgxALWc7BTt6Jr4l2EB4gEXIvHCrUAXKNrYCXQBCeohlrAe+g2OXgUaiF3LFtsAD2PwHPZDsLAYQ24Yx5SfuEEAZtqMBsG7vy27KMeyrwBZArORdGPZ9NwywhzTRn/Ps6H0FCtnRTdAtADNaDI4fDnaJMIkFGediMiE7egM/LwaAjbnEM6GhH6XNLRvrAXsBsTCKFEH9Qn2V6PO3+cyjmlGA1JasNIesubDo5FyxU0QFueJbkFgFSllRk/2wYLcXsNlR2uiZknrpeyNa09ckk/OWI1t7K9KMdhnZcWVPOaZeKg3QNwDuBSNlZ4v5vZVWOQDdSTTVs9SqQlxuyFUEoNQYkEgtfZWeSO0qBmqTA0CAhTS25wROffG0N54D5FZtXtO5APiSEd+HTfeGjCoXOPYX+POOYes78RdWz3e+V7JuFgAAAABJRU5ErkJggg==" data-mimetype="image/png"/>
+                <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Livraison
+                                        gratuite à partir de 89€
+                                    </font>
+              </h5>
+              <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip802397" data-original-id="617" data-original-src="/pepindepomme_custom_website/static/src/img/home/Plan_x0020_1.png" data-mimetype="image/png" data-resize-width="94"/>
+              <img class="img-fluid o_we_custom_image mt-2" src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip709349" data-original-id="618" data-original-src="/pepindepomme_custom_website/static/src/img/home/79c4917b-5943-4f02-8e0b-e0c68c43c811.png" data-mimetype="image/png" data-resize-width="54"/>
+            </div>
+            <div class="col-12 py-3 text-center o_colored_level col-lg-8">
+              <h5 class="mt-3">
+                <img class="img-fluid o_we_custom_image" src="/pepindepomme_custom_website/static/src/img/home/secure.png" alt="" loading="lazy" data-original-id="596" data-original-src="/pepindepomme_custom_website/static/src/img/home/secure.png" data-mimetype="image/png"/>
+                <font style="font: normal normal bold 22px/27px Roboto; color: #000000;">&amp;nbsp;Paiement
+                                        100% sécurisé
+                                    </font>
+              </h5>
+              <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/Logo-CB.png" alt="" loading="lazy"/>
+              <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png" alt="" loading="lazy" data-original-id="598" data-original-src="/pepindepomme_custom_website/static/src/img/home/Mastercard-logo.png" data-mimetype="image/png" data-resize-width="44"/>
+              <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/Paypal.png" alt="" loading="lazy" data-original-id="599" data-original-src="/pepindepomme_custom_website/static/src/img/home/Paypal.png" data-mimetype="image/png" data-resize-width="113"/>
+              <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/visa.png" alt="" loading="lazy" data-original-id="600" data-original-src="/pepindepomme_custom_website/static/src/img/home/visa.png" data-mimetype="image/png" data-resize-width="65"/>
+              <img class="img-fluid o_we_custom_image mr-4 mt-2" src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png" alt="" loading="lazy" data-original-id="601" data-original-src="/pepindepomme_custom_website/static/src/img/home/logo-sofinco.png" data-mimetype="image/png" data-resize-width="96"/>
+              <img class="img-fluid o_we_custom_image mt-2" src="/pepindepomme_custom_website/static/src/img/home/Image 102.png" alt="" loading="lazy" data-original-id="620" data-original-src="/pepindepomme_custom_website/static/src/img/home/Image 102.png" data-mimetype="image/png" data-resize-width="117"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    </t>
+
+
+    </template>
+</odoo>

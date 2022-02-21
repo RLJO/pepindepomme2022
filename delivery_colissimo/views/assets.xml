@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<odoo>
+    <template id="assets_backend" name="relay assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link  type="text/scss" href="/delivery_colissimo/static/src/scss/colissimo.scss" rel="stylesheet"/>
+            <script  type="text/javascript" src="/delivery_colissimo/static/src/js/colissimo.js"/>
+
+        </xpath>
+    </template>
+</odoo>
